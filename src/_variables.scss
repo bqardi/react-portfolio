@@ -1,0 +1,42 @@
+$highlight: #2bb1ff;
+$highlightTransparent: #2bb1ff33;
+$ok: #64d376;
+$warning: #f1d990;
+$danger: #e6737e;
+
+$javascript: #fbbc05;
+$react: #35b2f4;
+$html: #e34c26;
+$css: #2565ae;
+$sass: #cf649a;
+$linkedin: #0a66c2;
+$github: #6e5494;
+$api: #549476;
+
+$defaultFontSize: 10px;
+$textSize: $defaultFontSize * 1.618;
+$headingSizeMedium: $defaultFontSize * 1.618 * 1.618;
+$headingSizeLarge: $defaultFontSize * 1.618 * 1.618 * 1.618;
+
+$codeFont: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+$headingFont: 'Abel', sans-serif;
+$defaultFont: 'Open Sans', sans-serif;
+
+$primaryWeight: 300;
+$secondaryWeight: 700;
+
+$unit: 48px;
+$menuWidth: $unit * 5;
+$topbarHeight: 48px;
+$space: 32px;
+$iconSize: 20px;
+$iconSizeMedium: 28px;
+$cardMaxHeight: 310px;
+
+$breakpointMicro: 420px;
+$breakpointSmall: 600px;
+$breakpointMedium: 990px;
+$breakpointLarge: 1350px;
+
+$breakheightSmall: 500px;
+$breakheightMedium: 630px;

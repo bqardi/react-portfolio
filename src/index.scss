@@ -1,19 +1,91 @@
-body {
-	margin: 0;
-	font-family: "Lato", sans-serif;
-	font-weight: 300;
+@import "./variables";
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 400;
+body{
+  --hue: 280;
+  --saturation: 86%;
+  --theme-lightest: hsl(var(--hue), var(--saturation), 5%);
+  --theme-lighter: hsl(var(--hue), var(--saturation), 13%);
+  --theme-light: hsl(var(--hue), var(--saturation), 28%);
+  --theme: hsl(var(--hue), var(--saturation), 40%);
+  --theme-transparent: hsla(var(--hue), var(--saturation), 40%, 0.5);
+  --theme-dark: hsl(var(--hue), var(--saturation), 65%);
+  --theme-darker: hsl(var(--hue), var(--saturation), 85%);
+  --theme-darkermore: hsl(var(--hue), var(--saturation), 90%);
+  --theme-darkest: hsl(var(--hue), var(--saturation), 95%);
+  --light: hsl(0, 0%, 12%);
+  --light-faded: hsl(0, 0%, 18%);
+  --light-hover: hsl(0, 0%, 25%);
+  --light-focus: hsl(0, 0%, 32%);
+  --dark: hsl(0, 0%, 92%);
+  --darker: hsl(0, 0%, 89%);
+  --darkermore: hsl(0, 0%, 84%);
+  --dark-faded: hsl(0, 0%, 88%);
+  --dark-hover: hsl(0, 0%, 86%);
+  --dark-focus: hsl(0, 0%, 83%);
+  &.dark{
+    --theme-lightest: hsl(var(--hue), var(--saturation), 95%);
+    --theme-lighter: hsl(var(--hue), var(--saturation), 87%);
+    --theme-light: hsl(var(--hue), var(--saturation), 72%);
+    --theme: hsl(var(--hue), var(--saturation), 60%);
+    --theme-transparent: hsla(var(--hue), var(--saturation), 60%, 0.5);
+    --theme-dark: hsl(var(--hue), var(--saturation), 35%);
+    --theme-darker: hsl(var(--hue), var(--saturation), 15%);
+    --theme-darkermore: hsl(var(--hue), var(--saturation), 10%);
+    --theme-darkest: hsl(var(--hue), var(--saturation), 5%);
+    --light: hsl(0, 0%, 88%);
+    --light-faded: hsl(0, 0%, 82%);
+    --light-hover: hsl(0, 0%, 75%);
+    --light-focus: hsl(0, 0%, 68%);
+    --dark: hsl(0, 0%, 5%);
+    --darker: hsl(0, 0%, 11%);
+    --darkermore: hsl(0, 0%, 16%);
+    --dark-faded: hsl(0, 0%, 12%);
+    --dark-hover: hsl(0, 0%, 14%);
+    --dark-focus: hsl(0, 0%, 17%);
+  }
+  font: $primaryWeight $textSize $defaultFont;
+}
+
+button{
+  font: $primaryWeight $textSize $defaultFont;
+  &:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px $highlight;
+  }
+}
+
+h1{
+  font: $secondaryWeight $headingSizeLarge $headingFont;
+}
+h2{
+  font: $secondaryWeight $headingSizeMedium $headingFont;
+}
+h3, h4, h5, h6{
+  font-family: $headingFont;
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-		monospace;
+  font-family: $codeFont;
+}
+
+svg{
+  fill: var(--light);
+}
+
+img{
+  max-width: 100%;
+}
+
+ul{
+  padding-left: $space;
+}
+
+p{
+  line-height: 1.75rem;
 }

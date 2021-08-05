@@ -1,0 +1,29 @@
+@import "../variables";
+
+.ButtonGroup{
+	display: flex;
+	&__button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+		& svg{
+			height: 24px;
+			filter: grayscale(1);
+			transition: filter .15s;
+		}
+		&:hover{
+			background-color: $highlight;
+		}
+		&:hover svg{
+			filter: grayscale(0);
+		}
+		&--selected{
+			& svg{
+				filter: grayscale(0);
+			}
+		}
+	}
+}

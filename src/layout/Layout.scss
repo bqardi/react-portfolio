@@ -1,0 +1,275 @@
+@use "sass:math";
+@import "../variables";
+
+.Layout{
+  min-height: 100vh;
+	padding-top: $topbarHeight;
+	@media print {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		height: unset;
+	}
+	&--mediaunit{
+		@media only screen and (min-width: $breakpointSmall) {
+			grid-template-columns: $menuWidth 1fr;
+		}
+	}
+	&__grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: $space;
+		@media only screen and (min-width: $breakpointSmall), print {
+			&--profile{
+				grid-template-columns: repeat(2, 1fr);
+				width: unset;
+			}
+		}
+		@media only screen and (min-width: $breakpointMedium), print {
+			grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		}
+		&--profile{
+			position: relative;
+			grid-template-columns: 1fr;
+			gap: math.div($space, 2);
+			& img{
+				height: 280px;
+				object-fit: cover;
+				object-position: 50% 38%;
+				order: -1;
+			}
+			@media only screen and (min-width: 490px), print {
+				position: relative;
+				grid-template-columns: 1fr;
+				gap: 0;
+			}
+			@media only screen and (min-width: 500px), print {
+				grid-template-columns: 3fr 2fr;
+				width: unset;
+				& img{
+					position: static;
+					width: 100%;
+					object-fit: cover;
+					height: 340px;
+					order: 1;
+				}
+			}
+		}
+	}
+	&__cell{
+		width: 100%;
+		height: 100%;
+		&--fixed{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			height: $topbarHeight;
+		}
+		&--maxwidth{
+			max-width: 924px;
+			margin: 0 auto;
+			@media print {
+				max-width: 100%;
+			}
+		}
+		&--maxwidth-large{
+			max-width: 1350px;
+			margin: 0 auto;
+			@media print {
+				max-width: 100%;
+			}
+			@media screen and (min-width: 1920px) {
+				max-width: 70vw;
+			}
+		}
+		&--logo{
+			background-color: var(--dark);
+		}
+		&--light{
+			color: var(--dark);
+			background-color: var(--light);
+		}
+		&--lighter{
+			background-color: var(--dark-faded);
+			@media print {
+				background-color: white;
+			}
+		}
+		&--section{
+			background-color: var(--darker);
+			@media print {
+				page-break-inside: avoid;
+				background-color: white;
+			}
+		}
+		&--header{
+			font-size: 1.25rem;
+			padding: $space math.div($space, 2) math.div($space, 2);
+			@media only screen and (min-width: $breakpointMicro) {
+				padding: $space;
+			}
+			@media only screen and (min-width: $breakpointSmall) {
+				padding: $space * 2;
+			}
+		}
+		&--rowspan{
+			grid-row: span 2;
+		}
+		&--ghost{
+			position: relative;
+			z-index: -1;
+		}
+		&--colspan{
+			grid-column: span 2;
+			overflow-x: hidden;
+		}
+		&--minheight{
+			min-height: calc(100vh - #{$topbarHeight});
+		}
+		&--fullwidth{
+			width: 100vw;
+			@media only screen and (min-width: $breakpointMedium) {
+				width: unset;
+			}
+			@media print {
+				transform: translate(-$menuWidth);
+			}
+		}
+		&--padding{
+			padding: math.div($space, 2);
+			@media only screen and (min-width: $breakpointMicro), print {
+				padding: $space;
+			}
+			@media only screen and (min-width: $breakpointSmall) {
+				padding: $space * 2;
+			}
+		}
+		&--child-padding{
+			& > :first-child{
+				padding-top: 0;
+			}
+			& > :last-child{
+				padding-bottom: 0;
+			}
+		}
+		&--child-margin{
+			& > :first-child{
+				margin-top: 0;
+			}
+			& > :last-child{
+				margin-bottom: 0;
+			}
+		}
+		&--v-padding{
+			padding-top: math.div($space, 2);
+			padding-bottom: math.div($space, 2);
+			@media only screen and (min-width: $breakpointMicro), print {
+				padding-top: $space;
+				padding-bottom: $space;
+			}
+			@media only screen and (min-width: $breakpointSmall) {
+				padding-top: $space * 2;
+				padding-bottom: $space * 2;
+			}
+		}
+		&--h-padding{
+			padding-left: math.div($space, 2);
+			padding-right: math.div($space, 2);
+			@media only screen and (min-width: $breakpointMicro), print {
+				padding-left: $space;
+				padding-right: $space;
+			}
+			@media only screen and (min-width: $breakpointSmall) {
+				padding-left: $space * 2;
+				padding-right: $space * 2;
+			}
+		}
+		&--print-padding{
+			@media print {
+				padding: 0;
+			}
+		}
+		&--print-avoid-break-after{
+			@media print {
+				break-after: always;
+			}
+		}
+		&--b-margin{
+			margin-bottom: math.div($space, 2);
+			@media only screen and (min-width: $breakpointMicro), print {
+				margin-bottom: $space;
+			}
+			@media only screen and (min-width: $breakpointSmall) {
+				margin-bottom: $space * 2;
+			}
+		}
+		&--shadow{
+			$distance: 3px;
+			box-shadow: $distance $distance 8px 1px rgba(0, 0, 0, 0.4);
+		}
+		&--flex{
+			display: flex;
+		}
+		&--flexalign{
+			align-items: center;
+		}
+		&--flexbase{
+			align-items: baseline;
+		}
+		&--flexwrap{
+			flex-wrap: wrap;
+		}
+	}
+	&__row{
+		height: $unit;
+	}
+	&__dashboard{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: math.div($space, 2);
+		&--padding{
+			padding: $space;
+		}
+		@media only screen and (min-width: $breakpointSmall) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: $space;
+		}
+		@media only screen and (min-width: $breakpointMedium) {
+			grid-template-columns: repeat(4, 1fr);
+			gap: $space;
+		}
+	}
+	&__span{
+		&--c2{
+			@media only screen and (min-width: $breakpointMedium) {
+				grid-column: span 2;
+			}
+		}
+		&--c3{
+			@media only screen and (min-width: $breakpointSmall) {
+				grid-column: span 2;
+			}
+			@media only screen and (min-width: $breakpointMedium) {
+				grid-column: span 3;
+			}
+		}
+		&--c4{
+			@media only screen and (min-width: $breakpointSmall) {
+				grid-column: span 2;
+			}
+			@media only screen and (min-width: $breakpointMedium) {
+				grid-column: span 4;
+			}
+		}
+		&--r2{
+			grid-row: span 2;
+		}
+		&--r3{
+			grid-row: span 3;
+		}
+		&--r4{
+			grid-row: span 4;
+		}
+	}
+}
