@@ -1,0 +1,91 @@
+@use "sass:math";
+@import "../variables";
+
+.BuildProcess{
+	&__title{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		&Accordion{
+			font-size: 1.4rem;
+			margin-top: $space * 2;
+		}
+		&--space{
+			margin-top: $space;
+		}
+	}
+	&__text{
+		margin: 1rem 0;
+	}
+	&__button{
+		width: 200px;
+	}
+	&__bullet{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		margin-bottom: -23px;
+		margin-top: 5px;
+		margin-left: math.div(-$space, 1.25);
+		font-size: 0.6rem;
+		font-weight: 700;
+	}
+	&__list{
+		line-height: 1.75rem;
+		& li:not(:last-of-type){
+			margin-bottom: math.div($space, 4);
+		}
+		&Highlight{
+			color: var(--theme-lighter);
+			font-weight: 700;
+			margin-right: math.div($space, 4);
+			@media print {
+				color: var(--dark);
+			}
+		}
+		&--nodot{
+			list-style-type: none;
+			& svg{
+				margin-left: math.div(-$space, 1.2);
+			}
+		}
+		& svg{
+			width: 20px;
+			margin-bottom: -4px;
+			margin-right: math.div($space, 4);
+		}
+		& .react{
+			fill: $react;
+		}
+		& .javascript{
+			fill: $javascript;
+		}
+		& .html{
+			fill: $html;
+		}
+		& .css{
+			fill: $css;
+		}
+		& .sass{
+			fill: $sass;
+		}
+		& .node{
+			fill: #8CC84B;
+			width: 17px;
+			margin-left: -25px;
+			margin-right: 8px;
+		}
+		& .express{
+			color: #171717;
+			background-color: #f7f7f7;
+		}
+		& .reachrouter{
+			background-color: #1159a6;
+		}
+	}
+	&__accordion .Accordion__summary{
+		padding: math.div($space, 4) math.div($space, 4) math.div($space, 4) math.div($space, 2);
+	}
+}
