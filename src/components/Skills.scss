@@ -1,0 +1,33 @@
+@use "sass:math";
+@import "../variables";
+
+.Skills{
+	$iconWidth: 48px;
+	&__chip{
+		position: relative;
+		background-color: var(--theme-darkest);
+		width: 96px;
+		height: 96px;
+		font-size: 0.9rem;
+		font-weight: 400;
+		padding: 0 math.div($space, 4) math.div($space, 2);
+		border-radius: 5px;
+		border: 2px solid var(--theme-darker);
+		text-align: center;
+		&--tooltip{
+			border: 2px solid $ok;
+			&:hover, &:focus{
+				outline: none;
+				border: 2px solid $highlight;
+			}
+		}
+	}
+	&__icon{
+		position: absolute;
+		top: math.div(-$iconWidth, 2);
+		width: $iconWidth;
+		border-radius: 50%;
+		fill: hsla(0, 0%, 100%, 0.8);
+		padding: 8px;
+	}
+}

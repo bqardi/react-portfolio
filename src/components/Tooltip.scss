@@ -1,0 +1,78 @@
+@use "sass:math";
+@import "../variables";
+// Customizable:
+
+.Tooltip{
+  display: inline-block;
+  &__item{
+    color: var(--light);
+    background-color: var(--dark);
+    border-radius: 5px;
+    border: 1px solid var(--theme-dark);
+    max-width: clamp(260px, 80vw, 500px);
+    box-shadow: 3px 3px 9px 0 rgba(0, 0, 0, 0.25);
+  }
+  &__text{
+    margin: 0;
+    padding: math.div($space, 2) $space;
+  }
+  &__info{
+    z-index: 1;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+  &__infotip{
+		color: var(--light-faded);
+    display: flex;
+    align-items: center;
+  }
+  &__dotted{
+    cursor: help;
+    font-size: 0.9em;
+    line-height: 1.4rem;
+    font-style: italic;
+    text-decoration: underline dotted var(--theme);
+  }
+  &__caption{
+    margin-top: $space / 4;
+    white-space: normal;
+  }
+  &__chip{
+    padding: math.div($space, 4) math.div($space, 1.5);
+  }
+  &__title{
+    margin: 0;
+  }
+  &__icon{
+    width: 22px;
+    margin-left: math.div($space, 4);
+  }
+}
+
+// Required:
+// (don't change any of these, unless you know what you are doing):
+
+.Tooltip{
+  position: relative;
+  &:hover &__info{
+    opacity: 1;
+    visibility: visible;
+  }
+  &.js-hidden:hover &__info{
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.js-display &__info{
+    opacity: 1;
+    visibility: visible;
+  }
+  &__info{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+  }
+}

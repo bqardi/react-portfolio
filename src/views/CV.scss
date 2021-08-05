@@ -1,0 +1,57 @@
+@use "sass:math";
+@import "../variables";
+
+.CV{
+	$titleMarginBottom: 24px;
+	font-weight: 100;
+	&__profile{
+		width: 100%;
+	}
+	&__title{
+		margin-bottom: $titleMarginBottom;
+		font-size: 2rem;
+		font-weight: inherit;
+		color: var(--theme);
+	}
+	&__paragraph{
+		margin-bottom: 1rem;
+		font-weight: 100;
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+	&__extInfo{
+		padding-left: 0;
+		padding-right: 0;
+		color: var(--light-focus);
+		& p{
+			line-height: 2.1rem;
+		}
+	}
+	&__faded{
+		color: var(--theme-lighter);
+		font-weight: 700;
+	}
+	&__dark{
+		background-color: var(--darker);
+	}
+	&__chips{
+		display: flex;
+		flex-wrap: wrap;
+		gap: math.div($space, 4);
+		list-style-type: none;
+		padding: 0;
+		& li{
+			background-color: var(--theme-darker);
+			white-space: nowrap;
+			border-radius: 3px;
+			border: 2px solid transparent;
+			cursor: default;
+			display: flex;
+			align-items: center;
+			&:hover{
+				border: 2px solid var(--theme-light);
+			}
+		}
+	}
+}

@@ -8,7 +8,7 @@ function Work({type}){
 	var {projects, setProjects} = useStoreContext();
 
 	useEffect(() => {
-		if (!projects.length) {
+		if (!projects?.length) {
 			fetch("/portfolio.json")
 				.then(response => response.json())
 				.then(data => setProjects(data.projects));
@@ -21,7 +21,7 @@ function Work({type}){
 				<Layout.Cell modifiers={["padding"]}>
 					<section>
 						<Layout.Grid>
-							{projects.filter(project => project.types.find(tp => tp === type))
+							{projects?.filter(project => project.types.find(tp => tp === type))
 								.sort((prj1, prj2) => prj1.rating - prj2.rating)
 								.reverse()
 								.map(project => <WorkCard key={project.id} project={project} />)}

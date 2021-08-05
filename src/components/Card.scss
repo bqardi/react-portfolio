@@ -1,0 +1,51 @@
+@import "../variables";
+
+.Card{
+	$borderRadius: 0;
+	position: relative;
+	border-radius: $borderRadius;
+	color: var(--light);
+	@media print {
+		border: none;
+		color: var(--dark);
+		background-color: var(--light-faded);
+	}
+	&__loading{
+		height: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__image{
+		display: block;
+		width: 100%;
+		height: 100%;
+		max-height: $cardMaxHeight;
+		object-fit: cover;
+		&--borderRadius-all {border-radius: $borderRadius;}
+		&--borderRadius-top-left {border-top-left-radius: $borderRadius;}
+		&--borderRadius-top-right {border-top-right-radius: $borderRadius;}
+		&--borderRadius-bottom-left {border-bottom-left-radius: $borderRadius;}
+		&--borderRadius-bottom-right {border-bottom-right-radius: $borderRadius;}
+	}
+	&__body{
+		padding: $space;
+		& > :first-child{
+			margin-top: 0;
+		}
+		& > :last-child{
+			margin-bottom: 0;
+		}
+		&--dark{
+			background-color: var(--darker);
+		}
+	}
+	&__absolute{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+	}
+}
