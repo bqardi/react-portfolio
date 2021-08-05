@@ -1,0 +1,22 @@
+@use "sass:math";
+@import "../variables";
+
+.Form{
+	margin: $space 0 0;
+	& label{
+		color: var(--light-faded);
+		margin-top: 8px;
+	}
+	&__input{
+		&--error{
+			border: 1px solid $danger;
+			background-color: lighten($danger, 22);
+		}
+	}
+	&__input, & textarea{
+		padding: math.div($space, 2);
+	}
+	&__error{
+		color: $danger;
+	}
+}
