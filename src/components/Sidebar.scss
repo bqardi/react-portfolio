@@ -1,0 +1,102 @@
+@use "sass:math";
+@import "../variables";
+
+.Sidebar{
+	position: fixed;
+	top: $topbarHeight;
+	z-index: 1;
+	width: $menuWidth;
+	height: calc(100vh - #{$topbarHeight});
+	transform: translateX(-$menuWidth);
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	&--open{
+		animation-name: sidebarIn;
+	}
+	animation-name: sidebarOut;
+	@keyframes sidebarIn {
+		0%{
+			transform: translateX(-$menuWidth);
+		}
+		100%{
+			transform: translateX(0);
+		}
+	}
+	@keyframes sidebarOut {
+		0%{
+			transform: translateX(0);
+		}
+		100%{
+			transform: translateX(-$menuWidth);
+		}
+	}
+	@media print {
+		display: none;
+	}
+	&__scroll{
+		width: $menuWidth;
+		height: calc(100vh - #{$unit});
+		overflow: clip auto;
+	}
+	&__menu{
+		&::before{
+			content: "";
+			position: absolute;
+			inset: 0;
+			z-index: -1;
+			background-image: url("../images/code_02.jpg");
+			background-position: center;
+			background-size: cover;
+			opacity: 0.05;
+		}
+	}
+	&__link{
+		display: block;
+		text-decoration: none;
+		border: 2px solid transparent;
+		&:focus{
+			outline: none;
+			border: 2px solid $highlight;
+		}
+	}
+	&__button{
+		border: none;
+		background-color: transparent;
+	}
+	&__link,
+	&__button{
+		position: relative;
+		width: 100%;
+		height: $unit;
+		color: var(--light);
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: math.div($unit - $iconSize, 2);
+		& svg{
+			width: $iconSize;
+			height: $iconSize;
+			fill: var(--light);
+			margin-right: math.div($unit - $iconSize, 2);
+			flex-shrink: 0;
+		}
+		&:hover{
+			background-color: var(--theme-darker);
+		}
+		&--active{
+			background-color: var(--theme-darkermore);
+		}
+		.Sidebar--open &--active::after{
+			content: "";
+			position: absolute;
+			right: 9px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background-color: $highlight;
+		}
+		&--indent{
+			padding-left: $space;
+		}
+	}
+}

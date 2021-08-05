@@ -1,0 +1,44 @@
+@import "../variables";
+
+.Topbar{
+	position: relative;
+	background-color: var(--dark-focus);
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	& button{
+		border: 2px solid transparent;
+	}
+	& button:focus{
+		box-shadow: none;
+		border: 2px solid $highlight;
+	}
+	@media print {
+		display: none;
+	}
+	&__iconType{
+		position: relative;
+	}
+	&__iconAbsolute{
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+		width: 20px !important;
+	}
+	&__animate{
+		&--in{
+			animation-name: in;
+		}
+		&--out{
+			animation-name: out;
+		}
+	}
+	@keyframes in {
+		0%{opacity: 0;}
+		100%{opacity: 1}
+	}
+	@keyframes out {
+		0%{opacity: 1;}
+		100%{opacity: 0}
+	}
+}

@@ -1,0 +1,43 @@
+@use "sass:math";
+@import "../variables";
+
+.Logo{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, math.div($space, 1.4)) scale(1.5);
+	transition: transform .15s;
+	@media only screen and (min-width: $breakpointMicro) {
+		transform: translateX(-50%);
+	}
+	@media print {
+		display: none;
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		color: var(--light);
+		height: 100%;
+		border: 2px solid transparent;
+		&:hover{
+			color: var(--light-hover);
+		}
+		&:focus{
+			outline: none;
+			border: 2px solid $highlight;
+		}
+	}
+	&__icon{
+		width: 28px;
+		margin: math.div($unit, 6);
+	}
+	&__text{
+		display: none;
+		@media only screen and (min-width: $breakpointMicro) {
+			display: unset;
+		}
+	}
+}

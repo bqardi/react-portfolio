@@ -1,0 +1,64 @@
+@use "sass:math";
+@import "../variables";
+
+.Profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: math.div($space, 4);
+	margin: 0;
+	@media screen and (min-height: $breakheightSmall) {
+		padding: $space;
+		margin: math.div($space, 4) 0 0;
+	}
+	& h3{
+		display: none;
+		font-size: 1.5rem;
+		@media screen and (min-height: $breakheightSmall) {
+			display: block;
+		}
+	}
+	& img{
+		display: none;
+		border-radius: 50%;
+		width: 80px;
+		margin: math.div($space, 2) 0;
+		transition: transform .15s;
+		&:hover{
+			transform: scale(2.4);
+		}
+		@media screen and (min-height: $breakheightSmall) {
+			display: block;
+		}
+	}
+	& p{
+		display: none;
+		font-size: 0.9rem;
+		text-align: center;
+		& svg{
+			fill: var(--light);
+			width: 24px;
+			margin-right: math.div($space, 4);
+		}
+		@media screen and (min-height: $breakheightSmall) {
+			display: block;
+		}
+	}
+	&__social{
+		display: flex;
+		margin: math.div($space, 2) 0;
+		@media screen and (min-height: $breakheightSmall) {
+			margin-top: math.div($space, 2);
+		}
+	}
+	&__icon{
+		margin-right: math.div($space, 8);
+		&--linkedin{
+			fill: $linkedin;
+		}
+		&--github{
+			fill: $github;
+		}
+	}
+}

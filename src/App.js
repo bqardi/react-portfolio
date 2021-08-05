@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Router } from "@reach/router";
 import Landing from "./views/Landing";
 import Store from "./components/Store";
-// import Dashboard from "./views/Dashboard";
+import Dashboard from "./views/Dashboard";
 import useMediaQuery from "./hooks/useMediaQueries";
 import useLanguage from "./hooks/useLanguage";
 import "./App.scss";
@@ -39,7 +39,7 @@ function App() {
       }}>
         <Router>
           <Landing path="/" />
-          {/* <Dashboard path="/dashboard/*" /> */}
+          <Dashboard path="/dashboard/*" />
         </Router>
       </Store>
     </div>

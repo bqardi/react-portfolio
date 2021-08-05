@@ -1,0 +1,39 @@
+@use "sass:math";
+@import "../variables";
+
+.Settings{
+	&__theme{
+		position: relative;
+		padding: 0;
+		width: 100%;
+		background-color: var(--darker);
+		border: none !important;
+		align-items: center;
+		&:hover{
+			background-color: var(--darkermore);
+		}
+		&:hover &Color{
+			right: 0;
+		}
+		&Color{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 73%;
+			display: block;
+			height: 4px;
+			transition: right .15s;
+			&--orange{
+				background-color: hsl(110, 80%, 40%);
+			}
+		}
+		&Mode{
+			display: flex;
+			align-items: center;
+			flex: 1;
+			height: 100%;
+			color: var(--light);
+			padding: 0 16px;
+		}
+	}
+}
