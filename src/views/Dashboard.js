@@ -7,7 +7,7 @@ import Topbar from "../components/Topbar";
 import Animate, { useAnimate } from "../components/Animate";
 import Loading from "../components/Loading";
 
-// const Work = lazy(() => import("../views/Work"));
+const Work = lazy(() => import("../views/Work"));
 // const BuildProcess = lazy(() => import("../views/BuildProcess"));
 const Contact = lazy(() => import("../views/Contact"));
 // const CV = lazy(() => import("../views/CV"));
@@ -37,10 +37,10 @@ function Dashboard(){
 							</div>
 						}>
 							<Router>
-								{/* <BuildProcess path="/build-process" />
+								{/* <BuildProcess path="/build-process" /> */}
 								<Work path="/websites" type="web" />
 								<Work path="/tutorials" type="tutorial" />
-								<Work path="/games" type="game" /> */}
+								<Work path="/games" type="game" />
 								<Contact path="/contact" />
 								{/* <CV path="/cv" /> */}
 							</Router>

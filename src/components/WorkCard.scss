@@ -1,0 +1,160 @@
+@use "sass:math";
+@import "../variables";
+
+.WorkCard{
+	--image-offset: #{-$space};
+	--margin-top: #{math.div($space, 2)};
+	$borderRadius: 0;
+	position: relative;
+	margin-top: max(0px, var(--margin-top));
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: $borderRadius;
+	&::before{
+		content: "";
+		position: absolute;
+		inset: math.div($space, 4);
+		background-color: var(--theme-darkest);
+		border-radius: $borderRadius;
+	}
+	&:first-of-type{
+		margin-top: max(0px, #{$space});
+	}
+	@media only screen and (min-width: $breakpointMicro), print {
+		padding: $space;
+		--image-offset: #{-$space * 2};
+		--margin-top: #{$space};
+	}
+	&__container{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	& h3{
+		font-size: 2rem;
+		line-height: 2.2rem;
+		margin-bottom: $space;
+		padding: 0 $space;
+		@media only screen and (min-width: $breakpointMicro), print {
+			padding: 0;
+		}
+	}
+	&__description{
+		position: relative;
+		max-width: 500px;
+		padding: 0 $space;
+		@media only screen and (min-width: $breakpointMicro), print {
+			padding: 0;
+		}
+	}
+	&__tags{
+		position: relative;
+		font-size: 0.8rem;
+		color: var(--theme-lighter);
+		background-color: var(--theme-darker);
+		margin-bottom: math.div($space, 2);
+		padding: math.div($space, 6) math.div($space, 2);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&__tag{
+		white-space: nowrap;
+	}
+	&__tag:not(:last-of-type)::after{
+		content: "|";
+		margin: 0 0.25rem;
+		font-weight: 700;
+		font-size: 1.1rem;
+		color: var(--theme);
+	}
+	& img{
+		position: relative;
+		top: var(--image-offset);
+		margin-bottom: calc(var(--image-offset) + 32px);
+		width: 100%;
+		height: 45vw;
+		object-fit: cover;
+		display: block;
+		border-top-left-radius: $borderRadius;
+		border-top-right-radius: $borderRadius;
+		border-bottom-left-radius: 50% 15%;
+		border-bottom-right-radius: 50% 15%;
+		@media only screen and (min-width: $breakpointSmall) {
+			width: 260px;
+			height: 140px;
+			margin-right: $space;
+		}
+		@media print {
+			width: 180px;
+			height: 100px;
+			margin-right: $space;
+		}
+	}
+	&__links{
+		position: relative;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		margin-top: $space;
+	}
+	&__link{
+		margin-bottom: 1px;
+		background-color: var(--dark-focus);
+		padding: 0 1rem;
+		width: 100%;
+		height: 48px;
+		font-size: clamp(0.8rem, 3vw, 1rem);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media print {
+			background-color: transparent;
+			padding: 0;
+		}
+		& &--web{
+			fill: var(--theme);
+		}
+		& &--github{
+			fill: $github;
+		}
+		& &--api{
+			fill: $api;
+		}
+		& &--link{
+			fill: $danger;
+		}
+		&:hover{
+			background-color: var(--dark-hover);
+		}
+		&:hover &--icon{
+			fill: $highlight !important;
+		}
+		svg#{&}--icon{
+			width: 20px;
+			margin-right: 8px;
+			margin-bottom: 0;
+		}
+		svg#{&}--chevron{
+			width: 28px;
+			height: 28px;
+			margin-right: -8px;
+		}
+		& span{
+			flex: 1;
+			margin-right: 4px;
+			color: var(--light-faded);
+			@media print {
+				color: var(--dark-faded);
+			}
+		}
+		&:last-of-type{
+			margin-bottom: $space;
+			@media only screen and (min-width: $breakpointMicro) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
