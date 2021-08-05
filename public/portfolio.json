@@ -1,0 +1,1320 @@
+{
+	"experience": {
+		"current": {
+			"id": "exp04",
+			"jobhunting": true,
+			"name": {
+				"dan": "Jeres virksomhed?",
+				"eng": "Your company?"
+			},
+			"title": {
+				"dan": "Webudvikler, front end udvikler",
+				"eng": "Web developer, front end developer"
+			},
+			"description": {
+				"dan": "Er du/I det rette match for mig? Pt. leder jeg efter et job som frontend udvikler. Tag meget gerne [link] til mig, hvis i synes jeg virker som et godt match for jer.",
+				"eng": "Are you the right match for me? Currently I am on the lookout for a fulltime job as a frontend developer. Please [link] me if you think I seem like a good match for you."
+			},
+			"from": {
+				"year": "2021",
+				"month": "10"
+			},
+			"to": {
+				"year": "?",
+				"month": "?"
+			},
+			"location": {
+				"dan": "?",
+				"eng": "?"
+			},
+			"type": {
+				"dan": "Medarbejder",
+				"eng": "Employee"
+			}
+		},
+		"historic": [
+			{
+				"id": "exp03",
+				"name": "Roskilde Teknisk Skole",
+				"title": {
+					"dan": "Webudvikler, front end udvikler",
+					"eng": "Web developer, front end developer"
+				},
+				"description": {
+					"dan": "Her stiftede jeg bekendtskab med React og har elsket det lige siden.",
+					"eng": "Here I learned about React and have loved it ever since."
+				},
+				"from": {
+					"year": "2020",
+					"month": "01"
+				},
+				"to": {
+					"year": "2021",
+					"month": "10"
+				},
+				"location": {
+					"dan": "Roskilde",
+					"eng": "Roskilde"
+				},
+				"type": {
+					"dan": "Studerende",
+					"eng": "Student"
+				}
+			},
+			{
+				"id": "exp02",
+				"name": "Roskilde Teknisk Skole",
+				"title": {
+					"dan": "Digital media, web, design, 3D, medier",
+					"eng": "Digital media, web, design, 3D, media"
+				},
+				"description": {
+					"dan": "På Digital Media lærte jeg meget omkring design og 3D.",
+					"eng": "At Digital Media I learned a lot about design and 3D."
+				},
+				"from": {
+					"year": "2019",
+					"month": "01"
+				},
+				"to": {
+					"year": "2020",
+					"month": "10"
+				},
+				"location": {
+					"dan": "Roskilde",
+					"eng": "Roskilde"
+				},
+				"type": {
+					"dan": "Studerende",
+					"eng": "Student"
+				}
+			},
+			{
+				"id": "exp01",
+				"name": "K. A. Rasmussen A/S",
+				"title": {
+					"dan": "Visual Basic udvikler",
+					"eng": "Visual Basic developer"
+				},
+				"description": {
+					"dan": "Mit arbejde hos K. A. Rasmussen omfattede flere ting, bl. a. systemudvikling i Microsoft Office / VBA (Visual Basic for Applications) og vedligeholdelse/assisterende opbygning af webshop.",
+					"eng": "My job at K. A. Rasmussen consisted of several things, including systemdevelopment in Microsoft Office / VBA (Visual Basic for Applications) and maintenance/assisting development of webshop."
+				},
+				"from": {
+					"year": "2009",
+					"month": "03"
+				},
+				"to": {
+					"year": "2017",
+					"month": "02"
+				},
+				"location": {
+					"dan": "København",
+					"eng": "Copenhagen"
+				},
+				"type": {
+					"dan": "Medarbejder",
+					"eng": "Employee"
+				}
+			}
+		]
+	},
+	"skills": {
+		"languages": [
+			{
+				"name": "HTML",
+				"icon": "Html",
+				"color": "#e34c26",
+				"description": {
+					"dan": "Jeg har næsten været med fra starten (siden ca. 1997), da Tim Berners-Lee skrev den første version af HTML i 1993.",
+					"eng": "I've had my hands on HTML almost since its birth in 1993 (approx. since 1997), where Tim Berners-Lee wrote the first version."
+				}
+			},
+			{
+				"name": "CSS",
+				"icon": "Css",
+				"color": "#2565ae",
+				"description": {
+					"dan": "Har brugt CSS siden ca. 1997. Har god forståelse for BEM. Bruger ofte også SASS/SCSS.",
+					"eng": "I have used CSS approx. since 1997. I have a good understanding of BEM. I also often use SASS/SCSS."
+				}
+			},
+			{
+				"name": "JavaScript",
+				"icon": "JavaScript",
+				"color": "#fbbc05",
+				"description": {
+					"dan": "Jeg har brugt og har kendt JavaScript (ECMAScript) siden 1997 og er meget rutineret i sproget og alle ES versioner op til ES11 (vidste du f.eks. at spread operator (`...`) ikke blev tilføjet før ES9 (ECMA Script 2018)? Eller kender du `string.replaceAll()` (en feature jeg har brugt i dette portfolio) som blev tilføjet i ES12 (ECMA Script 2021)?)",
+					"eng": "I have known and used JavaScript (ECMAScript) since 1997 and I am very comfortable in the language and all ES versions up to ES11 (did you know that the spread operator (`...`) wasn't added until ES9 (ECMA Script 2018)? Or do you know about `string.replaceAll()` (a feature I have used in this portfolio) added in ES12 (ECMA Script 2021)?)"
+				}
+			},
+			{
+				"name": "C# (Unity 3D)",
+				"icon": "Csharp",
+				"color": "#642076",
+				"description": {
+					"dan": "Jeg har arbejdet intenst i ca. to år med C# i Unity 3D (game engine), hvor jeg udviklede spil og apps.",
+					"eng": "I have worked intensly for approx. two years with C# in Unity 3D (game engine), creating games and apps."
+				}
+			},
+			{
+				"name": "PHP",
+				"icon": "Php",
+				"color": "#787cb5",
+				"description": {
+					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP og dermed PHP hvor jeg byggede min første form med GET og POST.",
+					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP and thereby PHP where I built my first form using GET and POST."
+				}
+			},
+			{
+				"name": "mySQL",
+				"description": {
+					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP og dermed mySQL hvor jeg byggede min første database med data jeg kunne bruge online.",
+					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP and thereby mySQL where I built my first database with data I could use online."
+				}
+			},
+			{
+				"name": "VBA",
+				"description": {
+					"dan": "I mit arbejde hos K. A. Rasmussen (2009-2017) byggede jeg små systemer der skulle lette arbejdsbyrden for mig og mine kollegaer. Alt dette foregik i VBA (Visual Basic for Applications i Microsoft Office).",
+					"eng": "My work at K. A. Rasmussen (2009-2017) I built small systems which would lighten the burden for me and my colleagues. For all of this I used VBA (Visual Basic for Applications in Microsoft Office)"
+				}
+			}
+		],
+		"tech": [
+			{
+				"name": "React",
+				"icon": "React",
+				"color": "#35b2f4",
+				"description": {
+					"dan": "Første gang jeg arbejdede med React var i januar, 2021. At bygge en webapp med React komponenter har virkelig hjulpet mig til at holde en god kode struktur og gør det generelt nemmere at bygge store projekter.",
+					"eng": "My first time working with React was in january, 2021. Building a webapp with React components has really helped me keep a good code structure and generally makes it easier to build large projects."
+				}
+			},
+			{
+				"name": "JSON",
+				"icon": "Json",
+				"color": "#9273a3",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Debugging",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "SASS/SCSS",
+				"icon": "Sass",
+				"color": "#cf649a",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "BEM",
+				"description": {
+					"dan": "Block Element Modifier, en måde at skrive CSS på der gør det nemt at holde styr på classes. Fungerer godt med React, selvom det måske er ved at være lidt gammeldags.",
+					"eng": "Block Element Modifier, a way to write CSS that makes it easy to maintain classes. Works really well with React, even though it is getting a little old fashioned."
+				}
+			},
+			{
+				"name": "Node JS",
+				"icon": "Nodejs",
+				"color": "#3c873a",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "REST API",
+				"icon": "Api",
+				"color": "#549476",
+				"description": {
+					"dan": "REST (REpresentational State Transfer)",
+					"eng": "REST (REpresentational State Transfer)"
+				}
+			},
+			{
+				"name": "Netlify",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Heroku",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Mongo DB",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Express",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "JWT",
+				"description": {
+					"dan": "En JSON Web Token er en måde at sende beskeder sikkert mellem to parter, typisk mellem en frontend og en backend.",
+					"eng": "A JSON Web Token is a way to securely transfer a JSON message between two parties, typically between a frontend and a backend."
+				}
+			},
+			{
+				"name": "Security",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Bcrypt",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Hashing",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Salting",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Strapi",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Insomnia",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Accessibility",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "WordPress",
+				"icon": "Wordpress",
+				"color": "#00749c",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Doku-mentation",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Markdown",
+				"icon": "Markdown",
+				"color": "#424242",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Git",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "GitHub",
+				"icon": "Github",
+				"color": "#6e5494",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "A/B testing",
+				"icon": "AbTesting",
+				"color": "#af547a",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "TDD",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Jest",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Local Storage",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Session Storage",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Cookies",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "indexedDB",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "fetch API",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "axios",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			}
+		],
+		"design": [
+			{
+				"name": "Maya 3D",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Blender 3D",
+				"icon": "BlenderSoftware",
+				"color": "#ea7600",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Unity 3D",
+				"icon": "Unity",
+				"color": "#000",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Adobe PhotoShop",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Adobe InDesign",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Adobe Illustrator",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Figma",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Adobe XD",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Inkscape",
+				"description": {
+					"dan": "Bruger jeg til at generere/redigere SVG filer/kode.",
+					"eng": "I use this to generate/edit SVG files/code."
+				}
+			}
+		],
+		"fiddle": [
+			{
+				"name": "TensorFlow",
+				"description": {
+					"dan": "Machine Learning/AI. Lavede et enkelt projekt hvor jeg hyggede mig med talegenkendelse.",
+					"eng": "Machine Learning/AI. Did a single project where I had fun with speechrecognition."
+				}
+			},
+			{
+				"name": "Material UI",
+				"icon": "MaterialUi",
+				"color": "#007dc5",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "ThreeJS",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "AnimeJS",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "NextJS",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			}
+		]
+	},
+	"projects": [
+		{
+			"id": "prj22",
+			"rating": "100",
+			"types": ["tutorial"],
+			"image": "/images/project/compound-component-pattern.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "React - Compound component pattern",
+				"eng": "React - Compound component pattern"
+			},
+			"description": {
+				"dan": "En vejledning omkring compound component pattern i React (skrevet på engelsk).",
+				"eng": "A tutorial about the compound component pattern in React."
+			},
+			"links": [
+				{
+					"type": "link",
+					"description": {
+						"dan": "Artikel på dev.to",
+						"eng": "Article on dev.to"
+					},
+					"url": "https://dev.to/bqardi/compound-components-react-1ag8"
+				}
+			],
+			"tags": {
+				"dan": ["React", "Tutorial"],
+				"eng": ["React", "Tutorial"]
+			}
+		},
+		{
+			"id": "prj21",
+			"rating": "50",
+			"types": ["web"],
+			"image": "/images/project/dappy-crypto-currency.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Dappy Crypto Currency",
+				"eng": "Dappy Crypto Currency"
+			},
+			"description": {
+				"dan": "Dette projekt handler om cookies, Google Analytics (og GDPR) og at lave en landing page der håndterer dette. Der er også implementeret A/B testing.",
+				"eng": "This project is about cookies, Google Analytics (and GDPR) and creating a landing page that handles these. There is also an implementation of A/B testing."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi-dappy-crypto-currency.netlify.app"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/dappy-crypto-currency"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "React", "Cookies", "Google Analytics"],
+				"eng": ["GitHub", "School project", "React", "Cookies", "Google Analytics"]
+			}
+		},
+		{
+			"id": "prj20",
+			"rating": "80",
+			"types": ["tutorial"],
+			"image": "/images/project/testing_and_formatting_before_commit.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Test og formater før et commit",
+				"eng": "Test and format before commit"
+			},
+			"description": {
+				"dan": "En udførlig vejledning i automatisk at udføre tests og formattering (prettify) af din kode før der committes til GitHub (skrevet på engelsk).",
+				"eng": "A comprehensive tutorial about how to automatically perform a test and format (prettify) your code before committing to GitHub."
+			},
+			"links": [
+				{
+					"type": "link",
+					"description": {
+						"dan": "Artikel på dev.to",
+						"eng": "Article on dev.to"
+					},
+					"url": "https://dev.to/bqardi/testing-and-formatting-before-commit-43i5"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "React", "Tutorial"],
+				"eng": ["GitHub", "School project", "React", "Tutorial"]
+			}
+		},
+		{
+			"id": "prj19",
+			"rating": "90",
+			"types": ["web"],
+			"image": "/images/project/newsbox.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "NewsBox",
+				"eng": "NewsBox"
+			},
+			"description": {
+				"dan": "En stor opgave med 3 ugers varighed, hvor vi skulle lave en news app med fokus på fetch API'et, localStorage, onboarding, touch-events og animationer. I denne app har jeg afprøvet IndexedDB for første gang.\n\nJeg har smidt et lille easter egg ind i appen (skriv \"easteregg\" i søgefeltet på siden.)",
+				"eng": "A big project spanning 3 weeks, where we had to make a news-app. The project's focus was the fetch API, localStorage, onboarding, touch-events and animations. In this app I tried out IndexedDB for the first time.\n\nI threw in a little easter egg in the app (write \"easteregg\" in the search-field on the page.)"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi-newsbox.netlify.app"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/rts-cmk-wu04/newsbox-bqardi"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "fetch", "local-storage", "onboarding", "touch-events"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "fetch", "local-storage", "onboarding", "touch-events"]
+			}
+		},
+		{
+			"id": "prj18",
+			"rating": "60",
+			"types": ["web"],
+			"image": "/images/project/hifi-corner.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Hi-Fi Corner",
+				"eng": "Hi-Fi Corner"
+			},
+			"description": {
+				"dan": "En stor gruppeopgave med 2 ugers varighed, hvor vi skulle lave en shop med sortering, filtrering og enkeltvisningsside (en side der viser det enkelte produkt). Alt sammen fetch'et fra et JSON objekt vi også selv skulle konstruere. Det hele foregik via GitHub - Projects, med issues, pull requests, reviews, merge conflicts, etc.",
+				"eng": "A large group assignment spanning 2 weeks, where we had to make a webshop with sorting, filtering and singlepage-view (a page displaying the specific product). All fetch'ed from a JSON object we also had to construct ourselves. Everything took place via GitHub - Projects. with issues, pull requests, reviews, merge conflicts, etc."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://kings-n-queen.github.io/hifi-corner"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/kings-n-queen/hifi-corner"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Group project", "Mobil venlig", "fetch", "JSON", "kanban", "SCRUM"],
+				"eng": ["GitHub", "School project", "Group project", "Mobile friendly", "fetch", "JSON", "kanban", "SCRUM"]
+			}
+		},
+		{
+			"id": "prj17",
+			"rating": "100",
+			"types": ["web"],
+			"image": "/images/project/svg-icon-list.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Liste over SVG ikoner",
+				"eng": "SVG icon list"
+			},
+			"description": {
+				"dan": "En kollektion af SVG ikoner, som kan sorteres/filtreres og med et enkelt klik på ikonet, kopieres til udklipsholderen eller du kan downloade den som en fil.",
+				"eng": "A collection of Material Design icons in SVG format. Search between all the icons and click to copy to the clipboard or download as a file."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/material-design-icons"
+				}
+			],
+			"tags": {
+				"dan": ["Værktøjer", "Mobil venlig", "SVG", "ikoner"],
+				"eng": ["Tools", "Mobile friendly", "SVG", "icons"]
+			}
+		},
+		{
+			"id": "prj16",
+			"rating": "100",
+			"types": ["web"],
+			"image": "/images/project/workflow-helper.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Workflow helper",
+				"eng": "Workflow helper"
+			},
+			"description": {
+				"dan": "Et avanceret, men nemt at bruge -værktøj til at generere dine egne code-snippets til Visual Studio Code.",
+				"eng": "An advanced, but easy-to-use tool to generate your own custom code-snippets for Visual Studio Code"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/workflow-helper"
+				}
+			],
+			"tags": {
+				"dan": ["Værktøjer", "VSCode snippets"],
+				"eng": ["Tools", "VSCode snippets"]
+			}
+		},
+		{
+			"id": "prj15",
+			"rating": "70",
+			"types": ["web"],
+			"image": "/images/project/login-eksempel.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Login eksempel",
+				"eng": "Login example"
+			},
+			"description": {
+				"dan": "Et lille projekt hvor vi fik til opgave at lave et login eksempel, udfra et design givet til os i Adobe XD format.",
+				"eng": "A login example design in Adobe XD was handed to us and our task was to create it."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/login-example"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/login-example"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Form validering", "Design"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "Form validation", "Design"]
+			}
+		},
+		{
+			"id": "prj14",
+			"rating": "95",
+			"types": ["web", "game"],
+			"image": "/images/project/rogue-survivor.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Rogue Survivor",
+				"eng": "Rogue Survivor"
+			},
+			"description": {
+				"dan": "Et turbaseret eventyrspil, hvor du kan udføre quests, kæmpe mod monstre og udvikle din karakters spells og styrke ved hjælp af indsamlede ædelstene. Der kan også indsamles diverse andre objekter, som våben, armor, nøgler og health-potions. Her har jeg forsøgt mig med OOP for at undgå spaghetti-kode.",
+				"eng": "A turn-based adventure game where you can perform quests and develop your characters spells and strength by collecting gems. There are also many other objects to collect, like weapons, armor, keys and health potions. Here I have tried my luck with OOP to avoid spaghetti-code."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/rogue-survivor"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/rogue-survivor"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Spil", "Sjov", "OOP", "JS classes"],
+				"eng": ["GitHub", "Games", "Fun", "OOP", "JS classes"]
+			}
+		},
+		{
+			"id": "prj13",
+			"rating": "90",
+			"types": ["web", "game"],
+			"image": "/images/project/kryds-og-bolle.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Kryds og bolle",
+				"eng": "Tic, Tac, Toe"
+			},
+			"description": {
+				"dan": "Et lille spil jeg lavede til min 7 årige søn, fordi han fandt ud af at han kunne finde ud af at spille det og fandt det sjovt. Der er 3 AI niveauer hvor det højeste niveau er umuligt at slå.",
+				"eng": "My 7 year old son found out that he could play Tic, Tac, Toe, and therefore I build this little game for him. It contains 3 levels of AI difficulty (the AI in the highest level is unbeatable!)."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/kryds-og-bolle"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/kryds-og-bolle"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Spil", "Sjov", "Mobil venlig", "AI", "Algoritmer"],
+				"eng": ["GitHub", "Games", "Fun", "Mobile friendly", "AI", "Algorithms"]
+			}
+		},
+		{
+			"id": "prj12",
+			"rating": "80",
+			"types": ["web"],
+			"image": "/images/project/cph-architects.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "CPH Architects",
+				"eng": "CPH Architects"
+			},
+			"description": {
+				"dan": "Et projekt fokuseret på HTML, CSS, JavaScript, responsiveness og komponenter.",
+				"eng": "A project focused on HTML, CSS, JavaScript, responsiveness and components."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/cph-architects"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/cph-architects"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Design"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "Design"]
+			}
+		},
+		{
+			"id": "prj11",
+			"rating": "100",
+			"types": ["web", "tutorial"],
+			"image": "/images/project/professor.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Professor terning",
+				"eng": "Speed Cube"
+			},
+			"description": {
+				"dan": "Hvordan man løser en Rubiks Cube/professor terning. En begynder metode til at løse en professor terning/Rubiks Cube på, med udførlige trin for trin forklaringer.",
+				"eng": "How to solve a Rubiks Cube/Speed Cube. A rookie method with an explanatory step-by-step guide."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/professor"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/professor"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Tutorial", "Sjov", "Mobil venlig", "Intersection Observer"],
+				"eng": ["GitHub", "School project", "Tutorial", "Fun", "Mobile friendly", "Intersection Observer"]
+			}
+		},
+		{
+			"id": "prj10",
+			"rating": "50",
+			"types": ["web", "game"],
+			"image": "/images/project/quiz.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Quiz",
+				"eng": "Quiz"
+			},
+			"description": {
+				"dan": "En sjov lille quiz hvor du kan teste dit kendskab til sjov-, irrelevant viden.",
+				"eng": "A fun little quiz where you can test your knowledge of fun-, irrelevant knowledge"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/quiz-example"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/quiz-example"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Sjov", "Mobil venlig", "Form validering"],
+				"eng": ["GitHub", "School project", "Fun", "Mobile friendly", "Form validation"]
+			}
+		},
+		{
+			"id": "prj9",
+			"rating": "60",
+			"types": ["web"],
+			"image": "/images/project/object-builder.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Object builder",
+				"eng": "Object builder"
+			},
+			"description": {
+				"dan": "Et værktøj der kan hjælpe med at lave JavaScript/JSON objekter med et visuelt \"node-system\". Peg og klik for at bygge dine \"nodes\", og kopiér til sidst den genererede kode.",
+				"eng": "A tool to help you create JavaScript/JSON objects with a visuel \"node-system\". Point and click to build your nodes and copy the final code when you are done."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/object-builder"
+				}
+			],
+			"tags": {
+				"dan": ["Værktøjer", "Mobil venlig", "JSON"],
+				"eng": ["Tools", "Mobile friendly", "JSON"]
+			}
+		},
+		{
+			"id": "prj8",
+			"rating": "70",
+			"types": ["web", "game"],
+			"image": "/images/project/space-invaders-clone.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Space Invaders Clone",
+				"eng": "Space Invaders Clone"
+			},
+			"description": {
+				"dan": "Et lille Space Invaders klon spil, lavet i JavaScript med svg.js biblioteket.",
+				"eng": "A little Space Invaders clone game, made in JavaScript using the svg.js library"
+			},
+			"links": [
+				{
+					"type": "link",
+					"description": {
+						"dan": "JavaScript SVG bibliotek",
+						"eng": "JavaScript SVG library"
+					},
+					"url": "https://svgjs.dev/docs/3.0"
+				},
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/spaceinvaders"
+				}
+			],
+			"tags": {
+				"dan": ["Skole projekt", "Spil", "Sjov", "SVG", "Library"],
+				"eng": ["School project", "Games", "Fun", "SVG", "Library"]
+			}
+		},
+		{
+			"id": "prj7",
+			"rating": "50",
+			"types": ["web", "tutorial"],
+			"image": "/images/project/svg-mini-tutorial.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "SVG mini tutorial",
+				"eng": "SVG mini tutorial"
+			},
+			"description": {
+				"dan": "En kort og nem introduktion til SVG filer og brugen af dem.",
+				"eng": "A short and easy to understand introduction to SVG files and how to use them"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/tutorials/html/svg"
+				}
+			],
+			"tags": {
+				"dan": ["Tutorial", "SVG"],
+				"eng": ["Tutorial", "SVG"]
+			}
+		},
+		{
+			"id": "prj6",
+			"rating": "60",
+			"types": ["web"],
+			"image": "/images/project/lego-klods-major.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Lego klods major",
+				"eng": "Lego simpleton"
+			},
+			"description": {
+				"dan": "Et projekt hvor vi skulle lave en applikation til afspilning af klassens lego videoer. Legomændene er lavet i 3D programmet Maya. Resten af klassens videoer kan ses på Niels Harbo's website",
+				"eng": "Website to showcase our entire class' video-projects"
+			},
+			"links": [
+				{
+					"type": "link",
+					"description": {
+						"dan": "Niels Harbo's website",
+						"eng": "Niels Harbo's website"
+					},
+					"url": "https://nielsharbo.dk/rts"
+				},
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/dmgf2-videoer"
+				}
+			],
+			"tags": {
+				"dan": ["Skole projekt", "Sjov", "3D", "Video"],
+				"eng": ["School project", "Fun", "3D", "Video"]
+			}
+		},
+		{
+			"id": "prj5",
+			"rating": "70",
+			"types": ["web", "game"],
+			"image": "/images/project/lego-fun.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Lego sjov",
+				"eng": "Lego fun"
+			},
+			"description": {
+				"dan": "Et lille 3D program jeg har lavet i Unity hvor du kan bygge med legoklodser",
+				"eng": "A small 3D program made in Unity 3D, where you can build stuff with lego's"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.dk/unity-games/lego-fun"
+				}
+			],
+			"tags": {
+				"dan": ["Sjov", "3D", "C#", "Unity 3D"],
+				"eng": ["Fun", "3D", "C#", "Unity 3D"]
+			}
+		},
+		{
+			"id": "prj4",
+			"rating": "60",
+			"types": ["web"],
+			"image": "/images/project/star-wars-api.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Star Wars API",
+				"eng": "Star Wars API"
+			},
+			"description": {
+				"dan": "Brug af fetch API'et til at hente et JSON objekt fra Star Wars API'et og manipulere DOM'en med disse data.",
+				"eng": "Using the fetch API to fetch JSON data from the Star Wars API and manipulate the DOM with these data"
+			},
+			"links": [
+				{
+					"type": "link",
+					"description": {
+						"dan": "Star Wars API",
+						"eng": "Star Wars API"
+					},
+					"url": "https://swapi.dev"
+				},
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/star-wars-api"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/star-wars-api"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "fetch", "JSON", "API"],
+				"eng": ["GitHub", "School project", "fetch", "JSON", "API"]
+			}
+		},
+		{
+			"id": "prj3",
+			"rating": "65",
+			"types": ["web"],
+			"image": "/images/project/design-opgave.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "Design opgave",
+				"eng": "Design project"
+			},
+			"description": {
+				"dan": "Et projekt fra skolen, hvor vi fik et mock-up som vi skulle bygge et website efter.",
+				"eng": "A project from school, where we were given a mock-up to build a website that looks like it"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/projektopgave-uge-13"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/projektopgave-uge-13"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Design", "CSS grid"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "Design", "CSS grid"]
+			}
+		},
+		{
+			"id": "prj2",
+			"rating": "70",
+			"types": ["web"],
+			"image": "/images/project/digital-media-eksamen-præsentation.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Digital Media eksamen",
+				"eng": "Digital Media exam"
+			},
+			"description": {
+				"dan": "Præsentation til eksamen for Digital Media Grundforløb 2, lavet i HTML, CSS, JavaScript.",
+				"eng": "Presentation project for Digital Media GF2, made in HTML, CSS, JavaScript"
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/digital-media-eksamen-pr-sentation"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/digital-media-eksamen-pr-sentation"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Exam", "Design"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "Exam", "Design"]
+			}
+		},
+		{
+			"id": "prj1",
+			"rating": "75",
+			"types": ["web", "game"],
+			"image": "/images/project/solitaire-klondike.jpg",
+			"imageFocusArea": "top",
+			"title": {
+				"dan": "7-Kabale",
+				"eng": "Solitaire"
+			},
+			"description": {
+				"dan": "En 7-kabale test jeg lavede i forbindelse med mit card-API.",
+				"eng": "Solitaire project for testing my card-API hosted on GitHub."
+			},
+			"links": [
+				{
+					"type": "api",
+					"description": {
+						"dan": "API kode på GitHub",
+						"eng": "API code on GitHub"
+					},
+					"url": "https://github.com/bqardi/cards"
+				},
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi.github.io/klondike-solitaire"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/klondike-solitaire"
+				}
+			],
+			"tags": {
+				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Spil", "Sjov", "API", "fetch"],
+				"eng": ["GitHub", "School project", "Mobile friendly", "Games", "Fun", "API", "fetch"]
+			}
+		}
+	]
+}
