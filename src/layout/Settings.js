@@ -7,7 +7,7 @@ import { useStoreContext } from "../components/Store";
 import "./Settings.scss";
 
 function Settings(){
-	var {setMenuOpen, Translate, breakpointSmall, darkmode, setDarkmode} = useStoreContext();
+	var {setMenuOpen, Translate, translate, breakpointSmall, darkmode, setDarkmode} = useStoreContext();
 	var [settingsOpen, setSettingsOpen] = useState(false);
 
 	function settingsClickHandler(){
@@ -22,7 +22,7 @@ function Settings(){
 
 	return (
 		<Dropdown open={settingsOpen} onChange={setSettingsOpen}>
-			<Button variation="icon" onClick={settingsClickHandler}>
+			<Button variation="icon" onClick={settingsClickHandler} aria-label={translate("aria-settings")}>
 				<Icon.DotsVertical />
 			</Button>
 			<Dropdown.List>

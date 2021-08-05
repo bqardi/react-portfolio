@@ -59,6 +59,10 @@ const translations = {
 	"a-little-about-me": {"dan": "Lidt om mig:", "eng": "About me:"},
 	"and": {"dan": "og", "eng": "and"},
 
+	"aria-menu": {"dan": "Navigationsmenu", "eng": "Navigation menu"},
+	"aria-language": {"dan": "Vælg sprog", "eng": "Select language"},
+	"aria-settings": {"dan": "Indstillinger", "eng": "Settings"},
+
 	"about-image-alt": {"dan": "Sådan ser jeg ud", "eng": "This is how I look"},
 
 	"profile-image": {"dan": "Sådan ser jeg ud", "eng": "This is how I look"},

@@ -9,7 +9,7 @@ import Language from "./Language";
 import "./Topbar.scss";
 
 function Topbar(){
-	var {menuOpen, setMenuOpen, breakpointMedium} = useStoreContext();
+	var {translate, menuOpen, setMenuOpen, breakpointMedium} = useStoreContext();
 
 	function menuClickHandler(){
 		setMenuOpen(prev => !prev);
@@ -21,7 +21,7 @@ function Topbar(){
 	
 	return (
 		<div className="Topbar">
-			<Button variation="icon" onClick={menuClickHandler}>
+			<Button variation="icon" onClick={menuClickHandler} aria-label={translate("aria-menu")}>
 				{menuOpen ? <Icon.MenuOpen /> : <Icon.Menu />}
 			</Button>
 			<Logo />

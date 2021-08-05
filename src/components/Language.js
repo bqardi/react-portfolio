@@ -5,7 +5,7 @@ import Button from "./Button";
 import Icon from "./Icon";
 
 function Language(){
-	var {setMenuOpen, language, setLanguage, languages, Translate, breakpointSmall} = useStoreContext();
+	var {setMenuOpen, language, setLanguage, languages, Translate, translate, breakpointSmall} = useStoreContext();
 	var [languageOpen, setLanguageOpen] = useState(false);
 
 	function languageOpenHandler(){
@@ -20,8 +20,7 @@ function Language(){
 
 	return (
 		<Dropdown open={languageOpen} onChange={setLanguageOpen}>
-			<Button className="Topbar__iconType" variation="icon" onClick={languageOpenHandler}>
-				{/* {getIcon(languages.find(lang => lang.code === language).icon)} */}
+			<Button className="Topbar__iconType" variation="icon" onClick={languageOpenHandler} aria-label={translate("aria-language")}>
 				<Icon name={languages.find(lang => lang.code === language).icon} />
 				<Icon.Cog className="Topbar__iconAbsolute" />
 			</Button>
