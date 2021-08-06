@@ -18,6 +18,11 @@ function useForm(initial, callback, validate) {
 		});
 	}
 
+	function resetForm(){
+		setErrors({});
+		setValues(initial);
+	}
+
 	function submitHandler(e) {
 		e.preventDefault();
 		setErrors(validate(values));
@@ -36,7 +41,8 @@ function useForm(initial, callback, validate) {
 		values,
 		errors,
 		changeHandler,
-		submitHandler
+		submitHandler,
+		resetForm
 	};
 }
 

@@ -5,6 +5,7 @@ import Store from "./components/Store";
 import Dashboard from "./views/Dashboard";
 import useMediaQuery from "./hooks/useMediaQueries";
 import useLanguage from "./hooks/useLanguage";
+import Toast from "./components/Toast";
 import "./App.scss";
 import useLocalStorage from "./hooks/useLocalStorage";
 
@@ -13,6 +14,7 @@ function App() {
 	var breakpointMedium = useMediaQuery("(min-width: 990px)");
 
 	var [menuOpen, setMenuOpen] = useState(false);
+	var [toast, setToast] = useState({});
 	var [darkmode, setDarkmode] = useLocalStorage("darkmode", true);
 	var [theme, setTheme] = useLocalStorage("theme", {
 		hue: "290",
@@ -51,6 +53,8 @@ function App() {
 					setTheme,
 					menuOpen,
 					setMenuOpen,
+					toast,
+					setToast,
 					breakpointSmall,
 					breakpointMedium,
 					language,
@@ -63,6 +67,7 @@ function App() {
 					parseString
 				}}
 			>
+				<Toast toast={toast} />
 				<Router>
 					<Landing path="/" />
 					<Dashboard path="/dashboard/*" />

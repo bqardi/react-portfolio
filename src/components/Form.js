@@ -7,8 +7,8 @@ import Button from "./Button";
 import "./Form.scss";
 
 function Form() {
-	var { Translate } = useStoreContext();
-	var { changeHandler, submitHandler, values, errors } = useForm(
+	var { Translate, translate, setToast } = useStoreContext();
+	var { changeHandler, submitHandler, resetForm, values, errors } = useForm(
 		{
 			name: "",
 			email: "",
@@ -22,9 +22,10 @@ function Form() {
 		axios.post("https://portfolio.bqardi.dk/mail", values)
 			.then(response => {
 				if (response.data.message === "success") {
-					alert("Message Sent.");
+					setToast({type: "success", message: translate("contact-email-sent")});
+					resetForm();
 				} else if(response.data.message === "error") {
-					alert("Message failed to send.");
+					setToast({type: "alert", message: translate("contact-email-failed")});
 				}
 			});
 	}

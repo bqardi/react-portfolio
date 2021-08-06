@@ -255,6 +255,8 @@ const translations = {
 	},
 	"contact-message": { dan: "Besked:", eng: "Message:" },
 	"contact-submit": { dan: "Send", eng: "Submit" },
+	"contact-email-sent": { dan: "Besked sendt. Jeg vender tilbage hurtigst muligt.", eng: "Message sent. I will reply as soon as possible." },
+	"contact-email-failed": { dan: "Noget gik galt! Prøv igen.", eng: "Something went wrong! Please try again." },
 
 	"settings": { dan: "Indstillinger", eng: "Settings" },
 	"settings-darkmode": { dan: "Darkmode", eng: "Darkmode" },
@@ -366,7 +368,6 @@ const translations = {
 				"Here is a list I made when I brainstormed the project. This is just a list of pages and content that should go into the portfolio site:"
 		}
 	},
-	// "build-process-mockup": {"dan": "Mockup", "eng": "Mockup"},
 	"build-process-state-management": {
 		"summary": { dan: "State management", eng: "State management" },
 		"title-01": {
