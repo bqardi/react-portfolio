@@ -1,14 +1,16 @@
-function useFormValidation(){
-	function isRequired(value){
+function useFormValidation() {
+	function isRequired(value) {
 		return !!value;
 	}
-	function isEmail(value){
-		return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
+	function isEmail(value) {
+		return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+			value
+		);
 	}
-	function min(value, number){
+	function min(value, number) {
 		return value.length >= number;
 	}
-	function max(value, number){
+	function max(value, number) {
 		return value.length <= number;
 	}
 

@@ -5,9 +5,9 @@ import useContactValidation from "../hooks/useContactValidation";
 import Button from "./Button";
 import "./Form.scss";
 
-function Form(){
-	var {Translate} = useStoreContext();
-	var {changeHandler, submitHandler, values, errors} = useForm(
+function Form() {
+	var { Translate } = useStoreContext();
+	var { changeHandler, submitHandler, values, errors } = useForm(
 		{
 			name: "",
 			email: "",
@@ -17,9 +17,26 @@ function Form(){
 		useContactValidation
 	);
 
-	function submit(values){
+	function submit(values) {
 		// TODO: Send email with server (ExpressJS and NodeMailer?)
 		console.log(values);
+
+		fetch("http://portfolio.bqardi.dk/send", {
+			method: "POST",
+			body: JSON.stringify(values),
+			headers: {
+				"Accept": "application/json",
+				"Content-Type": "application/json"
+			}
+		})
+			.then(response => response.json())
+			.then(result => {
+				if (result.status === "success") {
+					alert("Message Sent.");
+				} else if (result.status === "fail") {
+					alert("Message failed to send.");
+				}
+			});
 	}
 
 	return (
@@ -34,10 +51,14 @@ function Form(){
 					type="text"
 					value={values.name}
 					onChange={changeHandler}
-					className={errors.name ? "Form__input Form__input--error" : "Form__input"}
+					className={
+						errors.name ? "Form__input Form__input--error" : "Form__input"
+					}
 					required
 				/>
-				{errors.name && <p className="Form__error">{<Translate id={errors.name} />}</p>}
+				{errors.name && (
+					<p className="Form__error">{<Translate id={errors.name} />}</p>
+				)}
 				<label htmlFor="email">
 					<Translate id="contact-email" />
 				</label>
@@ -47,10 +68,14 @@ function Form(){
 					type="email"
 					value={values.email}
 					onChange={changeHandler}
-					className={errors.email ? "Form__input Form__input--error" : "Form__input"}
+					className={
+						errors.email ? "Form__input Form__input--error" : "Form__input"
+					}
 					required
 				/>
-				{errors.email && <p className="Form__error">{<Translate id={errors.email} />}</p>}
+				{errors.email && (
+					<p className="Form__error">{<Translate id={errors.email} />}</p>
+				)}
 				<label htmlFor="message">
 					<Translate id="contact-message" />
 				</label>
@@ -61,7 +86,7 @@ function Form(){
 					value={values.message}
 					onChange={changeHandler}
 				/>
-				<Button style={{marginTop: "1rem"}}>
+				<Button style={{ marginTop: "1rem" }}>
 					<Translate id="contact-submit" />
 				</Button>
 			</Layout.Flex>

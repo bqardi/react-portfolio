@@ -12,14 +12,14 @@ const BuildProcess = lazy(() => import("../views/BuildProcess"));
 const Contact = lazy(() => import("../views/Contact"));
 const CV = lazy(() => import("../views/CV"));
 
-function Dashboard(){
-	var {menuOpen} = useStoreContext();
-  var [controller, {begin, end}] = useAnimate(300);
+function Dashboard() {
+	var { menuOpen } = useStoreContext();
+	var [controller, { begin, end }] = useAnimate(300);
 
-  useEffect(() => {
-    menuOpen && begin();
-    !menuOpen && end();
-  }, [menuOpen, begin, end]);
+	useEffect(() => {
+		menuOpen && begin();
+		!menuOpen && end();
+	}, [menuOpen, begin, end]);
 
 	return (
 		<Layout modifiers={["mediaunit"]}>
@@ -31,11 +31,13 @@ function Dashboard(){
 				<Animate className="Animate__menu" controller={controller}>
 					<Layout.Cell modifiers={["ghost"]}></Layout.Cell>
 					<Layout.Cell modifiers={["minheight", "fullwidth", "lighter"]}>
-						<Suspense fallback={
-							<div className="App__loading">
-								<Loading size={64} />
-							</div>
-						}>
+						<Suspense
+							fallback={
+								<div className="App__loading">
+									<Loading size={64} />
+								</div>
+							}
+						>
 							<Router>
 								<BuildProcess path="/build-process" />
 								<Work path="/websites" type="web" />

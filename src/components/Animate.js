@@ -8,8 +8,8 @@ const INITIAL_STATE = {
 	inBegin: false,
 	inEnd: false,
 	outBegin: false,
-	outEnd: false,
-}
+	outEnd: false
+};
 
 const RESET = "reset";
 const IN_BEGIN = "in_begin";
@@ -46,86 +46,91 @@ function reducer(state, action) {
 		case OUT_END:
 			return {
 				...INITIAL_STATE,
-				outEnd: true,
+				outEnd: true
 			};
-	
+
 		default:
 			return state;
 	}
 }
 
-export function useAnimate(durationIn, durationOut=durationIn){
-	var [{
-		initial,
-		started,
-		running,
-		inBegin,
-		inEnd,
-		outBegin,
-		outEnd
-	}, dispatch] = useReducer(reducer, INITIAL_STATE);
+export function useAnimate(durationIn, durationOut = durationIn) {
+	var [
+		{ initial, started, running, inBegin, inEnd, outBegin, outEnd },
+		dispatch
+	] = useReducer(reducer, INITIAL_STATE);
 
 	var startedTimoutRef = useRef();
 	var endTimoutRef = useRef();
 
-	function begin(){
-		if (started)  return;
+	function begin() {
+		if (started) return;
 
 		clearTimeout(startedTimoutRef.current);
 		clearTimeout(endTimoutRef.current);
-		dispatch({type: IN_BEGIN});
+		dispatch({ type: IN_BEGIN });
 		startedTimoutRef.current = setTimeout(() => {
-			dispatch({type: IN_END});
+			dispatch({ type: IN_END });
 		}, durationIn);
 	}
 
-	function end(){
+	function end() {
 		if (!started) return;
 
 		clearTimeout(startedTimoutRef.current);
 		clearTimeout(endTimoutRef.current);
-		dispatch({type: OUT_BEGIN});
+		dispatch({ type: OUT_BEGIN });
 		endTimoutRef.current = setTimeout(() => {
-			dispatch({type: OUT_END});
+			dispatch({ type: OUT_END });
 		}, durationOut);
 	}
 
-	function toggle(){
+	function toggle() {
 		begin();
 		end();
 	}
 
 	return [
-		{initial, started, running, durationIn, durationOut},
-		{begin, end, toggle},
-		{initial, started, running, inBegin, inEnd, outBegin, outEnd}
+		{ initial, started, running, durationIn, durationOut },
+		{ begin, end, toggle },
+		{ initial, started, running, inBegin, inEnd, outBegin, outEnd }
 	];
 }
 
 export function Animate({
-		children,
-		tag="div",
-		style,
-		className="Animate",
-		modifierIn="in",
-		modifierOut="out",
-		controller,
-		...other
-	}){
-
+	children,
+	tag = "div",
+	style,
+	className = "Animate",
+	modifierIn = "in",
+	modifierOut = "out",
+	controller,
+	...other
+}) {
 	if (controller === undefined) {
-		throw new Error("A controller must be provided to animate component (<Animate controller={controller}>)!")
+		throw new Error(
+			"A controller must be provided to animate component (<Animate controller={controller}>)!"
+		);
 	}
 
 	var CustomTag = tag;
-	
+
 	return (
 		<CustomTag
-			className={`${className}${!controller.initial ? controller.started ? " " + className + "--" + modifierIn : " " + className + "--" + modifierOut : ""}`}
+			className={`${className}${
+				!controller.initial
+					? controller.started
+						? " " + className + "--" + modifierIn
+						: " " + className + "--" + modifierOut
+					: ""
+			}`}
 			style={{
 				...style,
-				animationFillMode: !controller.initial && controller.started ? "forwards" : null,
-				animationDuration: controller.started ? controller.durationIn / 1000 + "s" : controller.durationOut / 1000 + "s"
+				animationFillMode:
+					!controller.initial && controller.started ? "forwards" : null,
+				animationDuration: controller.started
+					? controller.durationIn / 1000 + "s"
+					: controller.durationOut / 1000 + "s"
 			}}
 			{...other}
 		>

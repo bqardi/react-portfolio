@@ -7,44 +7,54 @@ import ButtonGroup from "../components/ButtonGroup";
 import Layout from "../layout/Layout";
 import "./Landing.scss";
 
-	var languageExperience = [
-		{
-			id: "javascript",
-			name: "JavaScript",
-			icon: "JavaScript",
-			separator: ", "
-		},
-		{
-			id: "react",
-			name: "React",
-			icon: "React",
-			separator: ", "
-		},
-		{
-			id: "html",
-			name: "HTML",
-			icon: "Html",
-			separator: "[translate]and"
-		},
-		{
-			id: "css",
-			name: "CSS",
-			icon: "Css"
-		},
-	]
+var languageExperience = [
+	{
+		id: "javascript",
+		name: "JavaScript",
+		icon: "JavaScript",
+		separator: ", "
+	},
+	{
+		id: "react",
+		name: "React",
+		icon: "React",
+		separator: ", "
+	},
+	{
+		id: "html",
+		name: "HTML",
+		icon: "Html",
+		separator: "[translate]and"
+	},
+	{
+		id: "css",
+		name: "CSS",
+		icon: "Css"
+	}
+];
 
-function Landing(){
-	var {Translate, translate, language, setLanguage} = useStoreContext();
-	
+function Landing() {
+	var { Translate, translate, language, setLanguage } = useStoreContext();
+
 	return (
 		<section className="Landing">
 			<div className="Landing__info">
 				<header className="Landing__header">
 					<ButtonGroup className="Landing__translation">
-						<ButtonGroup.Button id="dan" aria-label="Oversæt til dansk" defaultSelected={language === "dan"} onClick={() => setLanguage("dan")}>
+						<ButtonGroup.Button
+							id="dan"
+							aria-label="Oversæt til dansk"
+							defaultSelected={language === "dan"}
+							onClick={() => setLanguage("dan")}
+						>
 							<Icon.DanishFlag />
 						</ButtonGroup.Button>
-						<ButtonGroup.Button id="eng" aria-label="Translate to english" defaultSelected={language === "eng"} onClick={() => setLanguage("eng")}>
+						<ButtonGroup.Button
+							id="eng"
+							aria-label="Translate to english"
+							defaultSelected={language === "eng"}
+							onClick={() => setLanguage("eng")}
+						>
 							<Icon.BritishFlag />
 						</ButtonGroup.Button>
 					</ButtonGroup>
@@ -67,35 +77,55 @@ function Landing(){
 								<Translate id="landing-title" />
 							</h1>
 							<p className="Landing__text">
-								<Translate id="landing-text" languages={languageExperience.map(xp =>
-									<Fragment key={xp.id}>
-										<span className="Landing__nowrap">
-											<Icon name={xp.icon} className={`Landing__language Landing__language--${xp.id}`} />
-											<span className="Landing__programming">
-												{xp.name}
+								<Translate
+									id="landing-text"
+									languages={languageExperience.map(xp => (
+										<Fragment key={xp.id}>
+											<span className="Landing__nowrap">
+												<Icon
+													name={xp.icon}
+													className={`Landing__language Landing__language--${xp.id}`}
+												/>
+												<span className="Landing__programming">{xp.name}</span>
 											</span>
-										</span>
-										{
-											xp.separator?.substring(0, 11) === "[translate]"
-												? ` ${translate(xp.separator.split("[translate]").join(""))} `
-												: xp.separator
-										}
-									</Fragment>
-								)} />
+											{xp.separator?.substring(0, 11) === "[translate]"
+												? ` ${translate(
+														xp.separator.split("[translate]").join("")
+												  )} `
+												: xp.separator}
+										</Fragment>
+									))}
+								/>
 							</p>
 							<p className="Landing__text Landing__text--hightlight Landing__cta--onlylarge">
 								<Translate id="landing-skill" />
 							</p>
-							<Layout.Flex align="center" gap="16px" wrap style={{marginBottom: "16px"}}>
-								<Button to="/dashboard/websites" variation="cta" className="Landing__cta">
+							<Layout.Flex
+								align="center"
+								gap="16px"
+								wrap
+								style={{ marginBottom: "16px" }}
+							>
+								<Button
+									to="/dashboard/websites"
+									variation="cta"
+									className="Landing__cta"
+								>
 									<Translate id="landing-cta" />
 								</Button>
-								<Button to="/dashboard/cv" variation="cta-secondary" className="Landing__cta Landing__cta--onlylarge">
+								<Button
+									to="/dashboard/cv"
+									variation="cta-secondary"
+									className="Landing__cta Landing__cta--onlylarge"
+								>
 									<Translate id="landing-cta-secondary" />
 								</Button>
 							</Layout.Flex>
 							<Layout.Flex className="Landing__social">
-								<Button href="https://linkedin.com/in/sune-seifert" variation="mix">
+								<Button
+									href="https://linkedin.com/in/sune-seifert"
+									variation="mix"
+								>
 									<Icon.Linkedin className="Profile__icon Profile__icon--linkedin" />
 									LinkedIn
 								</Button>
@@ -120,16 +150,19 @@ function Landing(){
 	);
 }
 
-function Theme({color, hue, saturation}){
-	var {translate, theme, setTheme} = useStoreContext();
+function Theme({ color, hue, saturation }) {
+	var { translate, theme, setTheme } = useStoreContext();
 
 	return (
 		<button
 			className="Landing__changetheme"
 			aria-label={translate("landing-theme-" + color)}
-			onClick={() => setTheme({hue, saturation})}
+			onClick={() => setTheme({ hue, saturation })}
 		>
-			<span style={{backgroundColor: `hsl(${hue}, ${saturation}, 60%)`}} className={theme.hue === hue ? "active" : null}></span>
+			<span
+				style={{ backgroundColor: `hsl(${hue}, ${saturation}, 60%)` }}
+				className={theme.hue === hue ? "active" : null}
+			></span>
 		</button>
 	);
 }

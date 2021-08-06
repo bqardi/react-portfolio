@@ -1,18 +1,18 @@
 @use "sass:math";
 @import "../variables";
 
-.Code{
+.Code {
 	$indent: 20px;
 	$borderRadius: 5px;
 	white-space: nowrap;
-	&--singleline{
+	&--singleline {
 		background-color: var(--dark-focus);
 		padding: 2px 5px;
 		border-radius: 3px;
 		font-size: 0.85em;
 		letter-spacing: 2px;
 	}
-	&__content{
+	&__content {
 		color: hsl(0, 0%, 88%);
 		background-color: hsl(0, 0%, 11%);
 		padding: math.div($space, 4);
@@ -20,7 +20,7 @@
 		border-top: 1px solid var(--theme-dark);
 		border-radius: 0 0 $borderRadius $borderRadius;
 	}
-	&__title{
+	&__title {
 		background-color: var(--dark);
 		padding: math.div($space, 3) math.div($space, 2);
 		font-family: $codeFont;
@@ -32,32 +32,60 @@
 		border-bottom: none;
 		border-radius: $borderRadius $borderRadius 0 0;
 	}
-	&__scroll{
+	&__scroll {
 		overflow-x: auto;
 		padding: math.div($space, 2);
 	}
-	&--block{
+	&--block {
 		display: block;
 		margin: $space 0;
 	}
-	&__line{
+	&__line {
 		display: block;
 	}
-	&__indent{
+	&__indent {
 		display: block;
-		&--level-1{padding-left: $indent;}
-		&--level-2{padding-left: $indent * 2;}
-		&--level-3{padding-left: $indent * 3;}
-		&--level-4{padding-left: $indent * 4;}
+		&--level-1 {
+			padding-left: $indent;
+		}
+		&--level-2 {
+			padding-left: $indent * 2;
+		}
+		&--level-3 {
+			padding-left: $indent * 3;
+		}
+		&--level-4 {
+			padding-left: $indent * 4;
+		}
 	}
-	&__entity{color:hsl(0, 0%, 50%)}
-	&__reserved{color:hsl(214, 81%, 64%)}
-	&__property{color:hsl(207, 100%, 87%)}
-	&__class{color:hsl(152, 79%, 63%)}
-	&__number{color:hsl(111, 51%, 71%)}
-	&__string{color:hsl(29, 69%, 53%)}
-	&__function{color:hsl(41, 100%, 79%)}
-	&__operator{color:hsl(0, 0%, 95%)}
-	&__comment{color:hsl(120, 75%, 24%)}
-	&__statement{color:hsl(300, 67%, 62%)}
+	&__entity {
+		color: hsl(0, 0%, 50%);
+	}
+	&__reserved {
+		color: hsl(214, 81%, 64%);
+	}
+	&__property {
+		color: hsl(207, 100%, 87%);
+	}
+	&__class {
+		color: hsl(152, 79%, 63%);
+	}
+	&__number {
+		color: hsl(111, 51%, 71%);
+	}
+	&__string {
+		color: hsl(29, 69%, 53%);
+	}
+	&__function {
+		color: hsl(41, 100%, 79%);
+	}
+	&__operator {
+		color: hsl(0, 0%, 95%);
+	}
+	&__comment {
+		color: hsl(120, 75%, 24%);
+	}
+	&__statement {
+		color: hsl(300, 67%, 62%);
+	}
 }

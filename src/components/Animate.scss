@@ -1,37 +1,37 @@
 @import "../variables";
 
-.Animate{
-	&__menu{
+.Animate {
+	&__menu {
 		transform: translate(-$menuWidth);
 		height: 100%;
 		display: grid;
 		grid-template-columns: $menuWidth 1fr;
 		width: calc(100vw + #{$menuWidth});
-		&--in{
+		&--in {
 			animation-name: in;
 		}
-		&--out{
+		&--out {
 			animation-name: out;
 		}
 	}
 	@keyframes in {
-		0%{
+		0% {
 			transform: translate(-$menuWidth);
 			@media only screen and (min-width: $breakpointMedium) {
 				width: calc(100vw + #{$menuWidth});
 			}
 		}
-		100%{
+		100% {
 			transform: translate(0);
 			width: 100vw;
 		}
 	}
 	@keyframes out {
-		0%{
+		0% {
 			transform: translate(0);
 			width: 100vw;
 		}
-		100%{
+		100% {
 			transform: translate(-$menuWidth);
 			@media only screen and (min-width: $breakpointMedium) {
 				width: calc(100vw + #{$menuWidth});

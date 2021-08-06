@@ -1,9 +1,9 @@
 import { useStoreContext } from "../../components/Store";
 import Layout from "../../layout/Layout";
 
-function CVPage(){
-	var {Translate} = useStoreContext();
-	
+function CVPage() {
+	var { Translate } = useStoreContext();
+
 	return (
 		<Layout.Cell modifiers={["padding", "child-margin"]}>
 			<h3 className="BuildProcess__titleAccordion">

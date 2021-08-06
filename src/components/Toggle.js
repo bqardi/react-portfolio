@@ -4,7 +4,7 @@ var ToggleContext = createContext();
 
 function Toggle({
 	id,
-	isOn=false,
+	isOn = false,
 	callback,
 	children,
 	className,
@@ -14,19 +14,29 @@ function Toggle({
 	trackHeight = 12,
 	trackWidth = 36,
 	...other
-}){
+}) {
 	var [on, setOn] = useState(isOn);
 	var trackOffset = trackHeight / 2 - handleSize / 2;
 
-	function changeHandler(){
+	function changeHandler() {
 		setOn(!on);
 		callback && callback(!on);
 	}
 
 	return (
-		<ToggleContext.Provider value={{on, rounded, handleSize, trackHeight, trackWidth, trackOffset}}>
+		<ToggleContext.Provider
+			value={{ on, rounded, handleSize, trackHeight, trackWidth, trackOffset }}
+		>
 			<label
-				className={className ? on ? className + " " + classOn : className : on ? classOn : ""}
+				className={
+					className
+						? on
+							? className + " " + classOn
+							: className
+						: on
+						? classOn
+						: ""
+				}
 				{...other}
 			>
 				<input
@@ -34,7 +44,7 @@ function Toggle({
 					name={id}
 					id={id}
 					onChange={changeHandler}
-					style={{display: "none"}}
+					style={{ display: "none" }}
 				/>
 				{children}
 			</label>
@@ -42,20 +52,26 @@ function Toggle({
 	);
 }
 
-function Handle({children, transitionDuration = 0, ...other}){
-	var {on, rounded, handleSize, trackWidth, trackOffset} = useContext(ToggleContext);
+function Handle({ children, transitionDuration = 0, ...other }) {
+	var { on, rounded, handleSize, trackWidth, trackOffset } = useContext(
+		ToggleContext
+	);
 	return (
 		<span
 			style={{
 				borderRadius: rounded ? "50%" : null,
-				transition: transitionDuration ? `all ${transitionDuration / 1000}s` : null,
+				transition: transitionDuration
+					? `all ${transitionDuration / 1000}s`
+					: null,
 				position: "absolute",
 				top: trackOffset + "px",
 				left: trackOffset + "px",
 				width: handleSize + "px",
 				height: handleSize + "px",
 				boxSizing: "border-box",
-				transform: on ? `translate(${trackWidth - handleSize - trackOffset * 2}px)` : "translate(0)",
+				transform: on
+					? `translate(${trackWidth - handleSize - trackOffset * 2}px)`
+					: "translate(0)"
 			}}
 			{...other}
 		>
@@ -65,8 +81,14 @@ function Handle({children, transitionDuration = 0, ...other}){
 }
 Toggle.Handle = Handle;
 
-function Track({children, ...other}){
-	var {rounded, handleSize, trackHeight, trackWidth, trackOffset} = useContext(ToggleContext);
+function Track({ children, ...other }) {
+	var {
+		rounded,
+		handleSize,
+		trackHeight,
+		trackWidth,
+		trackOffset
+	} = useContext(ToggleContext);
 	return (
 		<span
 			style={{
@@ -75,7 +97,9 @@ function Track({children, ...other}){
 				width: trackWidth + "px",
 				height: trackHeight + "px",
 				boxSizing: "border-box",
-				borderRadius: rounded ? (handleSize + trackOffset * 2) / 2 + "px" : null,
+				borderRadius: rounded
+					? (handleSize + trackOffset * 2) / 2 + "px"
+					: null,
 				margin: trackOffset > 0 ? 0 : trackOffset * -1
 			}}
 			{...other}

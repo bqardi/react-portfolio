@@ -1,10 +1,10 @@
 import useFormValidation from "./useFormValidation";
 
-function useValidate(values){
-	var {isRequired, isEmail} = useFormValidation();
-	
+function useValidate(values) {
+	var { isRequired, isEmail } = useFormValidation();
+
 	var errors = {};
-	var {name, email} = values;
+	var { name, email } = values;
 
 	if (!isEmail(email)) {
 		errors.email = "contact-email-wrong";
@@ -15,7 +15,7 @@ function useValidate(values){
 	if (!isRequired(email)) {
 		errors.email = "contact-email-required";
 	}
-	
+
 	return errors;
 }
 

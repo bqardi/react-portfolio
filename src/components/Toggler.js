@@ -1,9 +1,17 @@
 import Toggle from "./Toggle";
 import "./Toggler.scss";
 
-function Toggler({id, label, isOn, callback, ...other}){
+function Toggler({ id, label, isOn, callback, ...other }) {
 	return (
-		<Toggle id={id} isOn={isOn} rounded className="Toggler" classOn="Toggler--on" callback={callback} {...other}>
+		<Toggle
+			id={id}
+			isOn={isOn}
+			rounded
+			className="Toggler"
+			classOn="Toggler--on"
+			callback={callback}
+			{...other}
+		>
 			{label}
 			<Toggle.Track className="Toggler__track">
 				<Toggle.Handle className="Toggler__handle" />

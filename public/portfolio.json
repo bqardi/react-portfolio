@@ -604,8 +604,20 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "React", "Cookies", "Google Analytics"],
-				"eng": ["GitHub", "School project", "React", "Cookies", "Google Analytics"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"React",
+					"Cookies",
+					"Google Analytics"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"React",
+					"Cookies",
+					"Google Analytics"
+				]
 			}
 		},
 		{
@@ -670,8 +682,24 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "fetch", "local-storage", "onboarding", "touch-events"],
-				"eng": ["GitHub", "School project", "Mobile friendly", "fetch", "local-storage", "onboarding", "touch-events"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Mobil venlig",
+					"fetch",
+					"local-storage",
+					"onboarding",
+					"touch-events"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Mobile friendly",
+					"fetch",
+					"local-storage",
+					"onboarding",
+					"touch-events"
+				]
 			}
 		},
 		{
@@ -707,8 +735,26 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Group project", "Mobil venlig", "fetch", "JSON", "kanban", "SCRUM"],
-				"eng": ["GitHub", "School project", "Group project", "Mobile friendly", "fetch", "JSON", "kanban", "SCRUM"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Group project",
+					"Mobil venlig",
+					"fetch",
+					"JSON",
+					"kanban",
+					"SCRUM"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Group project",
+					"Mobile friendly",
+					"fetch",
+					"JSON",
+					"kanban",
+					"SCRUM"
+				]
 			}
 		},
 		{
@@ -802,8 +848,20 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Form validering", "Design"],
-				"eng": ["GitHub", "School project", "Mobile friendly", "Form validation", "Design"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Mobil venlig",
+					"Form validering",
+					"Design"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Mobile friendly",
+					"Form validation",
+					"Design"
+				]
 			}
 		},
 		{
@@ -950,8 +1008,22 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Tutorial", "Sjov", "Mobil venlig", "Intersection Observer"],
-				"eng": ["GitHub", "School project", "Tutorial", "Fun", "Mobile friendly", "Intersection Observer"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Tutorial",
+					"Sjov",
+					"Mobil venlig",
+					"Intersection Observer"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Tutorial",
+					"Fun",
+					"Mobile friendly",
+					"Intersection Observer"
+				]
 			}
 		},
 		{
@@ -987,8 +1059,20 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Sjov", "Mobil venlig", "Form validering"],
-				"eng": ["GitHub", "School project", "Fun", "Mobile friendly", "Form validation"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Sjov",
+					"Mobil venlig",
+					"Form validering"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Fun",
+					"Mobile friendly",
+					"Form validation"
+				]
 			}
 		},
 		{
@@ -1230,8 +1314,20 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Design", "CSS grid"],
-				"eng": ["GitHub", "School project", "Mobile friendly", "Design", "CSS grid"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Mobil venlig",
+					"Design",
+					"CSS grid"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Mobile friendly",
+					"Design",
+					"CSS grid"
+				]
 			}
 		},
 		{
@@ -1312,8 +1408,24 @@
 				}
 			],
 			"tags": {
-				"dan": ["GitHub", "Skole projekt", "Mobil venlig", "Spil", "Sjov", "API", "fetch"],
-				"eng": ["GitHub", "School project", "Mobile friendly", "Games", "Fun", "API", "fetch"]
+				"dan": [
+					"GitHub",
+					"Skole projekt",
+					"Mobil venlig",
+					"Spil",
+					"Sjov",
+					"API",
+					"fetch"
+				],
+				"eng": [
+					"GitHub",
+					"School project",
+					"Mobile friendly",
+					"Games",
+					"Fun",
+					"API",
+					"fetch"
+				]
 			}
 		}
 	]

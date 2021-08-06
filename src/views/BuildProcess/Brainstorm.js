@@ -1,8 +1,8 @@
 import { useStoreContext } from "../../components/Store";
 import Layout from "../../layout/Layout";
 
-function Brainstorm(){
-	var {Translate} = useStoreContext();
+function Brainstorm() {
+	var { Translate } = useStoreContext();
 
 	return (
 		<Layout.Cell modifiers={["padding", "child-margin"]}>
@@ -34,28 +34,30 @@ function Brainstorm(){
 						<li>
 							Building this portfolio
 							<ul>
-									<li>Tech stack (FERN)
-										<ul>
-											<li>Firebase</li>
-											<li>Express</li>
-											<li>React
-												<ul>
-													<li>Compound components</li>
-													<li>BEM</li>
-												</ul>
-											</li>
-											<li>NodeJS</li>
-										</ul>
-									</li>
-									<li>
-										Approach
-										<ul>
-											<li>Git/GitHub</li>
-											<li>Compound components</li>
-											<li>State management</li>
-										</ul>
-									</li>
-								</ul>
+								<li>
+									Tech stack (FERN)
+									<ul>
+										<li>Firebase</li>
+										<li>Express</li>
+										<li>
+											React
+											<ul>
+												<li>Compound components</li>
+												<li>BEM</li>
+											</ul>
+										</li>
+										<li>NodeJS</li>
+									</ul>
+								</li>
+								<li>
+									Approach
+									<ul>
+										<li>Git/GitHub</li>
+										<li>Compound components</li>
+										<li>State management</li>
+									</ul>
+								</li>
+							</ul>
 						</li>
 						<li>
 							Contact
@@ -81,7 +83,8 @@ function Brainstorm(){
 						<li>
 							Settings
 							<ul>
-								<li>Language
+								<li>
+									Language
 									<ul>
 										<li>Translate via API</li>
 										<li>Translate custom text</li>

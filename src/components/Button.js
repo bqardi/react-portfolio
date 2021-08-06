@@ -4,17 +4,26 @@ import "./Button.scss";
 import Icon from "./Icon";
 import { useStoreContext } from "./Store";
 
-function Button({children, className, to, href, variation="default", modifiers, ...other}){
+function Button({
+	children,
+	className,
+	to,
+	href,
+	variation = "default",
+	modifiers,
+	...other
+}) {
 	if (variation === "cta") {
 		return (
 			<Link
 				to={to}
-				className={`Button Button--cta${helper.modifiers("Button", modifiers)}${helper.className(className)}`}
+				className={`Button Button--cta${helper.modifiers(
+					"Button",
+					modifiers
+				)}${helper.className(className)}`}
 				{...other}
 			>
-				<span className="Button__centered">
-					{children}
-				</span>
+				<span className="Button__centered">{children}</span>
 				<Icon.ChevronRight />
 			</Link>
 		);
@@ -23,10 +32,14 @@ function Button({children, className, to, href, variation="default", modifiers, 
 		return (
 			<a
 				href={href}
-				className={`Button Button--${variation === "default" ? "link" : variation}${helper.modifiers("Button", modifiers)}${helper.className(className)}`}
+				className={`Button Button--${
+					variation === "default" ? "link" : variation
+				}${helper.modifiers("Button", modifiers)}${helper.className(
+					className
+				)}`}
 				{...other}
 			>
-			{children}
+				{children}
 			</a>
 		);
 	}
@@ -34,7 +47,11 @@ function Button({children, className, to, href, variation="default", modifiers, 
 		return (
 			<Link
 				to={to}
-				className={`Button Button--${variation === "default" ? "link" : variation}${helper.modifiers("Button", modifiers)}${helper.className(className)}`}
+				className={`Button Button--${
+					variation === "default" ? "link" : variation
+				}${helper.modifiers("Button", modifiers)}${helper.className(
+					className
+				)}`}
 				{...other}
 			>
 				{children}
@@ -43,7 +60,10 @@ function Button({children, className, to, href, variation="default", modifiers, 
 	}
 	return (
 		<button
-			className={`Button Button--${variation}${helper.modifiers("Button", modifiers)}${helper.className(className)}`}
+			className={`Button Button--${variation}${helper.modifiers(
+				"Button",
+				modifiers
+			)}${helper.className(className)}`}
 			{...other}
 		>
 			{children}
@@ -51,8 +71,8 @@ function Button({children, className, to, href, variation="default", modifiers, 
 	);
 }
 
-function HireMe({className, translation="button-hire-me", ...other}){
-	var {Translate} = useStoreContext();
+function HireMe({ className, translation = "button-hire-me", ...other }) {
+	var { Translate } = useStoreContext();
 
 	return (
 		<Link

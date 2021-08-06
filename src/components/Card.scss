@@ -1,6 +1,6 @@
 @import "../variables";
 
-.Card{
+.Card {
 	$borderRadius: 0;
 	position: relative;
 	border-radius: $borderRadius;
@@ -10,37 +10,47 @@
 		color: var(--dark);
 		background-color: var(--light-faded);
 	}
-	&__loading{
+	&__loading {
 		height: 300px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	&__image{
+	&__image {
 		display: block;
 		width: 100%;
 		height: 100%;
 		max-height: $cardMaxHeight;
 		object-fit: cover;
-		&--borderRadius-all {border-radius: $borderRadius;}
-		&--borderRadius-top-left {border-top-left-radius: $borderRadius;}
-		&--borderRadius-top-right {border-top-right-radius: $borderRadius;}
-		&--borderRadius-bottom-left {border-bottom-left-radius: $borderRadius;}
-		&--borderRadius-bottom-right {border-bottom-right-radius: $borderRadius;}
+		&--borderRadius-all {
+			border-radius: $borderRadius;
+		}
+		&--borderRadius-top-left {
+			border-top-left-radius: $borderRadius;
+		}
+		&--borderRadius-top-right {
+			border-top-right-radius: $borderRadius;
+		}
+		&--borderRadius-bottom-left {
+			border-bottom-left-radius: $borderRadius;
+		}
+		&--borderRadius-bottom-right {
+			border-bottom-right-radius: $borderRadius;
+		}
 	}
-	&__body{
+	&__body {
 		padding: $space;
-		& > :first-child{
+		& > :first-child {
 			margin-top: 0;
 		}
-		& > :last-child{
+		& > :last-child {
 			margin-bottom: 0;
 		}
-		&--dark{
+		&--dark {
 			background-color: var(--darker);
 		}
 	}
-	&__absolute{
+	&__absolute {
 		position: absolute;
 		top: 0;
 		left: 0;

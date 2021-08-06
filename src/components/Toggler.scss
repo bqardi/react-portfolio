@@ -1,25 +1,25 @@
 @use "sass:math";
 @import "../variables";
 
-.Toggler{
+.Toggler {
 	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: math.div($space, 2);
-	&--on &__handle{
+	&--on &__handle {
 		background-color: var(--theme);
 	}
 	// &--on &__track{
 	// 	background-color: var(--light-faded);
 	// }
-	&__handle{
+	&__handle {
 		background-color: var(--theme-dark);
-		transition: background-color .15s, transform .15s;
+		transition: background-color 0.15s, transform 0.15s;
 		box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.25);
 	}
-	&__track{
+	&__track {
 		background-color: var(--theme-lighter);
-		transition: background-color .15s;
+		transition: background-color 0.15s;
 	}
 }

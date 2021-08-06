@@ -1,24 +1,24 @@
 import { useEffect, useState } from "react";
 
-function useForm(initial, callback, validate){
+function useForm(initial, callback, validate) {
 	var [errors, setErrors] = useState({});
 	var [values, setValues] = useState(initial);
 	var [isSubmitting, setIsSubmitting] = useState(false);
 
-	function changeHandler(e){
-		var {name, value} = e.target;
+	function changeHandler(e) {
+		var { name, value } = e.target;
 		setValues(prev => ({
 			...prev,
 			[name]: value
 		}));
 		setErrors(prev => {
-			var obj = {...prev};
+			var obj = { ...prev };
 			delete obj[name];
 			return obj;
 		});
 	}
 
-	function submitHandler(e){
+	function submitHandler(e) {
 		e.preventDefault();
 		setErrors(validate(values));
 		setIsSubmitting(true);

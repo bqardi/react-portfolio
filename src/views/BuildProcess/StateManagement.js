@@ -3,8 +3,8 @@ import Layout from "../../layout/Layout";
 import Code from "../../components/Code";
 import Button from "../../components/Button";
 
-function StateManagement(){
-	var {Translate, darkmode, setDarkmode} = useStoreContext();
+function StateManagement() {
+	var { Translate, darkmode, setDarkmode } = useStoreContext();
 
 	return (
 		<Layout.Cell modifiers={["padding", "child-margin"]}>
@@ -12,13 +12,22 @@ function StateManagement(){
 				<Translate id="title-01" extended="build-process-state-management" />
 			</h3>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-01" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-01"
+					extended="build-process-state-management"
+				/>
 			</p>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-02" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-02"
+					extended="build-process-state-management"
+				/>
 			</p>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-03" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-03"
+					extended="build-process-state-management"
+				/>
 			</p>
 			<Code title="React - JavaScript">
 				<Code.Statement>import</Code.Statement>
@@ -36,24 +45,40 @@ function StateManagement(){
 				<br />
 				<Code.Function.Block name="useStoreContext" statement="export">
 					<Code.Return>
-						<Code.Function.Call name="useContext" parameters={["StoreContext"]} />
+						<Code.Function.Call
+							name="useContext"
+							parameters={["StoreContext"]}
+						/>
 					</Code.Return>
 				</Code.Function.Block>
 				<br />
 				<br />
-				<Code.Function.Block name="Store" parameters={["children", "value"]} destructured>
+				<Code.Function.Block
+					name="Store"
+					parameters={["children", "value"]}
+					destructured
+				>
 					<Code.Return>
 						(
-							<Code.Indent>
-								<Code.Component tag="StoreContext.Provider" props={[{
+						<Code.Indent>
+							<Code.Component
+								tag="StoreContext.Provider"
+								props={[
+									{
 										property: "value",
-										value: <Code.Destructured><Code.Property>value</Code.Property></Code.Destructured>
-									}]}>
-									<Code.Destructured>
-										<Code.Property>children</Code.Property>
-									</Code.Destructured>
-								</Code.Component>
-							</Code.Indent>
+										value: (
+											<Code.Destructured>
+												<Code.Property>value</Code.Property>
+											</Code.Destructured>
+										)
+									}
+								]}
+							>
+								<Code.Destructured>
+									<Code.Property>children</Code.Property>
+								</Code.Destructured>
+							</Code.Component>
+						</Code.Indent>
 						)
 					</Code.Return>
 				</Code.Function.Block>
@@ -64,7 +89,10 @@ function StateManagement(){
 				<Code.Operator>;</Code.Operator>
 			</Code>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-04" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-04"
+					extended="build-process-state-management"
+				/>
 			</p>
 			<Code title="React - JavaScript">
 				<Code.Function.Block name="App">
@@ -80,22 +108,49 @@ function StateManagement(){
 					<br />
 					<Code.Return>
 						(
-							<Code.Indent>
-								<Code.Component tag="Store" props={[{
-									property: "value",
-									value: <Code.Destructured>
-										<Code.CommaSeparated items={["data", "setData", "darkmode", "setDarkmode", "language", "Translate", "translate"]} destructured pretty />
-									</Code.Destructured>
-								}]}>
-									<Code.Comment type="react"><Translate id="title-01-code-01" extended="build-process-state-management" /></Code.Comment>
-								</Code.Component>
-							</Code.Indent>
+						<Code.Indent>
+							<Code.Component
+								tag="Store"
+								props={[
+									{
+										property: "value",
+										value: (
+											<Code.Destructured>
+												<Code.CommaSeparated
+													items={[
+														"data",
+														"setData",
+														"darkmode",
+														"setDarkmode",
+														"language",
+														"Translate",
+														"translate"
+													]}
+													destructured
+													pretty
+												/>
+											</Code.Destructured>
+										)
+									}
+								]}
+							>
+								<Code.Comment type="react">
+									<Translate
+										id="title-01-code-01"
+										extended="build-process-state-management"
+									/>
+								</Code.Comment>
+							</Code.Component>
+						</Code.Indent>
 						)
 					</Code.Return>
 				</Code.Function.Block>
 			</Code>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-05" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-05"
+					extended="build-process-state-management"
+				/>
 			</p>
 			<Code title="React - JavaScript">
 				<Code.Function.Block name="Darkmode">
@@ -105,52 +160,85 @@ function StateManagement(){
 					<br />
 					<Code.Return>
 						(
-							<Code.Indent>
-								<Code.Component tag="button" props={[{
-									property: "onClick",
-									value: <Code.Block inline>
-										() <Code.Entity>=</Code.Entity>
-										<Code.GreaterThan />
-										&nbsp;
-										<Code.Function.Call name="setDarkmode" parameters={[
-											<>
-												<Code.Property>prev</Code.Property>
-												<Code.Entity space="before">=</Code.Entity>
+						<Code.Indent>
+							<Code.Component
+								tag="button"
+								props={[
+									{
+										property: "onClick",
+										value: (
+											<Code.Block inline>
+												() <Code.Entity>=</Code.Entity>
 												<Code.GreaterThan />
 												&nbsp;
-												<Code.Operator>!</Code.Operator>
-												<Code.Property>prev</Code.Property>
-											</>
-										]} />
-									</Code.Block>
-								}]}>
-									<Code.Block inline>
-										<Code.Property>darkmode</Code.Property>
-										<Code.Operator space="both">?</Code.Operator>
-										<Code.String>
-											<Translate id="title-01-button-light" extended="build-process-state-management" />
-										</Code.String>
-										<Code.Operator space="both">:</Code.Operator>
-										<Code.String>
-											<Translate id="title-01-button-dark" extended="build-process-state-management" />
-										</Code.String>
-									</Code.Block>
-								</Code.Component>
-							</Code.Indent>
+												<Code.Function.Call
+													name="setDarkmode"
+													parameters={[
+														<>
+															<Code.Property>prev</Code.Property>
+															<Code.Entity space="before">=</Code.Entity>
+															<Code.GreaterThan />
+															&nbsp;
+															<Code.Operator>!</Code.Operator>
+															<Code.Property>prev</Code.Property>
+														</>
+													]}
+												/>
+											</Code.Block>
+										)
+									}
+								]}
+							>
+								<Code.Block inline>
+									<Code.Property>darkmode</Code.Property>
+									<Code.Operator space="both">?</Code.Operator>
+									<Code.String>
+										<Translate
+											id="title-01-button-light"
+											extended="build-process-state-management"
+										/>
+									</Code.String>
+									<Code.Operator space="both">:</Code.Operator>
+									<Code.String>
+										<Translate
+											id="title-01-button-dark"
+											extended="build-process-state-management"
+										/>
+									</Code.String>
+								</Code.Block>
+							</Code.Component>
+						</Code.Indent>
 						)
 					</Code.Return>
 				</Code.Function.Block>
 			</Code>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-06" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-06"
+					extended="build-process-state-management"
+				/>
 			</p>
-			<Button className="BuildProcess__button" onClick={() => setDarkmode(prev => !prev)}>
-				{darkmode
-					? <Translate id="title-01-button-light" extended="build-process-state-management" />
-					: <Translate id="title-01-button-dark" extended="build-process-state-management" />}
+			<Button
+				className="BuildProcess__button"
+				onClick={() => setDarkmode(prev => !prev)}
+			>
+				{darkmode ? (
+					<Translate
+						id="title-01-button-light"
+						extended="build-process-state-management"
+					/>
+				) : (
+					<Translate
+						id="title-01-button-dark"
+						extended="build-process-state-management"
+					/>
+				)}
 			</Button>
 			<p className="BuildProcess__text">
-				<Translate id="title-01-p-07" extended="build-process-state-management" />
+				<Translate
+					id="title-01-p-07"
+					extended="build-process-state-management"
+				/>
 			</p>
 		</Layout.Cell>
 	);

@@ -1,13 +1,13 @@
 @import "variables";
 
 .App {
-  color: var(--light);
-  background-color: var(--dark);
+	color: var(--light);
+	background-color: var(--dark);
 	@media print {
 		color: var(--dark);
 		background-color: transparent;
 	}
-	&__loading{
+	&__loading {
 		height: 100%;
 		display: flex;
 		justify-content: center;

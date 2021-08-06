@@ -1,7 +1,7 @@
 @use "sass:math";
 @import "../variables";
 
-.Profile{
+.Profile {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,31 +12,31 @@
 		padding: $space;
 		margin: math.div($space, 4) 0 0;
 	}
-	& h3{
+	& h3 {
 		display: none;
 		font-size: 1.5rem;
 		@media screen and (min-height: $breakheightSmall) {
 			display: block;
 		}
 	}
-	& img{
+	& img {
 		display: none;
 		border-radius: 50%;
 		width: 80px;
 		margin: math.div($space, 2) 0;
-		transition: transform .15s;
-		&:hover{
+		transition: transform 0.15s;
+		&:hover {
 			transform: scale(2.4);
 		}
 		@media screen and (min-height: $breakheightSmall) {
 			display: block;
 		}
 	}
-	& p{
+	& p {
 		display: none;
 		font-size: 0.9rem;
 		text-align: center;
-		& svg{
+		& svg {
 			fill: var(--light);
 			width: 24px;
 			margin-right: math.div($space, 4);
@@ -45,19 +45,19 @@
 			display: block;
 		}
 	}
-	&__social{
+	&__social {
 		display: flex;
 		margin: math.div($space, 2) 0;
 		@media screen and (min-height: $breakheightSmall) {
 			margin-top: math.div($space, 2);
 		}
 	}
-	&__icon{
+	&__icon {
 		margin-right: math.div($space, 8);
-		&--linkedin{
+		&--linkedin {
 			fill: $linkedin;
 		}
-		&--github{
+		&--github {
 			fill: $github;
 		}
 	}

@@ -3,13 +3,17 @@ import Button from "./Button";
 import Icon from "./Icon";
 import "./Profile.scss";
 
-function Profile(){
-	var {translate, Translate} = useStoreContext();
+function Profile() {
+	var { translate, Translate } = useStoreContext();
 
 	return (
 		<article className="Profile">
 			<h3>Sune Seifert</h3>
-			<img src="/images/profil.jpg" title={translate("profile-image")} alt={translate("profile-image")} />
+			<img
+				src="/images/profil.jpg"
+				title={translate("profile-image")}
+				alt={translate("profile-image")}
+			/>
 			<p>
 				<Translate id="profile-teaser" />
 			</p>

@@ -1,16 +1,16 @@
 import Sidebar from "../components/Sidebar";
-import Accordion from "../components/Accordion";
+// import Accordion from "../components/Accordion";
 import Icon from "../components/Icon";
 import Profile from "../components/Profile";
 import { useStoreContext } from "../components/Store";
 import { useMatch } from "@reach/router";
 
-function Menu(){
+function Menu() {
 	var websites = useMatch("/dashboard/websites");
 	var tutorials = useMatch("/dashboard/tutorials");
 	var games = useMatch("/dashboard/games");
-	var {Translate} = useStoreContext();
-	
+	var { Translate } = useStoreContext();
+
 	return (
 		<Sidebar>
 			<Sidebar.Menu>
@@ -19,28 +19,18 @@ function Menu(){
 					<Icon.Tools />
 					<Translate id="title-build-process" />
 				</Sidebar.Link>
-				<Accordion>
-					<Accordion.Item open={websites || tutorials || games} title={
-						<Sidebar.Button tabIndex="-1" style={{
-							backgroundColor: "transparent",
-							boxShadow: "none",
-							pointerEvents: "none"
-						}}>
-							<Icon.BookOpenPageVariant />
-							<Translate id="work" />
-						</Sidebar.Button>
-				}>
-						<Sidebar.Link modifiers={["indent"]} to="/dashboard/websites">
-							<Translate id="title-web" />
-						</Sidebar.Link>
-						<Sidebar.Link modifiers={["indent"]} to="/dashboard/tutorials">
-							<Translate id="title-tutorial" />
-						</Sidebar.Link>
-						<Sidebar.Link modifiers={["indent"]} to="/dashboard/games">
-							<Translate id="title-game" />
-						</Sidebar.Link>
-					</Accordion.Item>
-				</Accordion>
+				<Sidebar.Link to="/dashboard/websites">
+					<Icon.Web />
+					<Translate id="title-web" />
+				</Sidebar.Link>
+				<Sidebar.Link to="/dashboard/tutorials">
+					<Icon.HandHeart />
+					<Translate id="title-tutorial" />
+				</Sidebar.Link>
+				<Sidebar.Link to="/dashboard/games">
+					<Icon.GamepadVariant />
+					<Translate id="title-game" />
+				</Sidebar.Link>
 				<Sidebar.Link to="/dashboard/contact">
 					<Icon.TargetAccount />
 					<Translate id="title-contact" />

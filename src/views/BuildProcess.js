@@ -14,9 +14,9 @@ import Icon from "../components/Icon";
 import "./BuildProcess.scss";
 import DarkmodeColorTheme from "./BuildProcess/DarkmodeColorTheme";
 
-function BuildProcess(){
-	var {Translate, translate} = useStoreContext();
-	
+function BuildProcess() {
+	var { Translate, translate } = useStoreContext();
+
 	return (
 		<Article type="build-process">
 			<section className="BuildProcess">
@@ -34,25 +34,37 @@ function BuildProcess(){
 						<ul className="BuildProcess__list">
 							<li>
 								<span className="BuildProcess__listHighlight">
-									<Translate id="title-01-li-01-span" extended="build-process" />
+									<Translate
+										id="title-01-li-01-span"
+										extended="build-process"
+									/>
 								</span>
 								<Translate id="title-01-li-01" extended="build-process" />
 							</li>
 							<li>
 								<span className="BuildProcess__listHighlight">
-									<Translate id="title-01-li-02-span" extended="build-process" />
+									<Translate
+										id="title-01-li-02-span"
+										extended="build-process"
+									/>
 								</span>
 								<Translate id="title-01-li-02" extended="build-process" />
 							</li>
 							<li>
 								<span className="BuildProcess__listHighlight">
-									<Translate id="title-01-li-03-span" extended="build-process" />
+									<Translate
+										id="title-01-li-03-span"
+										extended="build-process"
+									/>
 								</span>
 								<Translate id="title-01-li-03" extended="build-process" />
 							</li>
 							<li>
 								<span className="BuildProcess__listHighlight">
-									<Translate id="title-01-li-04-span" extended="build-process" />
+									<Translate
+										id="title-01-li-04-span"
+										extended="build-process"
+									/>
 								</span>
 								<Translate id="title-01-li-04" extended="build-process" />
 							</li>
@@ -67,16 +79,36 @@ function BuildProcess(){
 							<li>
 								<Icon.React className="react" />
 								<span className="BuildProcess__listHighlight">React</span>
-								<Translate id="title-02-li-01" extended="build-process" link={<Button href="https://dev.to/bqardi/compound-components-react-1ag8" variation="link">Compound Component</Button>} />
+								<Translate
+									id="title-02-li-01"
+									extended="build-process"
+									link={
+										<Button
+											href="https://dev.to/bqardi/compound-components-react-1ag8"
+											variation="link"
+										>
+											Compound Component
+										</Button>
+									}
+								/>
 								<ul>
-									<li><strong>Hooks</strong> - useState, useEffect, useRef, useContext, useMemo, custom hooks.</li>
-									<li><strong>Portal</strong> - createPortal, react-dom</li>
-									<li><strong>Lazy load</strong> - lazy, Suspense, react</li>
+									<li>
+										<strong>Hooks</strong> - useState, useEffect, useRef,
+										useContext, useMemo, custom hooks.
+									</li>
+									<li>
+										<strong>Portal</strong> - createPortal, react-dom
+									</li>
+									<li>
+										<strong>Lazy load</strong> - lazy, Suspense, react
+									</li>
 								</ul>
 							</li>
 							<li>
 								<div className="BuildProcess__bullet reachrouter">Rr</div>
-								<span className="BuildProcess__listHighlight">@Reach/Router</span>
+								<span className="BuildProcess__listHighlight">
+									@Reach/Router
+								</span>
 								<Translate id="title-02-li-02" extended="build-process" />
 							</li>
 							<li>
@@ -112,16 +144,63 @@ function BuildProcess(){
 						<h2 className="BuildProcess__title">
 							<Translate id="title-03" extended="build-process" />
 						</h2>
-						<Accordion className="BuildProcess__accordion">
-							<Accordion.Item title={translate("summary", "build-process-brainstorm")}><Brainstorm /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-state-management")}><StateManagement /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-landing-page")}><LandingPage /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-work")}><WorkPage /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-contact")}><ContactPage /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-cv")}><CVPage /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-translation")}><TranslationFeature /></Accordion.Item>
-							<Accordion.Item title={translate("summary", "build-process-darkmode-theme")}><DarkmodeColorTheme /></Accordion.Item>
-						</Accordion>
+						{/* <details className="BuildProcess__details">
+							<summary>
+								<Translate id="summary" extended="build-process-brainstorm" />
+								<Icon.ChevronRight />
+							</summary>
+							<Brainstorm />
+						</details> */}
+						<div className="BuildProcess__accordion">
+							<Accordion
+								id="brainstorm"
+								title={translate("summary", "build-process-brainstorm")}
+							>
+								<Brainstorm />
+							</Accordion>
+							<Accordion
+								id="state-management"
+								title={translate("summary", "build-process-state-management")}
+							>
+								<StateManagement />
+							</Accordion>
+							<Accordion
+								id="landing-page"
+								title={translate("summary", "build-process-landing-page")}
+							>
+								<LandingPage />
+							</Accordion>
+							<Accordion
+								id="work-page"
+								title={translate("summary", "build-process-work")}
+							>
+								<WorkPage />
+							</Accordion>
+							<Accordion
+								id="contact-page"
+								title={translate("summary", "build-process-contact")}
+							>
+								<ContactPage />
+							</Accordion>
+							<Accordion
+								id="cv-page"
+								title={translate("summary", "build-process-cv")}
+							>
+								<CVPage />
+							</Accordion>
+							<Accordion
+								id="translation-feature"
+								title={translate("summary", "build-process-translation")}
+							>
+								<TranslationFeature />
+							</Accordion>
+							<Accordion
+								id="darkmode-color-theme"
+								title={translate("summary", "build-process-darkmode-theme")}
+							>
+								<DarkmodeColorTheme />
+							</Accordion>
+						</div>
 					</Layout.Cell>
 				</Layout.Cell>
 				<Layout.Cell modifiers={["print-avoid-break-after"]}>

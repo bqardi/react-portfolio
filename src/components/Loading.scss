@@ -1,27 +1,31 @@
 @import "../variables";
 
-.Loading{
+.Loading {
 	position: relative;
-	&__fade{
+	&__fade {
 		transform-origin: top center;
 		position: absolute;
 		background-color: transparent;
 		animation-name: fade;
 		animation-iteration-count: infinite;
-		&Dot{
+		&Dot {
 			border-radius: 50%;
 		}
 		@keyframes fade {
-			0%{background-color: gray;}
-			100%{background-color: transparent;}
+			0% {
+				background-color: gray;
+			}
+			100% {
+				background-color: transparent;
+			}
 		}
 	}
-	&__jump{
+	&__jump {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		height: 100%;
-		&Dot{
+		&Dot {
 			border-radius: 50%;
 			background-color: #ccc;
 			animation-name: jump;
@@ -29,31 +33,50 @@
 			animation-timing-function: ease-in-out;
 		}
 		@keyframes jump {
-			0%{transform: translateY(0);background-color: #ccc;}
-			10%{transform: translateY(-75%);background-color: #888;}
-			20%{transform: translateY(25%);}
-			30%{transform: translateY(0);}
-			60%{background-color: #ccc;}
-			100%{transform: translateY(0);background-color: #ccc;}
+			0% {
+				transform: translateY(0);
+				background-color: #ccc;
+			}
+			10% {
+				transform: translateY(-75%);
+				background-color: #888;
+			}
+			20% {
+				transform: translateY(25%);
+			}
+			30% {
+				transform: translateY(0);
+			}
+			60% {
+				background-color: #ccc;
+			}
+			100% {
+				transform: translateY(0);
+				background-color: #ccc;
+			}
 		}
 	}
-	&__rotate{
+	&__rotate {
 		box-sizing: border-box;
 		animation-name: rotate;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 		transform: rotate(90deg);
-		&Icon{
-			&Front{
+		&Icon {
+			&Front {
 				fill: var(--theme);
 			}
-			&Back{
+			&Back {
 				fill: aliceblue;
 			}
 		}
 		@keyframes rotate {
-			0%{transform: rotate(90deg);}
-			100%{transform: rotate(450deg);}
+			0% {
+				transform: rotate(90deg);
+			}
+			100% {
+				transform: rotate(450deg);
+			}
 		}
 	}
 }

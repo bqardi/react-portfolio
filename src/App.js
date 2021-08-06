@@ -9,14 +9,26 @@ import "./App.scss";
 import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
-  var breakpointSmall = useMediaQuery("(min-width: 600px)");
-  var breakpointMedium = useMediaQuery("(min-width: 990px)");
+	var breakpointSmall = useMediaQuery("(min-width: 600px)");
+	var breakpointMedium = useMediaQuery("(min-width: 990px)");
 
 	var [menuOpen, setMenuOpen] = useState(false);
-  var [darkmode, setDarkmode] = useLocalStorage("darkmode", true);
-  var [theme, setTheme] = useLocalStorage("theme", {hue: "290", saturation: "86%"});
+	var [darkmode, setDarkmode] = useLocalStorage("darkmode", true);
+	var [theme, setTheme] = useLocalStorage("theme", {
+		hue: "290",
+		saturation: "86%"
+	});
 	var [projects, setProjects] = useState([]);
-  var {language, setLanguage, languages, translate, translateFeed, Translate, parseAttributes, parseString} = useLanguage();
+	var {
+		language,
+		setLanguage,
+		languages,
+		translate,
+		translateFeed,
+		Translate,
+		parseAttributes,
+		parseString
+	} = useLanguage();
 
 	useEffect(() => {
 		document.body.className = darkmode ? "dark" : "";
@@ -27,23 +39,37 @@ function App() {
 		document.body.style.setProperty("--saturation", theme.saturation);
 	}, [theme]);
 
-  return (
-    <div className="App">
-      <Store value={{
-        projects, setProjects,
-        darkmode, setDarkmode,
-        theme, setTheme,
-        menuOpen, setMenuOpen,
-        breakpointSmall, breakpointMedium,
-        language, setLanguage, languages, translate, translateFeed, Translate, parseAttributes, parseString
-      }}>
-        <Router>
-          <Landing path="/" />
-          <Dashboard path="/dashboard/*" />
-        </Router>
-      </Store>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Store
+				value={{
+					projects,
+					setProjects,
+					darkmode,
+					setDarkmode,
+					theme,
+					setTheme,
+					menuOpen,
+					setMenuOpen,
+					breakpointSmall,
+					breakpointMedium,
+					language,
+					setLanguage,
+					languages,
+					translate,
+					translateFeed,
+					Translate,
+					parseAttributes,
+					parseString
+				}}
+			>
+				<Router>
+					<Landing path="/" />
+					<Dashboard path="/dashboard/*" />
+				</Router>
+			</Store>
+		</div>
+	);
 }
 
 export default App;

@@ -1,27 +1,27 @@
 @import "../variables";
 
-.ButtonGroup{
+.ButtonGroup {
 	display: flex;
-	&__button{
+	&__button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		border: none;
 		background-color: transparent;
 		cursor: pointer;
-		& svg{
+		& svg {
 			height: 24px;
 			filter: grayscale(1);
-			transition: filter .15s;
+			transition: filter 0.15s;
 		}
-		&:hover{
+		&:hover {
 			background-color: $highlight;
 		}
-		&:hover svg{
+		&:hover svg {
 			filter: grayscale(0);
 		}
-		&--selected{
-			& svg{
+		&--selected {
+			& svg {
 				filter: grayscale(0);
 			}
 		}

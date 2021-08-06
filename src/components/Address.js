@@ -4,7 +4,7 @@ import Card from "./Card";
 
 import "./Address.scss";
 
-function Address(){
+function Address() {
 	return (
 		<Card>
 			<Card.Body className="Address">
@@ -16,17 +16,20 @@ function Address(){
 					<ul className="Address__contact">
 						<li>
 							<Button modifiers={["inline"]} href="mailto:bqardi@msn.com">
-								<Icon.Email />bqardi@msn.com
+								<Icon.Email />
+								bqardi@msn.com
 							</Button>
 						</li>
 						<li>
 							<Button modifiers={["inline"]} href="tel:+4520219128">
-								<Icon.CellphoneAndroid />+45 20 21 91 28
+								<Icon.CellphoneAndroid />
+								+45 20 21 91 28
 							</Button>
 						</li>
 						<li>
 							<Button modifiers={["inline"]} href="https://bqardi.dk">
-								<Icon.Web />https://bqardi.dk
+								<Icon.Web />
+								https://bqardi.dk
 							</Button>
 						</li>
 					</ul>

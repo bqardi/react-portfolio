@@ -2,7 +2,7 @@ import { Link } from "@reach/router";
 import Icon from "../components/Icon";
 import "./Logo.scss";
 
-function Logo(){
+function Logo() {
 	return (
 		<nav className="Logo">
 			<Link className="Logo__link" to="/" aria-label="Logo">

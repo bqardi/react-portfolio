@@ -1,25 +1,25 @@
 @use "sass:math";
 @import "../variables";
 
-.BuildProcess{
-	&__title{
+.BuildProcess {
+	&__title {
 		font-size: 2rem;
 		margin-bottom: 1rem;
-		&Accordion{
+		&Accordion {
 			font-size: 1.4rem;
 			margin-top: $space * 2;
 		}
-		&--space{
+		&--space {
 			margin-top: $space;
 		}
 	}
-	&__text{
+	&__text {
 		margin: 1rem 0;
 	}
-	&__button{
+	&__button {
 		width: 200px;
 	}
-	&__bullet{
+	&__bullet {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -32,12 +32,12 @@
 		font-size: 0.6rem;
 		font-weight: 700;
 	}
-	&__list{
+	&__list {
 		line-height: 1.75rem;
-		& li:not(:last-of-type){
+		& li:not(:last-of-type) {
 			margin-bottom: math.div($space, 4);
 		}
-		&Highlight{
+		&Highlight {
 			color: var(--theme-lighter);
 			font-weight: 700;
 			margin-right: math.div($space, 4);
@@ -45,47 +45,67 @@
 				color: var(--dark);
 			}
 		}
-		&--nodot{
+		&--nodot {
 			list-style-type: none;
-			& svg{
+			& svg {
 				margin-left: math.div(-$space, 1.2);
 			}
 		}
-		& svg{
+		& svg {
 			width: 20px;
 			margin-bottom: -4px;
 			margin-right: math.div($space, 4);
 		}
-		& .react{
+		& .react {
 			fill: $react;
 		}
-		& .javascript{
+		& .javascript {
 			fill: $javascript;
 		}
-		& .html{
+		& .html {
 			fill: $html;
 		}
-		& .css{
+		& .css {
 			fill: $css;
 		}
-		& .sass{
+		& .sass {
 			fill: $sass;
 		}
-		& .node{
-			fill: #8CC84B;
+		& .node {
+			fill: #8cc84b;
 			width: 17px;
 			margin-left: -25px;
 			margin-right: 8px;
 		}
-		& .express{
+		& .express {
 			color: #171717;
 			background-color: #f7f7f7;
 		}
-		& .reachrouter{
+		& .reachrouter {
 			background-color: #1159a6;
 		}
 	}
-	&__accordion .Accordion__summary{
-		padding: math.div($space, 4) math.div($space, 4) math.div($space, 4) math.div($space, 2);
+	&__accordion {
+		display: flex;
+		flex-direction: column;
+		gap: math.div($space, 4);
+		& .Accordion__summary {
+			padding: math.div($space, 4) math.div($space, 4) math.div($space, 4)
+				math.div($space, 2);
+		}
 	}
+	// &__details{
+	// 	background-color: var(--theme-darkest);
+	// 	& summary{
+	// 		list-style: none;
+	// 		background-color: #1159a6;
+	// 		padding: math.div($space, 4) math.div($space, 4) math.div($space, 4) math.div($space, 2);
+	// 		display: flex;
+	// 		justify-content: space-between;
+	// 		align-items: center;
+	// 		& svg{
+	// 			width: 24px;
+	// 		}
+	// 	}
+	// }
 }

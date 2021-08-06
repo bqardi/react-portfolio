@@ -1,7 +1,7 @@
 @use "sass:math";
 @import "../variables";
 
-.Experience{
+.Experience {
 	--left-offset: #{$space * 2};
 	--period-height: 200px;
 	--margin-bottom: #{$space * 4};
@@ -9,7 +9,7 @@
 	$studentColor: $ok;
 	$employeeColor: $highlight;
 	margin-bottom: var(--margin-bottom);
-	&--jobhunting{
+	&--jobhunting {
 		outline: 2px solid $highlight;
 		outline-offset: math.div($space, 6);
 		padding-bottom: $space;
@@ -17,20 +17,20 @@
 			outline-offset: math.div($space, 3);
 		}
 	}
-	&__cta{
+	&__cta {
 		position: absolute;
 		top: calc(100% - #{math.div($space, 2.5)});
 		left: 50%;
 		transform: translateX(-50%);
 	}
-	&__body{
+	&__body {
 		position: relative;
 		background-color: var(--dark-focus);
 		flex: 1;
 		border-radius: 3px;
 		margin: $lineOffset * 3 0 0 0;
 		padding-left: var(--left-offset);
-		&--line::before{
+		&--line::before {
 			content: "";
 			position: absolute;
 			top: -$lineOffset * 2;
@@ -41,10 +41,10 @@
 			background-color: var(--theme);
 		}
 	}
-	&:last-of-type &__body{
+	&:last-of-type &__body {
 		padding-left: $space;
 	}
-	&__period{
+	&__period {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -53,41 +53,41 @@
 		font-size: 1.1rem;
 		width: 230px;
 		padding: math.div($space, 4);
-		&--Student{
+		&--Student {
 			background-color: $studentColor;
 		}
-		&--Employee{
+		&--Employee {
 			background-color: $employeeColor;
 		}
-		&Separator{
+		&Separator {
 			fill: rgba(var(--dark), 0.4);
 			display: inline-block;
 			margin: 0 12px;
 			width: 24px;
 		}
 	}
-	&__year{
+	&__year {
 		font-size: 1.2em;
 		font-weight: 700;
 	}
-	&__month{
+	&__month {
 		font-size: 0.9em;
 		font-weight: 700;
 		color: rgba(var(--dark), 0.4);
 	}
-	&__location{
+	&__location {
 		position: absolute;
 		top: math.div(-$space, 4) * 3;
 		right: math.div($space, 4) * 3;
 		padding: math.div($space, 3) $space;
 		border-radius: 5px;
 		overflow: hidden;
-		&Title{
+		&Title {
 			position: relative;
 			z-index: 1;
 			color: var(--theme);
 		}
-		&Separator{
+		&Separator {
 			position: relative;
 			z-index: 1;
 			color: var(--theme);
@@ -97,18 +97,18 @@
 			font-weight: 700;
 			margin: 0 5px;
 		}
-		&City{
+		&City {
 			position: relative;
 			z-index: 1;
 			font-size: 1.4rem;
 			font-weight: 700;
 		}
-		&Background{
+		&Background {
 			position: absolute;
 			inset: 0;
 			background-color: var(--dark-hover);
 			height: 100%;
-			& svg{
+			& svg {
 				position: relative;
 				left: 50%;
 				transform: translateX(-50%);
@@ -117,30 +117,30 @@
 			}
 		}
 	}
-	&__separator{
+	&__separator {
 		color: $danger;
 		margin: 0 12px;
 	}
-	&__type{
+	&__type {
 		font-weight: 300;
 		font-size: 0.8em;
-		&--Student{
+		&--Student {
 			color: $studentColor;
 		}
-		&--Employee{
+		&--Employee {
 			color: $employeeColor;
 		}
 	}
-	&__name{
+	&__name {
 		font-size: 1.6rem;
 	}
-	&__title{
+	&__title {
 		margin: 0 0 $space;
 		text-transform: uppercase;
 		letter-spacing: 0.25rem;
 		color: var(--theme);
 	}
-	&__description{
+	&__description {
 		line-height: 1.5rem;
 	}
 }

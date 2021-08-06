@@ -1,7 +1,7 @@
 @use "sass:math";
 @import "../variables";
 
-.WorkCard{
+.WorkCard {
 	--image-offset: #{-$space};
 	--margin-top: #{math.div($space, 2)};
 	$borderRadius: 0;
@@ -11,14 +11,14 @@
 	display: flex;
 	flex-direction: column;
 	border-radius: $borderRadius;
-	&::before{
+	&::before {
 		content: "";
 		position: absolute;
 		inset: math.div($space, 4);
 		background-color: var(--theme-darkest);
 		border-radius: $borderRadius;
 	}
-	&:first-of-type{
+	&:first-of-type {
 		margin-top: max(0px, #{$space});
 	}
 	@media only screen and (min-width: $breakpointMicro), print {
@@ -26,12 +26,12 @@
 		--image-offset: #{-$space * 2};
 		--margin-top: #{$space};
 	}
-	&__container{
+	&__container {
 		position: relative;
 		display: flex;
 		flex-wrap: wrap;
 	}
-	& h3{
+	& h3 {
 		font-size: 2rem;
 		line-height: 2.2rem;
 		margin-bottom: $space;
@@ -40,7 +40,7 @@
 			padding: 0;
 		}
 	}
-	&__description{
+	&__description {
 		position: relative;
 		max-width: 500px;
 		padding: 0 $space;
@@ -48,7 +48,7 @@
 			padding: 0;
 		}
 	}
-	&__tags{
+	&__tags {
 		position: relative;
 		font-size: 0.8rem;
 		color: var(--theme-lighter);
@@ -59,17 +59,17 @@
 		flex-wrap: wrap;
 		align-items: center;
 	}
-	&__tag{
+	&__tag {
 		white-space: nowrap;
 	}
-	&__tag:not(:last-of-type)::after{
+	&__tag:not(:last-of-type)::after {
 		content: "|";
 		margin: 0 0.25rem;
 		font-weight: 700;
 		font-size: 1.1rem;
 		color: var(--theme);
 	}
-	& img{
+	& img {
 		position: relative;
 		top: var(--image-offset);
 		margin-bottom: calc(var(--image-offset) + 32px);
@@ -92,7 +92,7 @@
 			margin-right: $space;
 		}
 	}
-	&__links{
+	&__links {
 		position: relative;
 		flex-grow: 1;
 		display: flex;
@@ -100,7 +100,7 @@
 		justify-content: flex-end;
 		margin-top: $space;
 	}
-	&__link{
+	&__link {
 		margin-bottom: 1px;
 		background-color: var(--dark-focus);
 		padding: 0 1rem;
@@ -114,35 +114,35 @@
 			background-color: transparent;
 			padding: 0;
 		}
-		& &--web{
+		& &--web {
 			fill: var(--theme);
 		}
-		& &--github{
+		& &--github {
 			fill: $github;
 		}
-		& &--api{
+		& &--api {
 			fill: $api;
 		}
-		& &--link{
+		& &--link {
 			fill: $danger;
 		}
-		&:hover{
+		&:hover {
 			background-color: var(--dark-hover);
 		}
-		&:hover &--icon{
+		&:hover &--icon {
 			fill: $highlight !important;
 		}
-		svg#{&}--icon{
+		svg#{&}--icon {
 			width: 20px;
 			margin-right: 8px;
 			margin-bottom: 0;
 		}
-		svg#{&}--chevron{
+		svg#{&}--chevron {
 			width: 28px;
 			height: 28px;
 			margin-right: -8px;
 		}
-		& span{
+		& span {
 			flex: 1;
 			margin-right: 4px;
 			color: var(--light-faded);
@@ -150,7 +150,7 @@
 				color: var(--dark-faded);
 			}
 		}
-		&:last-of-type{
+		&:last-of-type {
 			margin-bottom: $space;
 			@media only screen and (min-width: $breakpointMicro) {
 				margin-bottom: 0;

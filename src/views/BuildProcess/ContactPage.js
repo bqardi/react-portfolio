@@ -2,8 +2,8 @@ import Layout from "../../layout/Layout";
 import { useStoreContext } from "../../components/Store";
 import Code from "../../components/Code";
 
-function ContactPage(){
-	var {Translate} = useStoreContext();
+function ContactPage() {
+	var { Translate } = useStoreContext();
 
 	return (
 		<Layout.Cell modifiers={["padding", "child-margin"]}>
@@ -22,25 +22,37 @@ function ContactPage(){
 			<ul className="BuildProcess__list">
 				<li>
 					<span className="BuildProcess__listHighlight">
-						<Translate id="title-01-li-01-span" extended="build-process-contact" />
+						<Translate
+							id="title-01-li-01-span"
+							extended="build-process-contact"
+						/>
 					</span>
 					<Translate id="title-01-li-01" extended="build-process-contact" />
 				</li>
 				<li>
 					<span className="BuildProcess__listHighlight">
-						<Translate id="title-01-li-02-span" extended="build-process-contact" />
+						<Translate
+							id="title-01-li-02-span"
+							extended="build-process-contact"
+						/>
 					</span>
 					<Translate id="title-01-li-02" extended="build-process-contact" />
 				</li>
 				<li>
 					<span className="BuildProcess__listHighlight">
-						<Translate id="title-01-li-03-span" extended="build-process-contact" />
+						<Translate
+							id="title-01-li-03-span"
+							extended="build-process-contact"
+						/>
 					</span>
 					<Translate id="title-01-li-03" extended="build-process-contact" />
 				</li>
 				<li>
 					<span className="BuildProcess__listHighlight">
-						<Translate id="title-01-li-04-span" extended="build-process-contact" />
+						<Translate
+							id="title-01-li-04-span"
+							extended="build-process-contact"
+						/>
 					</span>
 					<Translate id="title-01-li-04" extended="build-process-contact" />
 				</li>
@@ -62,15 +74,11 @@ function ContactPage(){
 			</p>
 			<ul className="BuildProcess__list">
 				<li>
-					<span className="BuildProcess__listHighlight">
-						useForm
-					</span>
+					<span className="BuildProcess__listHighlight">useForm</span>
 					<Translate id="title-03-li-01" extended="build-process-contact" />
 				</li>
 				<li>
-					<span className="BuildProcess__listHighlight">
-						useFormValidation
-					</span>
+					<span className="BuildProcess__listHighlight">useFormValidation</span>
 					<Translate id="title-03-li-02" extended="build-process-contact" />
 				</li>
 				<li>
@@ -84,7 +92,11 @@ function ContactPage(){
 				<Translate id="title-03-p-03" extended="build-process-contact" />
 			</p>
 			<Code title="React - JavaScript">
-				<Code.Function.Block name="useContactValidation" destructured parameters={["values"]}>
+				<Code.Function.Block
+					name="useContactValidation"
+					destructured
+					parameters={["values"]}
+				>
 					<Code.Variable
 						name={
 							<Code.CommaSeparated
@@ -100,43 +112,46 @@ function ContactPage(){
 					</Code.Variable>
 					<Code.Variable
 						name={
-							<Code.CommaSeparated
-								items={["name", "email"]}
-								destructured
-							/>
+							<Code.CommaSeparated items={["name", "email"]} destructured />
 						}
 					>
 						<Code.Property>values</Code.Property>
 					</Code.Variable>
 					<br />
-					<Code.If condition={
-						<>
-							<Code.Operator>!</Code.Operator>
-							<Code.Function.Call name="isEmail" parameters={["email"]} />
-						</>
-					}>
+					<Code.If
+						condition={
+							<>
+								<Code.Operator>!</Code.Operator>
+								<Code.Function.Call name="isEmail" parameters={["email"]} />
+							</>
+						}
+					>
 						<Code.CommaSeparated items={["errors", "email"]} separator="." />
 						<Code.Operator space="both">=</Code.Operator>
 						<Code.String>contact-email-wrong</Code.String>
 						<Code.Operator>;</Code.Operator>
 					</Code.If>
-					<Code.If condition={
-						<>
-							<Code.Operator>!</Code.Operator>
-							<Code.Function.Call name="isRequired" parameters={["name"]} />
-						</>
-					}>
+					<Code.If
+						condition={
+							<>
+								<Code.Operator>!</Code.Operator>
+								<Code.Function.Call name="isRequired" parameters={["name"]} />
+							</>
+						}
+					>
 						<Code.CommaSeparated items={["errors", "name"]} separator="." />
 						<Code.Operator space="both">=</Code.Operator>
 						<Code.String>contact-name-required</Code.String>
 						<Code.Operator>;</Code.Operator>
 					</Code.If>
-					<Code.If condition={
-						<>
-							<Code.Operator>!</Code.Operator>
-							<Code.Function.Call name="isRequired" parameters={["email"]} />
-						</>
-					}>
+					<Code.If
+						condition={
+							<>
+								<Code.Operator>!</Code.Operator>
+								<Code.Function.Call name="isRequired" parameters={["email"]} />
+							</>
+						}
+					>
 						<Code.CommaSeparated items={["errors", "email"]} separator="." />
 						<Code.Operator space="both">=</Code.Operator>
 						<Code.String>contact-email-required</Code.String>

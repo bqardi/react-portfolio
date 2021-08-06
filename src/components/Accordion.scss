@@ -1,24 +1,10 @@
 @use "sass:math";
 @import "../variables";
 
-.Accordion{
-	&__item{
-		margin-bottom: 0.5em;
-		outline: none;
-		&:last-of-type{
-			margin-bottom: 0;
-		}
-	}
-	&--active &__summary:focus{
-		color: var(--theme-darkest);
+.Accordion {
+	&--open &__summary {
 		background-color: var(--theme);
 		outline: none;
-		& svg{
-			fill: var(--theme-darkest);
-		}
-		& button{
-			color: var(--theme-darkest);
-		}
 	}
 	&__summary {
 		list-style: none;
@@ -26,29 +12,37 @@
 		justify-content: space-between;
 		align-items: center;
 		background-color: var(--theme-darker);
-		&:hover{
+		&:focus {
+			color: var(--theme-darkest);
+			background-color: var(--theme-light);
+			outline: none;
+			& svg {
+				fill: var(--theme-darkest);
+			}
+		}
+		&:hover {
 			color: hsl(0, 0%, 88%);
 			background-color: var(--theme-dark);
-			& svg{
+			& svg {
 				fill: hsl(0, 0%, 88%);
 			}
 		}
 	}
-	&__rotate{
+	&__rotate {
 		$iconWidth: math.div($unit, 3) * 2;
 		width: $iconWidth;
 		min-width: $iconWidth;
 		height: $iconWidth;
-		transition: transform .3s;
-		& svg{
+		transition: transform 0.3s;
+		& svg {
 			display: block;
 			fill: var(--light);
 		}
 	}
-	&__item--open &__rotate{
+	&--open &__rotate {
 		transform: rotate(90deg);
 	}
-	&__content{
+	&__content {
 		position: relative;
 		overflow-y: clip;
 		box-sizing: border-box;

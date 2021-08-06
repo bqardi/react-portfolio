@@ -1,9 +1,9 @@
 @use "sass:math";
 @import "../variables";
 
-.Skills{
+.Skills {
 	$iconWidth: 48px;
-	&__chip{
+	&__chip {
 		position: relative;
 		background-color: var(--theme-darkest);
 		width: 96px;
@@ -14,15 +14,16 @@
 		border-radius: 5px;
 		border: 2px solid var(--theme-darker);
 		text-align: center;
-		&--tooltip{
+		&--tooltip {
 			border: 2px solid $ok;
-			&:hover, &:focus{
+			&:hover,
+			&:focus {
 				outline: none;
 				border: 2px solid $highlight;
 			}
 		}
 	}
-	&__icon{
+	&__icon {
 		position: absolute;
 		top: math.div(-$iconWidth, 2);
 		width: $iconWidth;

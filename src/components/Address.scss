@@ -1,29 +1,29 @@
 @use "sass:math";
 @import "../variables";
 
-.Address{
+.Address {
 	height: 100%;
 	background-color: var(--darker);
 	padding: $space;
-	& address{
+	& address {
 		font-style: normal;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		height: 100%;
 	}
-	&__home{
-		& h2{
+	&__home {
+		& h2 {
 			margin: 0 0 math.div($space, 4);
 		}
-		& p{
+		& p {
 			margin: 0;
 		}
 	}
-	&__contact{
+	&__contact {
 		padding: 0;
 		list-style-type: none;
-		& li{
+		& li {
 			margin: math.div($space, 4) 0;
 		}
 	}

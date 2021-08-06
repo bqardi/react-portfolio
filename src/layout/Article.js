@@ -2,12 +2,14 @@ import { useStoreContext } from "../components/Store";
 import Layout from "./Layout";
 import "./Article.scss";
 
-function Article({children, type, resume}){
-	var {Translate} = useStoreContext();
+function Article({ children, type, resume }) {
+	var { Translate } = useStoreContext();
 
 	return (
 		<>
-			<Layout.Cell modifiers={["section", "header", "flex", "flexbase", "flexwrap"]}>
+			<Layout.Cell
+				modifiers={["section", "header", "flex", "flexbase", "flexwrap"]}
+			>
 				<h1 className="Article__title">
 					<Translate id={`title-${type}`} />
 				</h1>
@@ -15,12 +17,13 @@ function Article({children, type, resume}){
 					<Translate id={`description-${type}`} />
 				</p>
 			</Layout.Cell>
-			{resume ? 
+			{resume ? (
 				<Layout.Cell modifiers={["maxwidth"]}>
 					<Layout.Cell modifiers={["padding"]}>
 						<Translate id={`resume-${type}`} />
 					</Layout.Cell>
-				</Layout.Cell> : null}
+				</Layout.Cell>
+			) : null}
 			{children}
 		</>
 	);

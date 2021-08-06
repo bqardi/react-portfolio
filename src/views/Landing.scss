@@ -1,11 +1,11 @@
 @use "sass:math";
 @import "../variables";
 
-.Landing{
+.Landing {
 	position: relative;
 	height: 100vh;
 	overflow: hidden;
-	&::before{
+	&::before {
 		content: "";
 		position: absolute;
 		inset: 0;
@@ -20,10 +20,12 @@
 		animation-fill-mode: forwards;
 		transform-origin: right;
 		@keyframes slowZoom {
-			from{
-				transform: scale(1)}
-			to{
-				transform: scale(1.6)}
+			from {
+				transform: scale(1);
+			}
+			to {
+				transform: scale(1.6);
+			}
 		}
 		@media screen and (min-width: $breakpointMicro) and (max-height: $breakheightSmall) {
 			background-position: 100% 25%;
@@ -39,7 +41,7 @@
 			background-position: 100% 45%;
 		}
 	}
-	&__info{
+	&__info {
 		position: relative;
 		height: 100%;
 		display: flex;
@@ -47,7 +49,7 @@
 		justify-content: flex-end;
 		overflow: hidden;
 		@media screen and (min-width: $breakpointSmall) {
-			&::before{
+			&::before {
 				content: "Sune";
 				position: absolute;
 				top: 5rem;
@@ -62,27 +64,27 @@
 			}
 		}
 		@media screen and (min-width: $breakpointMedium) {
-			&::before{
+			&::before {
 				top: 4rem;
 				left: -1rem;
 				font-size: 25rem;
 			}
 		}
 		@media screen and (min-width: $breakpointLarge) {
-			&::before{
+			&::before {
 				top: 2rem;
 				left: 0;
 				font-size: 36rem;
 			}
 		}
 	}
-	&__header{
+	&__header {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		padding: 0 $space;
 		@media screen and (min-width: $breakpointMicro) {
-			&::after{
+			&::after {
 				content: "";
 				position: absolute;
 				bottom: 0;
@@ -94,7 +96,7 @@
 			}
 		}
 	}
-	&__container{
+	&__container {
 		position: relative;
 		flex-grow: 1;
 		display: flex;
@@ -112,24 +114,24 @@
 			margin-left: 10vw;
 		}
 	}
-	&__inner{
+	&__inner {
 		max-width: 650px;
 		padding: 0 $space;
-		& p{
+		& p {
 			max-width: 450px;
 		}
 	}
-	&__translation{
+	&__translation {
 		display: flex;
 		padding: 24px 0;
-		& button{
+		& button {
 			margin-right: math.div($space, 2);
 		}
 	}
-	&__nav{
+	&__nav {
 		display: flex;
 		align-items: center;
-		& a{
+		& a {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -138,11 +140,11 @@
 			color: var(--theme-lightest);
 			height: $unit * 1.5;
 			border: 2px solid transparent;
-			&:focus{
+			&:focus {
 				outline: none;
 				background-color: $highlightTransparent;
 			}
-			&:hover{
+			&:hover {
 				background-color: hsla(0, 0%, 100%, 0.2);
 			}
 			@media screen and (min-width: $breakpointMicro) {
@@ -150,37 +152,37 @@
 			}
 		}
 	}
-	&__hidden{
+	&__hidden {
 		display: none !important;
 		@media screen and (min-width: $breakpointSmall) {
 			display: flex !important;
 		}
 	}
-	&__nowrap{
+	&__nowrap {
 		white-space: nowrap;
 	}
-	&__language{
+	&__language {
 		position: relative;
 		top: 2px;
 		width: 16px;
 		margin-right: 2px;
-		&--javascript{
+		&--javascript {
 			fill: $javascript;
 		}
-		&--react{
+		&--react {
 			fill: $react;
 		}
-		&--html{
+		&--html {
 			fill: $html;
 		}
-		&--css{
+		&--css {
 			fill: $css;
 		}
 	}
-	&__design{
+	&__design {
 		position: relative;
 		@media screen and (min-width: $breakpointMedium) {
-			&::after{
+			&::after {
 				content: "Sune Seifert";
 				position: absolute;
 				top: 0;
@@ -198,7 +200,7 @@
 			}
 		}
 	}
-	&__title{
+	&__title {
 		color: var(--theme);
 		line-height: 2rem;
 		font-size: 1.8rem;
@@ -215,11 +217,11 @@
 			line-height: 4.4rem;
 		}
 	}
-	&__text{
+	&__text {
 		font-size: 0.9rem;
 		line-height: 1.5rem;
 		margin: math.div($space, 1.5) 0;
-		&--hightlight{
+		&--hightlight {
 			color: var(--theme-lighter);
 			font-weight: 700;
 			font-size: 1.2rem;
@@ -229,31 +231,31 @@
 			line-height: 1.8rem;
 		}
 		@media screen and (min-height: $breakheightSmall) {
-			&:first-of-type{
+			&:first-of-type {
 				margin-top: $space;
 			}
-			&:last-of-type{
+			&:last-of-type {
 				margin-bottom: $space * 1.25;
 			}
 		}
 	}
-	&__cta{
+	&__cta {
 		font-size: 1.2rem;
 		width: 260px;
-		&--onlylarge{
+		&--onlylarge {
 			display: none;
 			@media screen and (min-height: $breakheightMedium) {
 				display: flex;
 			}
 		}
 	}
-	&__social{
+	&__social {
 		display: none !important;
 		@media screen and (min-height: $breakheightMedium) {
 			display: flex !important;
 		}
 	}
-	&__footer{
+	&__footer {
 		position: relative;
 		margin: math.div($space, 4);
 		max-width: $breakpointMicro;
@@ -266,7 +268,7 @@
 			display: flex;
 		}
 	}
-	&__changetheme{
+	&__changetheme {
 		width: 48px;
 		height: 48px;
 		border: none;
@@ -275,26 +277,26 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		&:hover{
-			& span{
+		&:hover {
+			& span {
 				transform: scale(1.5);
 			}
 		}
-		& span{
+		& span {
 			display: block;
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
-			transition: transform .15s;
+			transition: transform 0.15s;
 			box-sizing: content-box;
-			&.active{
+			&.active {
 				transform: scale(1.2);
 				border: 2px solid $highlight;
 			}
 		}
-		&:focus{
+		&:focus {
 			box-shadow: none;
-			& span{
+			& span {
 				transform: scale(1.1);
 				border: 2px solid $ok;
 			}

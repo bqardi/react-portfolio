@@ -1,19 +1,19 @@
 @use "sass:math";
 @import "../variables";
 
-.Article{
-	&__title{
+.Article {
+	&__title {
 		white-space: nowrap;
 		margin-right: math.div($space, 3);
 		color: var(--theme);
 	}
-	&__description{
+	&__description {
 		font-size: 1rem;
 		color: var(--theme-lighter);
 		@media print {
 			color: var(--dark-faded);
 		}
-		&::before{
+		&::before {
 			content: "-";
 			margin-right: math.div($space, 3);
 		}

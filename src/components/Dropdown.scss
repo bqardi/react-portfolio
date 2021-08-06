@@ -1,9 +1,9 @@
 @use "sass:math";
 @import "../variables";
 
-.Dropdown{
+.Dropdown {
 	position: relative;
-	&__list{
+	&__list {
 		position: absolute;
 		top: 100%;
 		right: 0;
@@ -21,16 +21,16 @@
 		border-radius: 5px;
 		overflow: hidden;
 	}
-	&__item{
+	&__item {
 		background-color: var(--darker);
-		&:hover{
+		&:hover {
 			background-color: var(--dark-hover);
 		}
 	}
-	&__space{
+	&__space {
 		padding: math.div($space, 2);
 	}
-	&__header{
+	&__header {
 		padding-left: math.div($space, 2);
 		display: flex;
 		justify-content: space-between;
@@ -39,7 +39,7 @@
 		background-color: var(--dark);
 		border-bottom: 1px solid var(--dark-hover);
 	}
-	&__group{
+	&__group {
 		border-bottom: 1px solid var(--dark-hover);
 	}
 }

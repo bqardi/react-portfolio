@@ -1,7 +1,7 @@
 import helper from "../hooks/helper";
 import "./Layout.scss";
 
-function Layout({children, modifiers}){
+function Layout({ children, modifiers }) {
 	return (
 		<section className={`Layout${helper.modifiers("Layout", modifiers)}`}>
 			{children}
@@ -9,23 +9,33 @@ function Layout({children, modifiers}){
 	);
 }
 
-function Cell({children, modifiers}){
+function Cell({ children, modifiers }) {
 	return (
-		<div className={`Layout__cell${helper.modifiers("Layout__cell", modifiers)}`}>
+		<div
+			className={`Layout__cell${helper.modifiers("Layout__cell", modifiers)}`}
+		>
 			{children}
 		</div>
 	);
 }
 Layout.Cell = Cell;
 
-function Row({children}){
-	return (
-		<div className="Layout__row">{children}</div>
-	);
+function Row({ children }) {
+	return <div className="Layout__row">{children}</div>;
 }
 Layout.Row = Row;
 
-function Flex({children, center, justify, align, column, wrap, gap, style, ...other}){
+function Flex({
+	children,
+	center,
+	justify,
+	align,
+	column,
+	wrap,
+	gap,
+	style,
+	...other
+}) {
 	return (
 		<div
 			style={{
@@ -45,7 +55,7 @@ function Flex({children, center, justify, align, column, wrap, gap, style, ...ot
 }
 Layout.Flex = Flex;
 
-function Grid({children, modifiers}){
+function Grid({ children, modifiers }) {
 	return (
 		<div
 			className={`Layout__grid${helper.modifiers("Layout__grid", modifiers)}`}
@@ -56,10 +66,13 @@ function Grid({children, modifiers}){
 }
 Layout.Grid = Grid;
 
-function Dashboard({children, modifiers}){
+function Dashboard({ children, modifiers }) {
 	return (
 		<div
-			className={`Layout__dashboard${helper.modifiers("Layout__dashboard", modifiers)}`}
+			className={`Layout__dashboard${helper.modifiers(
+				"Layout__dashboard",
+				modifiers
+			)}`}
 		>
 			{children}
 		</div>
@@ -67,7 +80,7 @@ function Dashboard({children, modifiers}){
 }
 Layout.Grid.Dashboard = Dashboard;
 
-function Span({children, modifiers}){
+function Span({ children, modifiers }) {
 	return (
 		<div
 			className={`Layout__span${helper.modifiers("Layout__span", modifiers)}`}

@@ -1,9 +1,9 @@
 import { useStoreContext } from "../../components/Store";
 import Layout from "../../layout/Layout";
 
-function LandingPage(){
-	var {Translate} = useStoreContext();
-	
+function LandingPage() {
+	var { Translate } = useStoreContext();
+
 	return (
 		<Layout.Cell modifiers={["padding", "child-margin"]}>
 			<h3 className="BuildProcess__titleAccordion">

@@ -8,20 +8,29 @@ import Settings from "../layout/Settings";
 import Language from "./Language";
 import "./Topbar.scss";
 
-function Topbar(){
-	var {translate, menuOpen, setMenuOpen, breakpointMedium} = useStoreContext();
+function Topbar() {
+	var {
+		translate,
+		menuOpen,
+		setMenuOpen,
+		breakpointMedium
+	} = useStoreContext();
 
-	function menuClickHandler(){
+	function menuClickHandler() {
 		setMenuOpen(prev => !prev);
 	}
 
-  useEffect(() => {
+	useEffect(() => {
 		setMenuOpen(breakpointMedium);
-  }, [setMenuOpen, breakpointMedium]);
-	
+	}, [setMenuOpen, breakpointMedium]);
+
 	return (
 		<div className="Topbar">
-			<Button variation="icon" onClick={menuClickHandler} aria-label={translate("aria-menu")}>
+			<Button
+				variation="icon"
+				onClick={menuClickHandler}
+				aria-label={translate("aria-menu")}
+			>
 				{menuOpen ? <Icon.MenuOpen /> : <Icon.Menu />}
 			</Button>
 			<Logo />
