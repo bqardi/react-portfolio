@@ -1,3 +1,4 @@
+import axios from "axios";
 import Layout from "../layout/Layout";
 import { useStoreContext } from "./Store";
 import useForm from "../hooks/useForm";
@@ -18,22 +19,11 @@ function Form() {
 	);
 
 	function submit(values) {
-		// TODO: Send email with server (ExpressJS and NodeMailer?)
-		console.log(values);
-
-		fetch("http://portfolio.bqardi.dk/send", {
-			method: "POST",
-			body: JSON.stringify(values),
-			headers: {
-				"Accept": "application/json",
-				"Content-Type": "application/json"
-			}
-		})
-			.then(response => response.json())
-			.then(result => {
-				if (result.status === "success") {
+		axios.post("https://portfolio.bqardi.dk/mail", values)
+			.then(response => {
+				if (response.data.message === "success") {
 					alert("Message Sent.");
-				} else if (result.status === "fail") {
+				} else if(response.data.message === "error") {
 					alert("Message failed to send.");
 				}
 			});
