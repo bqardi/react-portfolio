@@ -5,12 +5,12 @@ import "./Experience.scss";
 import Icon from "./Icon";
 import Button from "./Button";
 
-function Experience({ xp, showLine, isCurrent }) {
+function Experience({ xp, showLine, isCurrent, className }) {
 	var { Translate, translateFeed, parseAttributes } = useStoreContext();
 
 	return (
 		<Card
-			className={`Experience${xp.jobhunting ? " Experience--jobhunting" : ""}`}
+			className={`Experience${xp.jobhunting ? " Experience--jobhunting" : ""}${helper.className(className)}`}
 		>
 			<div
 				className={`Experience__period${helper.className(
@@ -72,9 +72,6 @@ function Experience({ xp, showLine, isCurrent }) {
 				</p>
 			</Card.Body>
 			{xp.jobhunting && <Button.HireMe className="Experience__cta" />}
-			{/* {xp.jobhunting && <Button className="Experience__cta" variation="cta" to="/dashboard/contact">
-				<Translate id="button-hire-me" />
-			</Button>} */}
 		</Card>
 	);
 }

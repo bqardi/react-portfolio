@@ -95,6 +95,9 @@
 				min-width: 220px;
 			}
 		}
+		@media print {
+			display: none;
+		}
 	}
 	&__container {
 		position: relative;
@@ -106,7 +109,7 @@
 		@media screen and (min-width: $breakpointMedium) {
 			margin-left: 5vw;
 		}
-		@media screen and (min-height: $breakheightSmall) {
+		@media screen and (min-height: $breakheightSmall), print {
 			justify-content: flex-start;
 		}
 		@media screen and (min-width: $breakpointLarge) {

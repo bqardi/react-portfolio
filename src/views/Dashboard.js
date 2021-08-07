@@ -23,7 +23,7 @@ function Dashboard() {
 
 	return (
 		<Layout modifiers={["mediaunit"]}>
-			<Layout.Cell modifiers={["fixed", "light"]}>
+			<Layout.Cell modifiers={["fixed", "light", "noprint"]}>
 				<Topbar />
 			</Layout.Cell>
 			<Menu />

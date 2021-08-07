@@ -21,11 +21,13 @@
 		}
 	}
 	&__extInfo {
-		padding-left: 0;
-		padding-right: 0;
+		padding: $space;
 		color: var(--light-focus);
 		& p {
 			line-height: 2.1rem;
+		}
+		@media print {
+			color: hsl(0, 0%, 17%);
 		}
 	}
 	&__faded {
@@ -34,6 +36,9 @@
 	}
 	&__dark {
 		background-color: var(--darker);
+		@media print {
+			background-color: transparent;
+		}
 	}
 	&__chips {
 		display: flex;
@@ -52,6 +57,26 @@
 			&:hover {
 				border: 2px solid var(--theme-light);
 			}
+		}
+	}
+	&__noprint{
+		@media print {
+			display: none;
+		}
+	}
+	&__onlyprint{
+		display: none;
+		&Title{
+			font-weight: 700;
+			display: block;
+		}
+		&Text{
+			display: block;
+			font-size: 0.8em;
+			margin: 0 0 math.div($space, 2) math.div($space, 4);
+		}
+		@media print {
+			display: block;
 		}
 	}
 }

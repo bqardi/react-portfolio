@@ -13,19 +13,25 @@
 		@media only screen and (min-width: $breakpointSmall) {
 			grid-template-columns: $menuWidth 1fr;
 		}
+		@media print {
+			padding-top: 0;
+		}
 	}
 	&__grid {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: $space;
-		@media only screen and (min-width: $breakpointSmall), print {
+		@media only screen and (min-width: $breakpointSmall) {
 			&--profile {
 				grid-template-columns: repeat(2, 1fr);
 				width: unset;
 			}
 		}
-		@media only screen and (min-width: $breakpointMedium), print {
+		@media only screen and (min-width: $breakpointMedium) {
 			grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		}
+		@media print {
+			grid-template-columns: 1fr;
 		}
 		&--profile {
 			position: relative;
@@ -93,14 +99,14 @@
 		&--lighter {
 			background-color: var(--dark-faded);
 			@media print {
-				background-color: white;
+				background-color: transparent;
 			}
 		}
 		&--section {
 			background-color: var(--darker);
 			@media print {
 				page-break-inside: avoid;
-				background-color: white;
+				background-color: transparent;
 			}
 		}
 		&--header {
@@ -138,11 +144,14 @@
 		}
 		&--padding {
 			padding: math.div($space, 2);
-			@media only screen and (min-width: $breakpointMicro), print {
+			@media only screen and (min-width: $breakpointMicro) {
 				padding: $space;
 			}
 			@media only screen and (min-width: $breakpointSmall) {
 				padding: $space * 2;
+			}
+			@media print {
+				padding: 0;
 			}
 		}
 		&--child-padding {
@@ -197,11 +206,14 @@
 		}
 		&--b-margin {
 			margin-bottom: math.div($space, 2);
-			@media only screen and (min-width: $breakpointMicro), print {
+			@media only screen and (min-width: $breakpointMicro) {
 				margin-bottom: $space;
 			}
 			@media only screen and (min-width: $breakpointSmall) {
 				margin-bottom: $space * 2;
+			}
+			@media print {
+				margin-bottom: math.div($space, 2);
 			}
 		}
 		&--shadow {
@@ -219,6 +231,11 @@
 		}
 		&--flexwrap {
 			flex-wrap: wrap;
+		}
+		&--noprint{
+			@media print {
+				display: none;
+			}
 		}
 	}
 	&__row {

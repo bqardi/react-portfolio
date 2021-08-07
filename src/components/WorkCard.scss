@@ -17,6 +17,9 @@
 		inset: math.div($space, 4);
 		background-color: var(--theme-darkest);
 		border-radius: $borderRadius;
+		@media print {
+			background-color: transparent;
+		}
 	}
 	&:first-of-type {
 		margin-top: max(0px, #{$space});
@@ -25,6 +28,9 @@
 		padding: $space;
 		--image-offset: #{-$space * 2};
 		--margin-top: #{$space};
+	}
+	@media print {
+		margin: 0;
 	}
 	&__container {
 		position: relative;
@@ -47,17 +53,24 @@
 		@media only screen and (min-width: $breakpointMicro), print {
 			padding: 0;
 		}
+		@media print {
+			max-width: unset;
+		}
 	}
 	&__tags {
 		position: relative;
 		font-size: 0.8rem;
-		color: var(--theme-lighter);
-		background-color: var(--theme-darker);
 		margin-bottom: math.div($space, 2);
 		padding: math.div($space, 6) math.div($space, 2);
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+		color: var(--theme-lighter);
+		background-color: var(--theme-darker);
+		@media print {
+			color: hsl(0, 0%, 12%);
+			background-color: hsl(0, 0%, 97%);
+		}
 	}
 	&__tag {
 		white-space: nowrap;
@@ -99,6 +112,9 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		margin-top: $space;
+		@media print {
+			display: none;
+		}
 	}
 	&__link {
 		margin-bottom: 1px;
@@ -155,6 +171,24 @@
 			@media only screen and (min-width: $breakpointMicro) {
 				margin-bottom: 0;
 			}
+		}
+	}
+	&__printlinks{
+		position: absolute;
+		top: -$space;
+		left: 244px;
+		flex-direction: column;
+		display: none;
+		@media print {
+			display: flex;
+		}
+	}
+	&__printlink{
+		&--icon {
+			width: 20px;
+			margin-right: 8px;
+			margin-bottom: -4px;
+			fill: hsl(0, 0%, 5%);
 		}
 	}
 }

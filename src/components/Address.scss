@@ -5,6 +5,9 @@
 	height: 100%;
 	background-color: var(--darker);
 	padding: $space;
+	@media print {
+		background-color: transparent;
+	}
 	& address {
 		font-style: normal;
 		display: flex;

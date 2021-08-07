@@ -9,6 +9,9 @@
 	$studentColor: $ok;
 	$employeeColor: $highlight;
 	margin-bottom: var(--margin-bottom);
+	@media print {
+		--margin-bottom: 0;
+	}
 	&--jobhunting {
 		outline: 2px solid $highlight;
 		outline-offset: math.div($space, 6);
@@ -39,6 +42,11 @@
 			transform: translate(-50%);
 			width: 1px;
 			background-color: var(--theme);
+		}
+		@media print {
+			margin: 0;
+			padding-left: $space;
+			background-color: transparent;
 		}
 	}
 	&:last-of-type &__body {
@@ -114,6 +122,13 @@
 				transform: translateX(-50%);
 				height: 100%;
 				fill: var(--dark-faded);
+			}
+			@media print {
+				margin: 0;
+				background-color: var(--light);
+				& svg {
+					fill: var(--light-faded);
+				}
 			}
 		}
 	}

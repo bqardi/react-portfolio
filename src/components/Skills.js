@@ -9,10 +9,10 @@ function Skills({ translation, array, noBottomMargin }) {
 
 	return (
 		<Layout.Cell modifiers={noBottomMargin ? null : ["b-margin"]}>
-			<h3 style={{ marginBottom: "2rem" }}>
+			<h3 className="Skills__title">
 				<Translate id={translation} />
 			</h3>
-			<Layout.Flex wrap justify="center" gap="28px 16px">
+			<Layout.Flex wrap justify="center" gap="28px 16px" className="Skills__printflex">
 				{array?.map(item => {
 					var description = parseString(translateFeed(item.description));
 

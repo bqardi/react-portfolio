@@ -11,7 +11,7 @@
 		font-size: 1rem;
 		color: var(--theme-lighter);
 		@media print {
-			color: var(--dark-faded);
+			color: hsl(0, 0%, 12%);
 		}
 		&::before {
 			content: "-";

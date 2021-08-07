@@ -103,7 +103,6 @@ function CV() {
 				<Skills
 					translation="skills-other"
 					array={data.skills?.design}
-					noBottomMargin
 				/>
 				<Skills translation="skills-fiddle" array={data.skills?.fiddle} />
 			</Layout.Cell>
@@ -112,7 +111,25 @@ function CV() {
 					<h2 className="CV__title">
 						<Translate id="personal-skills" />
 					</h2>
-					<ul className="CV__chips">
+					<ul className="CV__onlyprint">
+						<li>
+							<span className="CV__onlyprintTitle"><Translate id="personal-skills-01" /></span>
+							<span className="CV__onlyprintText"><Translate id="personal-skills-01-description" /></span>
+						</li>
+						<li>
+							<span className="CV__onlyprintTitle"><Translate id="personal-skills-02" /></span>
+							<span className="CV__onlyprintText"><Translate id="personal-skills-02-description" /></span>
+						</li>
+						<li>
+							<span className="CV__onlyprintTitle"><Translate id="personal-skills-03" /></span>
+							<span className="CV__onlyprintText"><Translate id="personal-skills-03-description" /></span>
+						</li>
+						<li>
+							<span className="CV__onlyprintTitle"><Translate id="personal-skills-04" /></span>
+							<span className="CV__onlyprintText"><Translate id="personal-skills-04-description" /></span>
+						</li>
+					</ul>
+					<ul className="CV__chips CV__noprint">
 						<li>
 							<Infotip
 								text="personal-skills-01"
@@ -150,7 +167,7 @@ function CV() {
 				</h2>
 				<Layout.Grid>
 					{data.experience && (
-						<Experience xp={data.experience.current} showLine isCurrent />
+						<Experience className="CV__noprint" xp={data.experience.current} showLine isCurrent />
 					)}
 					{data.experience?.historic.map((xp, index, arr) => (
 						<Experience

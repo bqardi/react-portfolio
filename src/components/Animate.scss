@@ -13,6 +13,9 @@
 		&--out {
 			animation-name: out;
 		}
+		@media print {
+			transform: translate(0);
+		}
 	}
 	@keyframes in {
 		0% {

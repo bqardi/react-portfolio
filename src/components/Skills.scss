@@ -3,6 +3,12 @@
 
 .Skills {
 	$iconWidth: 48px;
+	&__title{
+		margin-bottom: $space;
+		@media print {
+			margin-bottom: math.div($space, 4);
+		}
+	}
 	&__chip {
 		position: relative;
 		background-color: var(--theme-darkest);
@@ -22,6 +28,15 @@
 				border: 2px solid $highlight;
 			}
 		}
+		@media print {
+			background-color: transparent;
+			width: unset;
+			height: unset;
+			border: none;
+			border-radius: 0;
+			border-bottom: 1px solid var(--theme-lighter);
+			padding: 0 math.div($space, 8) math.div($space, 8);
+		}
 	}
 	&__icon {
 		position: absolute;
@@ -30,5 +45,19 @@
 		border-radius: 50%;
 		fill: hsla(0, 0%, 100%, 0.8);
 		padding: 8px;
+		@media print {
+			position: relative;
+			top: 0;
+			width: 20px;
+			padding: 4px;
+			margin-right: 5px;
+		}
+	}
+	&__printflex{
+		@media print {
+			justify-content: flex-start !important;
+			gap: 12px !important;
+			padding: 0 $space;
+		}
 	}
 }

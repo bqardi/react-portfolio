@@ -13,6 +13,15 @@ function WorkCard({ project }) {
 
 	return (
 		<div className="WorkCard">
+			<div className="WorkCard__printlinks">
+				{project.links.map(link => <span className="WorkCard__printlink" key={link.url}>
+					<Icon
+						className="WorkCard__printlink--icon"
+						name={helper.proper(link.type)}
+					/>
+					{link.url}
+				</span>)}
+			</div>
 			<div className="WorkCard__container">
 				<img
 					src={project.image}
