@@ -27,9 +27,9 @@ function Address() {
 							</Button>
 						</li>
 						<li>
-							<Button modifiers={["inline"]} href="https://bqardi.dk">
+							<Button modifiers={["inline"]} href="https://portfolio.bqardi.dk">
 								<Icon.Web />
-								https://bqardi.dk
+								https://portfolio.bqardi.dk
 							</Button>
 						</li>
 					</ul>

@@ -139,9 +139,9 @@ const translations = {
 	"personal-skills-01": { dan: "Detalje orienteret", eng: "Detail oriented" },
 	"personal-skills-01-description": {
 		dan:
-			"Fokus, opmærksomhed og kvalitet er nøgleordene her. Jeg er fokuseret når jeg arbejder, jeg dobbelttjekker altid mit arbejde for at være sikker på at det lever op til mine kritiske standarder og så ved jeg at det er de små detaljer der gør et godt stykke arbejde, fantastisk.",
+			"Fokus, opmærksomhed og kvalitet er nøgleordene her. Jeg er fokuseret, når jeg arbejder. Jeg dobbelttjekker altid mit arbejde for at være sikker på, at det lever op til mine kritiske standarder. Jeg ved, at det er de små detaljer, der gør et godt stykke arbejde fantastisk.",
 		eng:
-			"Focus, attention and quality are the key-words here. I am focused when I work, I always doublecheck things I'm working on to make sure they live up to my critical standards and then I am well aware that it's the small details that make a decent job, great."
+			"Focus, attention and quality are the key-words here. I am focused when I work. I always doublecheck things I'm working on to make sure they live up to my critical standards. I am well aware that it's the little details that make a decent job great."
 	},
 	"personal-skills-02": { dan: "Struktureret", eng: "Structured" },
 	"personal-skills-02-description": {
@@ -729,6 +729,17 @@ const translations = {
 			eng:
 				"That way I only need to change those two values to change the entire color theme:"
 		}
+	},
+	"build-process-backend": {
+		"summary": { dan: "Backend", eng: "Backend" },
+		"title-01-array-01": {
+			dan: [
+				"Jeg bruger min egen server (en NAS boks fra Synology) der kører på Linux, hvor jeg har installeret Node.js og bruger Express til at sende mit React portfolio ud til omverdenen.",
+			],
+			eng: [
+				"I use my own server (a NAS box from Synology) which runs on Linux, where I have installed Node.js and using Express to serve my React portfolio website to the world.",
+			]
+		},
 	}
 };
 

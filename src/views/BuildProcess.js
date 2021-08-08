@@ -3,6 +3,7 @@ import Article from "../layout/Article";
 import Layout from "../layout/Layout";
 import Accordion from "../components/Accordion";
 import Button from "../components/Button";
+import Icon from "../components/Icon";
 import Brainstorm from "./BuildProcess/Brainstorm";
 import LandingPage from "./BuildProcess/LandingPage";
 import WorkPage from "./BuildProcess/WorkPage";
@@ -10,9 +11,9 @@ import ContactPage from "./BuildProcess/ContactPage";
 import CVPage from "./BuildProcess/CVPage";
 import TranslationFeature from "./BuildProcess/TranslationFeature";
 import StateManagement from "./BuildProcess/StateManagement";
-import Icon from "../components/Icon";
-import "./BuildProcess.scss";
 import DarkmodeColorTheme from "./BuildProcess/DarkmodeColorTheme";
+import Backend from "./BuildProcess/Backend";
+import "./BuildProcess.scss";
 
 function BuildProcess() {
 	var { Translate, translate } = useStoreContext();
@@ -144,13 +145,6 @@ function BuildProcess() {
 						<h2 className="BuildProcess__title">
 							<Translate id="title-03" extended="build-process" />
 						</h2>
-						{/* <details className="BuildProcess__details">
-							<summary>
-								<Translate id="summary" extended="build-process-brainstorm" />
-								<Icon.ChevronRight />
-							</summary>
-							<Brainstorm />
-						</details> */}
 						<div className="BuildProcess__accordion">
 							<Accordion
 								id="brainstorm"
@@ -199,6 +193,12 @@ function BuildProcess() {
 								title={translate("summary", "build-process-darkmode-theme")}
 							>
 								<DarkmodeColorTheme />
+							</Accordion>
+							<Accordion
+								id="backend"
+								title={translate("summary", "build-process-backend")}
+							>
+								<Backend />
 							</Accordion>
 						</div>
 					</Layout.Cell>
