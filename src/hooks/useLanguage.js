@@ -736,9 +736,13 @@ const translations = {
 		"title-01-array-01": {
 			dan: [
 				"Jeg bruger min egen server (en NAS boks fra Synology) der kører på Linux, hvor jeg har installeret Node.js og bruger Express til at sende mit React portfolio ud til omverdenen.",
+				"Til min kontakt form har jeg brugt Nodemailer samt mailgun til at sende informationerne fra input felterne i formen til min personlige email adresse: [email], som så gør mig i stand til at svare direkte til din anførte email.",
+				"Her er kontakt formularen:"
 			],
 			eng: [
 				"I use my own server (a NAS box from Synology) which runs on Linux, where I have installed Node.js and using Express to serve my React portfolio website to the world.",
+				"For my contact form I have used Nodemailer and Mailgun to send information from the input fields in the form to my personal email address: [email], which then enables me to directly respond to your provided email.",
+				"Here is the contact form:"
 			]
 		},
 	}
