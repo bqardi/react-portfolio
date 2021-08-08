@@ -9,9 +9,11 @@ import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import "./CV.scss";
 import Infotip from "../components/Infotip";
+import usePageTitle from "../hooks/usePageTitle";
 
 function CV() {
 	var { translate, Translate, projects, setProjects } = useStoreContext();
+	usePageTitle(translate("title-cv"));
 	var [data, setData] = useState({});
 
 	useEffect(() => {

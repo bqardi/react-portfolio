@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import ButtonGroup from "../components/ButtonGroup";
 import Layout from "../layout/Layout";
 import "./Landing.scss";
+import usePageTitle from "../hooks/usePageTitle";
 
 var languageExperience = [
 	{
@@ -35,6 +36,7 @@ var languageExperience = [
 
 function Landing() {
 	var { Translate, translate, language, setLanguage } = useStoreContext();
+	usePageTitle();
 
 	return (
 		<section className="Landing">

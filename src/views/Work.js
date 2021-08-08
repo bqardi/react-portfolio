@@ -3,9 +3,11 @@ import Layout from "../layout/Layout";
 import Article from "../layout/Article";
 import WorkCard from "../components/WorkCard";
 import { useStoreContext } from "../components/Store";
+import usePageTitle from "../hooks/usePageTitle";
 
 function Work({ type }) {
-	var { projects, setProjects } = useStoreContext();
+	var { projects, setProjects, translate } = useStoreContext();
+	usePageTitle(translate("title-projects"));
 
 	useEffect(() => {
 		if (!projects?.length) {

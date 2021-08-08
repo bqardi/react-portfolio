@@ -14,9 +14,11 @@ import StateManagement from "./BuildProcess/StateManagement";
 import DarkmodeColorTheme from "./BuildProcess/DarkmodeColorTheme";
 import Backend from "./BuildProcess/Backend";
 import "./BuildProcess.scss";
+import usePageTitle from "../hooks/usePageTitle";
 
 function BuildProcess() {
 	var { Translate, translate } = useStoreContext();
+	usePageTitle(translate("title-build-process"));
 
 	return (
 		<Article type="build-process">

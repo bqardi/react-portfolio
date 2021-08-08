@@ -185,6 +185,7 @@ const translations = {
 		dan: "Hvordan jeg byggede dette portfolio",
 		eng: "How I build this portfolio"
 	},
+	"title-projects": { dan: "Projekter", eng: "Projects" },
 	"title-web": { dan: "Websites", eng: "Websites" },
 	"description-web": {
 		dan: "Her er nogle af mine website projekter og designs",
