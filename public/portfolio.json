@@ -560,8 +560,8 @@
 				{
 					"type": "link",
 					"description": {
-						"dan": "Artikel på dev.to",
-						"eng": "Article on dev.to"
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
 					},
 					"url": "https://portfolio.bqardi.dk"
 				},
