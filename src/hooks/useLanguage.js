@@ -16,11 +16,11 @@ const translations = {
 			full: "English",
 			icon: "BritishFlag"
 		},
-		{
-			code: "lorem",
-			full: "Lorem ipsum",
-			icon: "LoremFlag"
-		}
+		// {
+		// 	code: "lorem",
+		// 	full: "Lorem ipsum",
+		// 	icon: "LoremFlag"
+		// }
 	],
 	"missing": {
 		dan: "Oversæt",
