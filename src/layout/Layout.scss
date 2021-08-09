@@ -10,9 +10,6 @@
 		height: unset;
 	}
 	&--mediaunit {
-		@media only screen and (min-width: $breakpointSmall) {
-			grid-template-columns: $menuWidth 1fr;
-		}
 		@media print {
 			padding-top: 0;
 		}
@@ -75,6 +72,9 @@
 		&--maxwidth {
 			max-width: 924px;
 			margin: 0 auto;
+			@media only screen and (min-width: $breakpointMedium) {
+				width: calc(100vw - #{$menuWidth});
+			}
 			@media print {
 				max-width: 100%;
 			}
@@ -278,15 +278,6 @@
 			@media only screen and (min-width: $breakpointMedium) {
 				grid-column: span 4;
 			}
-		}
-		&--r2 {
-			grid-row: span 2;
-		}
-		&--r3 {
-			grid-row: span 3;
-		}
-		&--r4 {
-			grid-row: span 4;
 		}
 	}
 }
