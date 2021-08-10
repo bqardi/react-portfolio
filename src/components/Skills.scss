@@ -5,9 +5,9 @@
 	$iconWidth: 48px;
 	&__title{
 		margin-bottom: $space;
-		@media print {
-			margin-bottom: math.div($space, 4);
-		}
+		// @media print {
+		// 	margin-bottom: math.div($space, 4);
+		// }
 	}
 	&__chip {
 		position: relative;
@@ -58,6 +58,45 @@
 			justify-content: flex-start !important;
 			gap: 12px !important;
 			padding: 0 $space;
+		}
+	}
+	&__chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: math.div($space, 4);
+		list-style-type: none;
+		padding: 0;
+		& li {
+			background-color: var(--theme-darker);
+			white-space: nowrap;
+			border-radius: 3px;
+			border: 2px solid transparent;
+			cursor: default;
+			display: flex;
+			align-items: center;
+			&:hover {
+				border: 2px solid var(--theme-light);
+			}
+		}
+	}
+	&__noprint{
+		@media print {
+			display: none;
+		}
+	}
+	&__onlyprint{
+		display: none;
+		&Title{
+			font-weight: 700;
+			display: block;
+		}
+		&Text{
+			display: block;
+			font-size: 0.8em;
+			margin: math.div($space, 2) 0 $space math.div($space, 4);
+		}
+		@media print {
+			display: block;
 		}
 	}
 }

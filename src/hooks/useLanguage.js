@@ -164,6 +164,13 @@ const translations = {
 		eng:
 			"Shift of focus when a problem arises and must be solved, while still maintaining a bigger overview. Ready and willing to adapt to deliver results even if expectations are changed."
 	},
+	"personal-skills-05": { dan: "Videbegærlig", eng: "Inquisitive" },
+	"personal-skills-05-description": {
+		dan:
+			"\"Man kan alt, man skal bare lære det først\". Jeg er nysgerrig og udforskende af natur. Er der noget jeg ikke ved, skal jeg nok finde ud af det. Som frontend udvikler, er der uendelig mange nye værktøjer man kan tage fat på og lære om, og der kommer hele tiden nye og bedre værktøjer til. Love it!",
+		eng:
+			"\"You can do anything, you just have to learn it first\". I am currious and explorative by nature. If there is something i don't know, I will figure it out. As a frontend developer, there are an infinite amount of tools to know and learn about, and new, better tools appear all the time. Love it!"
+	},
 
 	"resume": {
 		dan: [

@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import Tooltip from "./Tooltip";
 import Icon from "./Icon";
 import "./Skills.scss";
+import Infotip from "./Infotip";
 
 function Skills({ translation, array, noBottomMargin }) {
 	var { translateFeed, Translate, parseString } = useStoreContext();
@@ -47,5 +48,38 @@ function Skills({ translation, array, noBottomMargin }) {
 		</Layout.Cell>
 	);
 }
+
+function Personal({skills}){
+	var { Translate } = useStoreContext();
+
+	return (
+		<>
+			<ul className="Skills__onlyprint">
+				{skills.map(skill => {
+					return (
+						<li key={skill}>
+							<span className="Skills__onlyprintTitle"><Translate id={`personal-skills-${skill}`} /></span>
+							<span className="Skills__onlyprintText"><Translate id={`personal-skills-${skill}-description`} /></span>
+						</li>
+					)
+				})}
+			</ul>
+			<ul className="Skills__chips Skills__noprint">
+				{skills.map(skill => {
+					return (
+						<li key={skill}>
+							<Infotip
+								text={`personal-skills-${skill}`}
+								popup={`personal-skills-${skill}-description`}
+								chip
+							/>
+						</li>
+					)
+				})}
+			</ul>
+		</>
+	);
+}
+Skills.Personal = Personal;
 
 export default Skills;

@@ -64,19 +64,4 @@
 			display: none;
 		}
 	}
-	&__onlyprint{
-		display: none;
-		&Title{
-			font-weight: 700;
-			display: block;
-		}
-		&Text{
-			display: block;
-			font-size: 0.8em;
-			margin: 0 0 math.div($space, 2) math.div($space, 4);
-		}
-		@media print {
-			display: block;
-		}
-	}
 }

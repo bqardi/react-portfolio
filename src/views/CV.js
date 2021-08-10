@@ -113,54 +113,7 @@ function CV() {
 					<h2 className="CV__title">
 						<Translate id="personal-skills" />
 					</h2>
-					<ul className="CV__onlyprint">
-						<li>
-							<span className="CV__onlyprintTitle"><Translate id="personal-skills-01" /></span>
-							<span className="CV__onlyprintText"><Translate id="personal-skills-01-description" /></span>
-						</li>
-						<li>
-							<span className="CV__onlyprintTitle"><Translate id="personal-skills-02" /></span>
-							<span className="CV__onlyprintText"><Translate id="personal-skills-02-description" /></span>
-						</li>
-						<li>
-							<span className="CV__onlyprintTitle"><Translate id="personal-skills-03" /></span>
-							<span className="CV__onlyprintText"><Translate id="personal-skills-03-description" /></span>
-						</li>
-						<li>
-							<span className="CV__onlyprintTitle"><Translate id="personal-skills-04" /></span>
-							<span className="CV__onlyprintText"><Translate id="personal-skills-04-description" /></span>
-						</li>
-					</ul>
-					<ul className="CV__chips CV__noprint">
-						<li>
-							<Infotip
-								text="personal-skills-01"
-								popup="personal-skills-01-description"
-								chip
-							/>
-						</li>
-						<li>
-							<Infotip
-								text="personal-skills-02"
-								popup="personal-skills-02-description"
-								chip
-							/>
-						</li>
-						<li>
-							<Infotip
-								text="personal-skills-03"
-								popup="personal-skills-03-description"
-								chip
-							/>
-						</li>
-						<li>
-							<Infotip
-								text="personal-skills-04"
-								popup="personal-skills-04-description"
-								chip
-							/>
-						</li>
-					</ul>
+					<Skills.Personal skills={["01", "02", "03", "04", "05"]} />
 				</Layout.Cell>
 			</Layout.Cell>
 			<Layout.Cell modifiers={["padding", "maxwidth", "print-padding"]}>
