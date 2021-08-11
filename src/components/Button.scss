@@ -149,6 +149,7 @@
 			width: $iconSize * 2;
 			height: $iconSize * 2;
 			margin-right: math.div($space, 4);
+			margin-bottom: -4px;
 			fill: var(--theme);
 			@media screen and (min-width: $breakpointMedium) {
 				width: $iconSize;

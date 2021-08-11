@@ -140,6 +140,15 @@ function BuildProcess() {
 								<Translate id="title-02-li-07" extended="build-process" />
 							</li>
 						</ul>
+						<h2 className="BuildProcess__title BuildProcess__title--space">
+							GitHub
+						</h2>
+						<p className="BuildProcess__text">
+							<Button href="https://github.com/bqardi/react-portfolio">
+								<Icon.Github />
+								https://github.com/bqardi/react-portfolio
+							</Button>
+						</p>
 					</Layout.Cell>
 				</Layout.Cell>
 				<Layout.Cell modifiers={["section", "print-avoid-break-after"]}>
