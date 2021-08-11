@@ -247,6 +247,10 @@ const translations = {
 			"Står du/I og mangler en dygtig web udvikler, så send mig en hurtig besked:",
 		eng: "Are you in need of a skilled web developer, then send me a message:"
 	},
+	"contact-online-profile": {
+		dan: "Online profiler - Rekruttering",
+		eng: "Online profiles - Recruiters"
+	},
 	"contact-name": { dan: "Navn (påkrævet):", eng: "Name (required):" },
 	"contact-name-required": {
 		dan: "Navn skal udfyldes",
