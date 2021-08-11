@@ -144,6 +144,9 @@ function BuildProcess() {
 							GitHub
 						</h2>
 						<p className="BuildProcess__text">
+							<Translate id="title-02-github" extended="build-process" />
+						</p>
+						<p className="BuildProcess__text">
 							<Button href="https://github.com/bqardi/react-portfolio">
 								<Icon.Github />
 								https://github.com/bqardi/react-portfolio

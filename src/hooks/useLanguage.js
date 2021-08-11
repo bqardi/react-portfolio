@@ -360,6 +360,8 @@ const translations = {
 				"- A Node.js framework to help organize webapps. Used as backend to serve my portfolio site (frontend) online."
 		},
 
+		"title-02-github": { dan: "Se koden til dette portfolio på GitHub:", eng: "See the code for this portfolio on GitHub:" },
+
 		"title-03": { dan: "Processen", eng: "The process" },
 
 		"title-04": { dan: "Ansæt mig", eng: "Hire me" },
