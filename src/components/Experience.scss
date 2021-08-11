@@ -57,7 +57,7 @@
 		justify-content: center;
 		align-items: center;
 		border-radius: 3px;
-		color: var(--dark);
+		color: $dark;
 		font-size: 1.1rem;
 		width: 230px;
 		padding: math.div($space, 4);
@@ -68,7 +68,7 @@
 			background-color: $employeeColor;
 		}
 		&Separator {
-			fill: rgba(var(--dark), 0.4);
+			fill: rgba($dark, 0.4);
 			display: inline-block;
 			margin: 0 12px;
 			width: 24px;
@@ -153,7 +153,7 @@
 		margin: 0 0 $space;
 		text-transform: uppercase;
 		letter-spacing: 0.25rem;
-		color: var(--theme);
+		color: var(--theme-lighter);
 	}
 	&__description {
 		line-height: 1.5rem;

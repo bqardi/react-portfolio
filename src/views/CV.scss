@@ -33,6 +33,9 @@
 	&__faded {
 		color: var(--theme-lighter);
 		font-weight: 700;
+		@media print {
+			color: hsl(0, 0%, 5%);
+		}
 	}
 	&__dark {
 		background-color: var(--darker);

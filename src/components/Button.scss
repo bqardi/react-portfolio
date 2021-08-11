@@ -141,19 +141,28 @@
 		}
 	}
 	&--link {
-		color: var(--theme);
+		color: var(--theme-lighter);
 		text-decoration: none;
 		display: inline-block;
 		height: unset;
+		@media print {
+			color: $dark;
+		}
 		& svg {
 			width: $iconSize * 2;
 			height: $iconSize * 2;
 			margin-right: math.div($space, 4);
-			margin-bottom: -4px;
-			fill: var(--theme);
+			margin-bottom: -14px;
+			fill: var(--theme-lighter);
 			@media screen and (min-width: $breakpointMedium) {
 				width: $iconSize;
 				height: $iconSize;
+				margin-bottom: -4px;
+			}
+			@media print {
+				width: $iconSize;
+				height: $iconSize;
+				fill: $dark;
 			}
 		}
 		&:hover {

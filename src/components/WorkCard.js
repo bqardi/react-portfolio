@@ -48,7 +48,7 @@ function WorkCard({ project }) {
 								className={"WorkCard__link--icon WorkCard__link--" + link.type}
 								name={helper.proper(link.type)}
 							/>
-							<span>{translateFeed(link.description)}:</span>
+							<span className="WorkCard__link--text">{translateFeed(link.description)}:</span>
 							<Icon.ArrowRightBold className="WorkCard__link--chevron" />
 						</Button>
 					);

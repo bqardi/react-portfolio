@@ -6,7 +6,7 @@ import { useStoreContext } from "../components/Store";
 import usePageTitle from "../hooks/usePageTitle";
 
 function Work({ type }) {
-	var { projects, setProjects, translate } = useStoreContext();
+	var { projects, setProjects, translate, Translate } = useStoreContext();
 	usePageTitle(translate("title-projects"));
 
 	useEffect(() => {
@@ -22,6 +22,9 @@ function Work({ type }) {
 			<Layout.Cell modifiers={["section", "maxwidth-large"]}>
 				<Layout.Cell modifiers={["padding"]}>
 					<section>
+						<Layout.Cell modifiers={["b-margin"]}>
+							<h2><Translate id="work" /></h2>
+						</Layout.Cell>
 						<Layout.Grid>
 							{projects
 								?.filter(project => project.types.find(tp => tp === type))
