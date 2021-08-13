@@ -102,10 +102,7 @@ function CV() {
 				</h2>
 				<Skills translation="skills-languages" array={data.skills?.languages} />
 				<Skills translation="skills-tech" array={data.skills?.tech} />
-				<Skills
-					translation="skills-other"
-					array={data.skills?.design}
-				/>
+				<Skills translation="skills-other" array={data.skills?.design} />
 				<Skills translation="skills-fiddle" array={data.skills?.fiddle} />
 			</Layout.Cell>
 			<Layout.Cell modifiers={["section", "print-avoid-break-after"]}>
@@ -122,7 +119,12 @@ function CV() {
 				</h2>
 				<Layout.Grid>
 					{data.experience && (
-						<Experience className="CV__noprint" xp={data.experience.current} showLine isCurrent />
+						<Experience
+							className="CV__noprint"
+							xp={data.experience.current}
+							showLine
+							isCurrent
+						/>
 					)}
 					{data.experience?.historic.map((xp, index, arr) => (
 						<Experience

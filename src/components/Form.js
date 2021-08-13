@@ -19,15 +19,14 @@ function Form() {
 	);
 
 	function submit(values) {
-		axios.post("https://portfolio.bqardi.dk/mail", values)
-			.then(response => {
-				if (response.data.message === "success") {
-					setToast({type: "success", message: translate("contact-email-sent")});
-					resetForm();
-				} else if(response.data.message === "error") {
-					setToast({type: "alert", message: translate("contact-email-failed")});
-				}
-			});
+		axios.post("https://portfolio.bqardi.dk/mail", values).then(response => {
+			if (response.data.message === "success") {
+				setToast({ type: "success", message: translate("contact-email-sent") });
+				resetForm();
+			} else if (response.data.message === "error") {
+				setToast({ type: "alert", message: translate("contact-email-failed") });
+			}
+		});
 	}
 
 	return (

@@ -6,7 +6,7 @@ function Portal({ portalName = "root", children }) {
 	const el = useMemo(() => document.createElement("div"), []);
 
 	useEffect(() => {
-		portal.appendChild(el);
+		portal?.appendChild(el);
 		return () => portal.removeChild(el);
 	}, [el, portal]);
 

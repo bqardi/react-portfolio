@@ -142,13 +142,14 @@
 		&:hover {
 			background-color: var(--theme-dark);
 		}
-		&--text{
+		&--text {
 			color: var(--theme-lighter);
 		}
-		&:hover &--text{
+		&:hover &--text {
 			color: var(--theme-lightest);
 		}
-		&:hover &--icon, &:hover &--chevron {
+		&:hover &--icon,
+		&:hover &--chevron {
 			fill: var(--theme-lightest) !important;
 		}
 		svg#{&}--icon {
@@ -176,7 +177,7 @@
 			}
 		}
 	}
-	&__printlinks{
+	&__printlinks {
 		position: absolute;
 		top: -$space;
 		left: 244px;
@@ -186,7 +187,7 @@
 			display: flex;
 		}
 	}
-	&__printlink{
+	&__printlink {
 		&--icon {
 			width: 20px;
 			margin-right: 8px;

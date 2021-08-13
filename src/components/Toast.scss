@@ -1,7 +1,7 @@
 @use "sass:math";
 @import "../variables";
 
-.Toast{
+.Toast {
 	position: fixed;
 	top: $topbarHeight;
 	left: 0;
@@ -12,32 +12,33 @@
 	align-items: center;
 	font-size: 1.2rem;
 	font-weight: 700;
-	padding: math.div($space, 2) math.div($space, 4) math.div($space, 2) math.div($space, 2);
-	&--success{
+	padding: math.div($space, 2) math.div($space, 4) math.div($space, 2)
+		math.div($space, 2);
+	&--success {
 		color: darken($ok, 40);
 		background-color: $ok;
 		& svg {
 			fill: darken($ok, 40);
 		}
 	}
-	&--alert{
+	&--alert {
 		color: darken($danger, 40);
 		background-color: $danger;
 		& svg {
 			fill: darken($danger, 40);
 		}
 	}
-	&__icon{
+	&__icon {
 		width: $space;
 	}
-	&__message{
+	&__message {
 		flex: 1;
 		margin-left: math.div($space, 2);
 		line-height: 1.4rem;
 	}
-	&__close:hover{
+	&__close:hover {
 		background-color: transparent;
-		& svg{
+		& svg {
 			fill: darken($danger, 30);
 		}
 	}

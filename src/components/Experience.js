@@ -10,7 +10,9 @@ function Experience({ xp, showLine, isCurrent, className }) {
 
 	return (
 		<Card
-			className={`Experience${xp.jobhunting ? " Experience--jobhunting" : ""}${helper.className(className)}`}
+			className={`Experience${
+				xp.jobhunting ? " Experience--jobhunting" : ""
+			}${helper.className(className)}`}
 		>
 			<div
 				className={`Experience__period${helper.className(

@@ -1,8 +1,8 @@
 @import "../variables";
 
-.Missing{
+.Missing {
 	padding: $space 0;
-	&__animateX{
+	&__animateX {
 		position: absolute;
 		z-index: 10;
 		animation-name: fallOffX;
@@ -11,7 +11,7 @@
 		animation-timing-function: ease-out;
 		animation-fill-mode: forwards;
 	}
-	&__animateY{
+	&__animateY {
 		position: relative;
 		animation-name: fallOffY;
 		animation-duration: 4s;
@@ -19,7 +19,7 @@
 		animation-timing-function: cubic-bezier(2.175, 0.885, 0.32, 1.275);
 		animation-fill-mode: forwards;
 	}
-	&__animateRotate{
+	&__animateRotate {
 		position: relative;
 		animation-name: fallOffRotate;
 		animation-duration: 3s;
@@ -28,36 +28,58 @@
 		animation-fill-mode: forwards;
 	}
 	@keyframes fallOffX {
-		0%{transform: translateX(0);}
-		99%{transform: translateX(-300%);}
-		100%{transform: translateX(-1000%);}
+		0% {
+			transform: translateX(0);
+		}
+		99% {
+			transform: translateX(-300%);
+		}
+		100% {
+			transform: translateX(-1000%);
+		}
 	}
 	@keyframes fallOffY {
-		0%{transform: translateY(0);}
-		99%{transform: translateY(800%);}
-		100%{transform: translateY(-1000%);}
+		0% {
+			transform: translateY(0);
+		}
+		99% {
+			transform: translateY(800%);
+		}
+		100% {
+			transform: translateY(-1000%);
+		}
 	}
 	@keyframes fallOffRotate {
-		0%{transform: rotate(0);}
-		99%{transform: rotate(-270deg);}
-		100%{transform: rotate(0);}
+		0% {
+			transform: rotate(0);
+		}
+		99% {
+			transform: rotate(-270deg);
+		}
+		100% {
+			transform: rotate(0);
+		}
 	}
-	&__navigate{
+	&__navigate {
 		animation-name: fadeIn;
 		animation-duration: 1s;
-		& h2{
+		& h2 {
 			font-size: 1.8rem;
 			margin-bottom: 1rem;
 		}
-		& ul{
+		& ul {
 			line-height: 2.6rem;
 		}
-		& a{
+		& a {
 			height: 2.4rem;
 		}
 		@keyframes fadeIn {
-			0%{opacity: 0;}
-			100%{opacity: 1;}
+			0% {
+				opacity: 0;
+			}
+			100% {
+				opacity: 1;
+			}
 		}
 	}
 }

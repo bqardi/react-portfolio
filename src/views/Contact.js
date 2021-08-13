@@ -14,14 +14,18 @@ function Contact() {
 	return (
 		<Article type="contact">
 			<Layout.Cell modifiers={["padding", "maxwidth"]}>
-				<p><Translate id="contact-text" /></p>
+				<p>
+					<Translate id="contact-text" />
+				</p>
 				<Form />
 			</Layout.Cell>
 			<Layout.Cell modifiers={["padding", "maxwidth"]}>
 				<Address />
 			</Layout.Cell>
 			<Layout.Cell modifiers={["padding", "maxwidth"]}>
-				<h2><Translate id="contact-online-profile" /></h2>
+				<h2>
+					<Translate id="contact-online-profile" />
+				</h2>
 				<OnlineProfiles />
 			</Layout.Cell>
 		</Article>

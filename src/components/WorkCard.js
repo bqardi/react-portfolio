@@ -14,13 +14,15 @@ function WorkCard({ project }) {
 	return (
 		<div className="WorkCard">
 			<div className="WorkCard__printlinks">
-				{project.links.map(link => <span className="WorkCard__printlink" key={link.url}>
-					<Icon
-						className="WorkCard__printlink--icon"
-						name={helper.proper(link.type)}
-					/>
-					{link.url}
-				</span>)}
+				{project.links.map(link => (
+					<span className="WorkCard__printlink" key={link.url}>
+						<Icon
+							className="WorkCard__printlink--icon"
+							name={helper.proper(link.type)}
+						/>
+						{link.url}
+					</span>
+				))}
 			</div>
 			<div className="WorkCard__container">
 				<img
@@ -48,7 +50,9 @@ function WorkCard({ project }) {
 								className={"WorkCard__link--icon WorkCard__link--" + link.type}
 								name={helper.proper(link.type)}
 							/>
-							<span className="WorkCard__link--text">{translateFeed(link.description)}:</span>
+							<span className="WorkCard__link--text">
+								{translateFeed(link.description)}:
+							</span>
 							<Icon.ArrowRightBold className="WorkCard__link--chevron" />
 						</Button>
 					);

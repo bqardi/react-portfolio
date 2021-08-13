@@ -13,7 +13,12 @@ function Skills({ translation, array, noBottomMargin }) {
 			<h3 className="Skills__title">
 				<Translate id={translation} />
 			</h3>
-			<Layout.Flex wrap justify="center" gap="28px 16px" className="Skills__printflex">
+			<Layout.Flex
+				wrap
+				justify="center"
+				gap="28px 16px"
+				className="Skills__printflex"
+			>
 				{array?.map(item => {
 					var description = parseString(translateFeed(item.description));
 
@@ -49,7 +54,7 @@ function Skills({ translation, array, noBottomMargin }) {
 	);
 }
 
-function Personal({skills}){
+function Personal({ skills }) {
 	var { Translate } = useStoreContext();
 
 	return (
@@ -58,10 +63,14 @@ function Personal({skills}){
 				{skills.map(skill => {
 					return (
 						<li key={skill}>
-							<span className="Skills__onlyprintTitle"><Translate id={`personal-skills-${skill}`} /></span>
-							<span className="Skills__onlyprintText"><Translate id={`personal-skills-${skill}-description`} /></span>
+							<span className="Skills__onlyprintTitle">
+								<Translate id={`personal-skills-${skill}`} />
+							</span>
+							<span className="Skills__onlyprintText">
+								<Translate id={`personal-skills-${skill}-description`} />
+							</span>
 						</li>
-					)
+					);
 				})}
 			</ul>
 			<ul className="Skills__chips Skills__noprint">
@@ -74,7 +83,7 @@ function Personal({skills}){
 								chip
 							/>
 						</li>
-					)
+					);
 				})}
 			</ul>
 		</>

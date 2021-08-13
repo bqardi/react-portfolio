@@ -23,7 +23,9 @@ function Work({ type }) {
 				<Layout.Cell modifiers={["padding"]}>
 					<section>
 						<Layout.Cell modifiers={["b-margin"]}>
-							<h2><Translate id="work" /></h2>
+							<h2>
+								<Translate id="work" />
+							</h2>
 						</Layout.Cell>
 						<Layout.Grid>
 							{projects

@@ -4,8 +4,8 @@ import "./Toast.scss";
 import { useStoreContext } from "./Store";
 import { useEffect, useRef } from "react";
 
-function Toast({toast}){
-	var {setToast} = useStoreContext();
+function Toast({ toast }) {
+	var { setToast } = useStoreContext();
 
 	var timerRef = useRef();
 
@@ -18,12 +18,12 @@ function Toast({toast}){
 		case "alert":
 			type = "Alert";
 			break;
-	
+
 		default:
 			break;
 	}
 
-	function resetToast(){
+	function resetToast() {
 		clearTimeout(timerRef.current);
 		setToast({});
 	}
@@ -38,13 +38,11 @@ function Toast({toast}){
 	}, [toast]);
 
 	if (!toast.type) return null;
-	
+
 	return (
 		<div className={`Toast Toast--${toast.type}`}>
 			<Icon name={type} className="Toast__icon" />
-			<p className="Toast__message">
-				{toast.message}
-			</p>
+			<p className="Toast__message">{toast.message}</p>
 			<Button onClick={resetToast} variation="icon" className="Toast__close">
 				<Icon.Close className="Toast__icon" />
 			</Button>

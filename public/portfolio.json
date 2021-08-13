@@ -543,6 +543,63 @@
 	},
 	"projects": [
 		{
+			"id": "prj24",
+			"rating": "90",
+			"types": ["web"],
+			"image": "/images/project/mobile-app-landing-page.jpg",
+			"imageFocusArea": "center",
+			"title": {
+				"dan": "Mobil app landing page.",
+				"eng": "Mobile app landing page."
+			},
+			"description": {
+				"dan": "En landing page lavet med mobile first princip for et responsivt layout.",
+				"eng": "A landing page made with the mobile first principle for a responsive layout."
+			},
+			"links": [
+				{
+					"type": "web",
+					"description": {
+						"dan": "Online version af projektet",
+						"eng": "Online version of the project"
+					},
+					"url": "https://bqardi-mobile-app-landing-page.netlify.app/"
+				},
+				{
+					"type": "github",
+					"description": {
+						"dan": "Projekt kode på GitHub",
+						"eng": "Project code on GitHub"
+					},
+					"url": "https://github.com/bqardi/mobile-app-landing-page"
+				}
+			],
+			"tags": {
+				"dan": [
+					"React",
+					"GitHub",
+					"Mobil venlig",
+					"Design",
+					"Figma",
+					"Axios",
+					"TDD",
+					"SASS/SCSS",
+					"Responsiv"
+				],
+				"eng": [
+					"React",
+					"GitHub",
+					"Mobile friendly",
+					"Design",
+					"Figma",
+					"Axios",
+					"TDD",
+					"SASS/SCSS",
+					"Responsive"
+				]
+			}
+		},
+		{
 			"id": "prj23",
 			"rating": "100",
 			"types": ["web"],
@@ -575,8 +632,28 @@
 				}
 			],
 			"tags": {
-				"dan": ["React", "Portfolio", "GitHub", "local-storage", "Mobil venlig", "Design", "Form validering", "Axios", "Express"],
-				"eng": ["React", "Portfolio", "GitHub", "local-storage", "Mobil venlig", "Design", "Form validering", "Axios", "Express"]
+				"dan": [
+					"React",
+					"Portfolio",
+					"GitHub",
+					"local-storage",
+					"Mobil venlig",
+					"Design",
+					"Form validering",
+					"Axios",
+					"Express"
+				],
+				"eng": [
+					"React",
+					"Portfolio",
+					"GitHub",
+					"local-storage",
+					"Mobil friendly",
+					"Design",
+					"Form validation",
+					"Axios",
+					"Express"
+				]
 			}
 		},
 		{

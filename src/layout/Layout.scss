@@ -232,7 +232,7 @@
 		&--flexwrap {
 			flex-wrap: wrap;
 		}
-		&--noprint{
+		&--noprint {
 			@media print {
 				display: none;
 			}

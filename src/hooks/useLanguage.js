@@ -15,7 +15,7 @@ const translations = {
 			code: "eng",
 			full: "English",
 			icon: "BritishFlag"
-		},
+		}
 		// {
 		// 	code: "lorem",
 		// 	full: "Lorem ipsum",
@@ -167,9 +167,9 @@ const translations = {
 	"personal-skills-05": { dan: "Videbegærlig", eng: "Inquisitive" },
 	"personal-skills-05-description": {
 		dan:
-			"\"Man kan alt, man skal bare lære det først\". Jeg er nysgerrig og udforskende af natur. Er der noget jeg ikke ved, skal jeg nok finde ud af det. Som frontend udvikler, er der uendelig mange nye værktøjer man kan tage fat på og lære om, og der kommer hele tiden nye og bedre værktøjer til. Love it!",
+			'"Man kan alt, man skal bare lære det først". Jeg er nysgerrig og udforskende af natur. Er der noget jeg ikke ved, skal jeg nok finde ud af det. Som frontend udvikler, er der uendelig mange nye værktøjer man kan tage fat på og lære om, og der kommer hele tiden nye og bedre værktøjer til. Love it!',
 		eng:
-			"\"You can do anything, you just have to learn it first\". I am currious and explorative by nature. If there is something i don't know, I will figure it out. As a frontend developer, there are an infinite amount of tools to know and learn about, and new, better tools appear all the time. Love it!"
+			'"You can do anything, you just have to learn it first". I am currious and explorative by nature. If there is something i don\'t know, I will figure it out. As a frontend developer, there are an infinite amount of tools to know and learn about, and new, better tools appear all the time. Love it!'
 	},
 
 	"resume": {
@@ -187,12 +187,21 @@ const translations = {
 
 	// "title-home": {"dan": "Dashboard", "eng": "Dashboard"},
 	// "description-home": {"dan": "Find hurtigt det du leder efter", "eng": "Quickly find what you're looking for"},
-	"title-missing": {"dan": "Uuups!", "eng": "Whooops!"},
-	"description-missing": {"dan": "Denne side faldt ud af browseren!?!", "eng": "This page fell off the browser!?!"},
-	"missing-title": {"dan": "Du kan prøve at:", "eng": "You can try and:"},
-	"missing-to-frontpage": {"dan": "gå til forsiden", "eng": "go to the frontpage"},
-	"missing-to-projects": {"dan": "gå til projekter", "eng": "go to the projects page"},
-	"missing-to-cv": {"dan": "tage et kig på mit CV", "eng": "go look at my CV"},
+	"title-missing": { dan: "Uuups!", eng: "Whooops!" },
+	"description-missing": {
+		dan: "Denne side faldt ud af browseren!?!",
+		eng: "This page fell off the browser!?!"
+	},
+	"missing-title": { dan: "Du kan prøve at:", eng: "You can try and:" },
+	"missing-to-frontpage": {
+		dan: "gå til forsiden",
+		eng: "go to the frontpage"
+	},
+	"missing-to-projects": {
+		dan: "gå til projekter",
+		eng: "go to the projects page"
+	},
+	"missing-to-cv": { dan: "tage et kig på mit CV", eng: "go look at my CV" },
 
 	"title-build-process": { dan: "Opbygning", eng: "Build process" },
 	"description-build-process": {
@@ -274,8 +283,14 @@ const translations = {
 	},
 	"contact-message": { dan: "Besked:", eng: "Message:" },
 	"contact-submit": { dan: "Send", eng: "Submit" },
-	"contact-email-sent": { dan: "Besked sendt. Jeg vender tilbage hurtigst muligt.", eng: "Message sent. I will reply as soon as possible." },
-	"contact-email-failed": { dan: "Noget gik galt! Prøv igen.", eng: "Something went wrong! Please try again." },
+	"contact-email-sent": {
+		dan: "Besked sendt. Jeg vender tilbage hurtigst muligt.",
+		eng: "Message sent. I will reply as soon as possible."
+	},
+	"contact-email-failed": {
+		dan: "Noget gik galt! Prøv igen.",
+		eng: "Something went wrong! Please try again."
+	},
 
 	"settings": { dan: "Indstillinger", eng: "Settings" },
 	"settings-darkmode": { dan: "Darkmode", eng: "Darkmode" },
@@ -367,7 +382,10 @@ const translations = {
 				"- A Node.js framework to help organize webapps. Used as backend to serve my portfolio site (frontend) online."
 		},
 
-		"title-02-github": { dan: "Se koden til dette portfolio på GitHub:", eng: "See the code for this portfolio on GitHub:" },
+		"title-02-github": {
+			dan: "Se koden til dette portfolio på GitHub:",
+			eng: "See the code for this portfolio on GitHub:"
+		},
 
 		"title-03": { dan: "Processen", eng: "The process" },
 
@@ -764,7 +782,7 @@ const translations = {
 				"For my contact form I have used Nodemailer and Mailgun to send information from the input fields in the form to my personal email address: [email], which then enables me to directly respond to your provided email.",
 				"Here is the contact form:"
 			]
-		},
+		}
 	}
 };
 

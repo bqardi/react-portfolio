@@ -25,8 +25,8 @@ function Settings() {
 	useEffect(() => {
 		var themeMeta = document.getElementById("theme-color");
 		darkmode
-			? themeMeta.setAttribute("content", "hsl(0, 0%, 17%)")
-			: themeMeta.setAttribute("content", "hsl(0, 0%, 83%)");
+			? themeMeta?.setAttribute("content", "hsl(0, 0%, 17%)")
+			: themeMeta?.setAttribute("content", "hsl(0, 0%, 83%)");
 	}, [darkmode]);
 
 	return (

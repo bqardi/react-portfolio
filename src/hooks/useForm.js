@@ -18,7 +18,7 @@ function useForm(initial, callback, validate) {
 		});
 	}
 
-	function resetForm(){
+	function resetForm() {
 		setErrors({});
 		setValues(initial);
 	}
