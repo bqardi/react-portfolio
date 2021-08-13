@@ -6,6 +6,7 @@ import Menu from "../layout/Menu";
 import Topbar from "../components/Topbar";
 import Animate, { useAnimate } from "../components/Animate";
 import Loading from "../components/Loading";
+import Missing from "./Missing";
 
 const Work = lazy(() => import("../views/Work"));
 const BuildProcess = lazy(() => import("../views/BuildProcess"));
@@ -45,6 +46,7 @@ function Dashboard() {
 								<Work path="/games" type="game" />
 								<Contact path="/contact" />
 								<CV path="/cv" />
+								<Missing default />
 							</Router>
 						</Suspense>
 					</Layout.Cell>

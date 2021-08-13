@@ -187,6 +187,13 @@ const translations = {
 
 	// "title-home": {"dan": "Dashboard", "eng": "Dashboard"},
 	// "description-home": {"dan": "Find hurtigt det du leder efter", "eng": "Quickly find what you're looking for"},
+	"title-missing": {"dan": "Uuups!", "eng": "Whooops!"},
+	"description-missing": {"dan": "Denne side faldt ud af browseren!?!", "eng": "This page fell off the browser!?!"},
+	"missing-title": {"dan": "Du kan prøve at:", "eng": "You can try and:"},
+	"missing-to-frontpage": {"dan": "gå til forsiden", "eng": "go to the frontpage"},
+	"missing-to-projects": {"dan": "gå til projekter", "eng": "go to the projects page"},
+	"missing-to-cv": {"dan": "tage et kig på mit CV", "eng": "go look at my CV"},
+
 	"title-build-process": { dan: "Opbygning", eng: "Build process" },
 	"description-build-process": {
 		dan: "Hvordan jeg byggede dette portfolio",

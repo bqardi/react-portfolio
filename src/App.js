@@ -8,6 +8,7 @@ import useLanguage from "./hooks/useLanguage";
 import Toast from "./components/Toast";
 import "./App.scss";
 import useLocalStorage from "./hooks/useLocalStorage";
+import Missing from "./views/Missing";
 
 function App() {
 	var breakpointSmall = useMediaQuery("(min-width: 600px)");
@@ -71,6 +72,7 @@ function App() {
 				<Router>
 					<Landing path="/" />
 					<Dashboard path="/dashboard/*" />
+					<Missing default />
 				</Router>
 			</Store>
 		</div>

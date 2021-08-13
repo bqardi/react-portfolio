@@ -3,6 +3,7 @@
 .App {
 	color: var(--light);
 	background-color: var(--dark);
+	min-height: 100vh;
 	@media print {
 		color: hsl(0, 0%, 5%) !important;
 		background-color: transparent !important;
