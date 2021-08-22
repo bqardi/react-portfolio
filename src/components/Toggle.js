@@ -28,6 +28,7 @@ function Toggle({
 			value={{ on, rounded, handleSize, trackHeight, trackWidth, trackOffset }}
 		>
 			<label
+				tabIndex="0"
 				className={
 					className
 						? on

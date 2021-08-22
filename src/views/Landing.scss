@@ -245,11 +245,18 @@
 	&__cta {
 		font-size: 1.2rem;
 		width: 260px;
+		border: 2px solid inherit;
 		&--onlylarge {
 			display: none;
 			@media screen and (min-height: $breakheightMedium) {
 				display: flex;
 			}
+		}
+		&:focus{
+			outline: none;
+			border: 2px solid white;
+			color: white;
+			background-color: var(--theme-darker);
 		}
 	}
 	&__social {

@@ -5,15 +5,22 @@ import "./Dropdown.scss";
 
 var DropdownContext = createContext();
 
-function Dropdown({ children, open, onChange, className, ...other }) {
+function Dropdown({ children, open, onChange, onEscape, className, ...other }) {
 	var listRef = useRef();
 	useClickOutside(listRef, onChange);
+
+	function keyUpHandler(e){
+		if (e.key === "Escape") {
+			onEscape && onEscape(false);
+		}
+	}
 
 	return (
 		<DropdownContext.Provider value={{ open, onChange }}>
 			<div
 				ref={listRef}
 				className={`Dropdown${helper.className(className)}`}
+				onKeyUp={keyUpHandler}
 				{...other}
 			>
 				{children}

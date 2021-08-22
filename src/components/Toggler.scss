@@ -7,12 +7,10 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: math.div($space, 2);
+	border: 2px solid transparent;
 	&--on &__handle {
 		background-color: var(--theme);
 	}
-	// &--on &__track{
-	// 	background-color: var(--light-faded);
-	// }
 	&__handle {
 		background-color: var(--theme-dark);
 		transition: background-color 0.15s, transform 0.15s;
@@ -21,5 +19,9 @@
 	&__track {
 		background-color: var(--theme-lighter);
 		transition: background-color 0.15s;
+	}
+	&:focus{
+		outline: none;
+		border: 2px solid $highlight;
 	}
 }

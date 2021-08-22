@@ -27,7 +27,7 @@ function Language() {
 	}
 
 	return (
-		<Dropdown open={languageOpen} onChange={setLanguageOpen}>
+		<Dropdown open={languageOpen} onChange={setLanguageOpen} onEscape={setLanguageOpen}>
 			<Button
 				className="Topbar__iconType"
 				variation="icon"

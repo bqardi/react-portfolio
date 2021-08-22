@@ -30,7 +30,7 @@ function Settings() {
 	}, [darkmode]);
 
 	return (
-		<Dropdown open={settingsOpen} onChange={setSettingsOpen}>
+		<Dropdown open={settingsOpen} onChange={setSettingsOpen} onEscape={setSettingsOpen}>
 			<Button
 				variation="icon"
 				onClick={settingsClickHandler}

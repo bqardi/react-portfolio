@@ -123,6 +123,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		border: 2px solid transparent;
 		@media print {
 			background-color: transparent;
 			padding: 0;
@@ -175,6 +176,10 @@
 			@media only screen and (min-width: $breakpointMicro) {
 				margin-bottom: 0;
 			}
+		}
+		&:focus{
+			outline: none;
+			border: 2px solid $highlight;
 		}
 	}
 	&__printlinks {

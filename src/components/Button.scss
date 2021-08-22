@@ -26,8 +26,9 @@
 	}
 	&--mix {
 		justify-content: space-between;
-		padding: 0 math.div($space, 2);
+		padding: 0 math.div($space, 2.5);
 		text-decoration: none;
+		border: 2px solid transparent;
 		& svg {
 			width: $iconSizeMedium;
 		}
@@ -35,7 +36,9 @@
 			background-color: var(--dark-hover);
 		}
 		&:focus {
-			background-color: var(--dark-focus);
+			// background-color: var(--dark-focus);
+			outline: none;
+			border: 2px solid $highlight;
 		}
 	}
 	&--pill {
