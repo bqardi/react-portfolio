@@ -17,7 +17,13 @@
 	& textarea {
 		padding: math.div($space, 2);
 	}
+	&__field{
+		position: relative;
+	}
 	&__error {
+		position: absolute;
+		top: 5px;
+		right: 0;
 		color: $danger;
 	}
 }
