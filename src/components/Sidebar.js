@@ -35,11 +35,11 @@ function Button({ children, ...other }) {
 Sidebar.Button = Button;
 
 function Anchor({ children, to, href, modifiers }) {
-	var { setMenuOpen, breakpointMedium } = useStoreContext();
+	var { menuOpen, setMenuOpen, breakpointMedium } = useStoreContext();
 
 	if (href) {
 		return (
-			<a href={href} className="Sidebar__anchor">
+			<a href={href} className="Sidebar__anchor" tabIndex={menuOpen ? null : "-1"}>
 				{children}
 			</a>
 		);
@@ -58,6 +58,7 @@ function Anchor({ children, to, href, modifiers }) {
 					isCurrent ? " Sidebar__link--active" : ""
 				}${helper.modifiers("Sidebar__link", modifiers)}`
 			})}
+			tabIndex={menuOpen ? null : "-1"}
 		>
 			{children}
 		</Link>

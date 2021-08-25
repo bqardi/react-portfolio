@@ -4,7 +4,7 @@ import Icon from "./Icon";
 import "./Profile.scss";
 
 function Profile() {
-	var { translate, Translate } = useStoreContext();
+	var { translate, Translate, menuOpen } = useStoreContext();
 
 	return (
 		<article className="Profile">
@@ -18,11 +18,11 @@ function Profile() {
 				<Translate id="profile-teaser" />
 			</p>
 			<div className="Profile__social">
-				<Button href="https://linkedin.com/in/sune-seifert" variation="mix">
+				<Button href="https://linkedin.com/in/sune-seifert" variation="mix" tabIndex={menuOpen ? null : "-1"}>
 					<Icon.Linkedin className="Profile__icon Profile__icon--linkedin" />
 					LinkedIn
 				</Button>
-				<Button href="https://github.com/bqardi" variation="mix">
+				<Button href="https://github.com/bqardi" variation="mix" tabIndex={menuOpen ? null : "-1"}>
 					<Icon.Github className="Profile__icon Profile__icon--github" />
 					GitHub
 				</Button>
