@@ -5,8 +5,8 @@ import "./Dropdown.scss";
 
 var DropdownContext = createContext();
 
-function Dropdown({ children, open, onOpen, className, initialIndex=-1, ...other }) {
-	var [activeIndex, setActiveIndex] = useState(initialIndex);
+function Dropdown({ children, open, onOpen, className, ...other }) {
+	var [activeIndex, setActiveIndex] = useState(-1);
 	var [lastIndex, setLastIndex] = useState(0);
 	var listRef = useRef();
 	useClickOutside(listRef, escapeHandler);
@@ -30,17 +30,17 @@ function Dropdown({ children, open, onOpen, className, initialIndex=-1, ...other
 	}
 	function keyUpHandler(e){
 		if (e.key === "Escape") {
-			escapeHandler();
+			escapeHandler(false);
 		}
 	}
-	function escapeHandler(){
-		setActiveIndex(initialIndex);
-		onOpen && onOpen(false);
+	function escapeHandler(isOpen){
+		setActiveIndex(-1);
+		onOpen && onOpen(isOpen);
 	}
 
 	useEffect(() => {
 		if (activeIndex === -1) {
-			escapeHandler();
+			escapeHandler(false);
 		}
 	}, [activeIndex]);
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useStoreContext } from "./Store";
 import Dropdown from "./Dropdown";
 import Button from "./Button";
@@ -6,6 +6,7 @@ import Icon from "./Icon";
 
 function Language() {
 	var {
+		menuOpen,
 		setMenuOpen,
 		language,
 		setLanguage,
@@ -26,8 +27,16 @@ function Language() {
 		setLanguageOpen(false);
 	}
 
+	useEffect(() => {
+		if (breakpointSmall) {
+			setLanguageOpen(false);
+		} else {
+			menuOpen && setLanguageOpen(false);
+		}
+	}, [menuOpen]);
+
 	return (
-		<Dropdown open={languageOpen} onChange={setLanguageOpen} onOpen={setLanguageOpen}>
+		<Dropdown open={languageOpen} onOpen={setLanguageOpen}>
 			<Button
 				className="Topbar__iconType"
 				variation="icon"

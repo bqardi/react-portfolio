@@ -8,6 +8,7 @@ import "./Settings.scss";
 
 function Settings() {
 	var {
+		menuOpen,
 		setMenuOpen,
 		Translate,
 		translate,
@@ -23,6 +24,14 @@ function Settings() {
 	}
 
 	useEffect(() => {
+		if (breakpointSmall) {
+			setSettingsOpen(false);
+		} else {
+			menuOpen && setSettingsOpen(false);
+		}
+	}, [menuOpen]);
+
+	useEffect(() => {
 		var themeMeta = document.getElementById("theme-color");
 		darkmode
 			? themeMeta?.setAttribute("content", "hsl(0, 0%, 17%)")
@@ -33,7 +42,6 @@ function Settings() {
 		<Dropdown
 			open={settingsOpen}
 			onOpen={setSettingsOpen}
-			initialIndex={0}
 		>
 			<Button
 				variation="icon"
