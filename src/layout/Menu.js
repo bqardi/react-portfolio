@@ -3,12 +3,8 @@ import Sidebar from "../components/Sidebar";
 import Icon from "../components/Icon";
 import Profile from "../components/Profile";
 import { useStoreContext } from "../components/Store";
-import { useMatch } from "@reach/router";
 
 function Menu() {
-	var websites = useMatch("/dashboard/websites");
-	var tutorials = useMatch("/dashboard/tutorials");
-	var games = useMatch("/dashboard/games");
 	var { Translate } = useStoreContext();
 
 	return (
