@@ -294,6 +294,7 @@ const translations = {
 
 	"settings": { dan: "Indstillinger", eng: "Settings" },
 	"settings-darkmode": { dan: "Darkmode", eng: "Darkmode" },
+	"settings-theme": { dan: "Tema farver", eng: "Theme colors" },
 
 	// ********************************************************************************************
 	// Build process

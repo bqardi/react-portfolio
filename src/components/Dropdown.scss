@@ -23,8 +23,13 @@
 	}
 	&__item {
 		background-color: var(--darker);
+		border: 2px solid transparent;
 		&:hover {
 			background-color: var(--dark-hover);
+		}
+		&:focus{
+			outline: none;
+			border: 2px solid $highlight;
 		}
 	}
 	&__space {
@@ -35,7 +40,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: $space * 1.5;
+		height: $space * 1.625;
 		background-color: var(--dark);
 		border-bottom: 1px solid var(--dark-hover);
 	}

@@ -23,6 +23,21 @@ function Toggle({
 		callback && callback(!on);
 	}
 
+	function keyDownHandler(e){
+		if (e.key === " ") {
+			e.preventDefault();
+		}
+	}
+
+	function keyUpHandler(e){
+		if (e.key === "Enter") {
+			changeHandler();
+		}
+		if (e.key === " ") {
+			changeHandler();
+		}
+	}
+
 	return (
 		<ToggleContext.Provider
 			value={{ on, rounded, handleSize, trackHeight, trackWidth, trackOffset }}
@@ -38,6 +53,8 @@ function Toggle({
 						? classOn
 						: ""
 				}
+				onKeyDown={keyDownHandler}
+				onKeyUp={keyUpHandler}
 				{...other}
 			>
 				<input

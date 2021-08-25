@@ -1,26 +1,62 @@
-import { createContext, useContext, useRef } from "react";
+import { createContext, useContext, useEffect, useRef, useState } from "react";
 import useClickOutside from "../hooks/useClickOutside";
 import helper from "../hooks/helper";
 import "./Dropdown.scss";
 
 var DropdownContext = createContext();
 
-function Dropdown({ children, open, onChange, onEscape, className, ...other }) {
+function Dropdown({ children, open, onOpen, className, initialIndex=-1, ...other }) {
+	var [activeIndex, setActiveIndex] = useState(initialIndex);
+	var [lastIndex, setLastIndex] = useState(0);
 	var listRef = useRef();
-	useClickOutside(listRef, onChange);
+	useClickOutside(listRef, escapeHandler);
 
-	function keyUpHandler(e){
-		if (e.key === "Escape") {
-			onEscape && onEscape(false);
+	function keyDownHandler(e){
+		if (e.key === "ArrowUp") {
+			e.preventDefault();
+			setActiveIndex(prev => prev <= 0 ? lastIndex : prev - 1);
+		}
+		if (e.key === "ArrowDown") {
+			e.preventDefault();
+			setActiveIndex(prev => prev === lastIndex ? 0 : prev + 1);
+		}
+		if (e.key === "Tab") {
+			if (e.shiftKey) {
+				setActiveIndex(prev => prev <= 0 ? -1 : prev - 1);
+			} else {
+				setActiveIndex(prev => prev === lastIndex ? -1 : prev + 1);
+			}
 		}
 	}
+	function keyUpHandler(e){
+		if (e.key === "Escape") {
+			escapeHandler();
+		}
+	}
+	function escapeHandler(){
+		setActiveIndex(initialIndex);
+		onOpen && onOpen(false);
+	}
+
+	useEffect(() => {
+		if (activeIndex === -1) {
+			escapeHandler();
+		}
+	}, [activeIndex]);
 
 	return (
-		<DropdownContext.Provider value={{ open, onChange }}>
+		<DropdownContext.Provider value={{
+			open,
+			activeIndex,
+			lastIndex,
+			setLastIndex
+		}}>
 			<div
 				ref={listRef}
 				className={`Dropdown${helper.className(className)}`}
 				onKeyUp={keyUpHandler}
+				onKeyDown={keyDownHandler}
+				tabIndex="-1"
 				{...other}
 			>
 				{children}
@@ -41,9 +77,32 @@ function List({ children, className, header, ...other }) {
 }
 Dropdown.List = List;
 
-function ListItem({ children, className, ...other }) {
+function ListItem({ children, className, activeClass="Dropdown__item--active", index, ...other }) {
+	var { activeIndex, lastIndex, setLastIndex } = useContext(DropdownContext);
+
+	var itemRef = useRef();
+
+	useEffect(() => {
+		if (index > lastIndex) {
+			setLastIndex(index);
+		}
+	}, [index, lastIndex]);
+
+	useEffect(() => {
+		if (itemRef.current) {
+			if (index === activeIndex) {
+				itemRef.current.focus();
+			}
+		}
+	}, [itemRef, index, activeIndex]);
+
 	return (
-		<div className={`Dropdown__item${helper.className(className)}`} {...other}>
+		<div
+			ref={itemRef}
+			className={`Dropdown__item${helper.className(className)}`}
+			tabIndex="-1"
+			{...other}
+		>
 			{children}
 		</div>
 	);

@@ -2,12 +2,23 @@
 @import "../variables";
 
 .Settings {
+	&__droplist{
+		@media screen and (max-height: 520px) {
+			width: 80vw;
+			max-width: unset;
+		}
+	}
+	&__dropgroup{
+		@media screen and (max-height: 520px) {
+			display: grid;
+			grid-template-columns: repeat(6, 1fr);
+		}
+	}
 	&__theme {
 		position: relative;
 		padding: 0;
 		width: 100%;
 		background-color: var(--darker);
-		border: none !important;
 		align-items: center;
 		&:hover {
 			background-color: var(--darkermore);

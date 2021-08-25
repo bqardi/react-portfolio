@@ -27,7 +27,7 @@ function Language() {
 	}
 
 	return (
-		<Dropdown open={languageOpen} onChange={setLanguageOpen} onEscape={setLanguageOpen}>
+		<Dropdown open={languageOpen} onChange={setLanguageOpen} onOpen={setLanguageOpen}>
 			<Button
 				className="Topbar__iconType"
 				variation="icon"
@@ -44,17 +44,20 @@ function Language() {
 					<h3 style={{ margin: "0" }}>
 						<Translate id="language" />
 					</h3>
-					<Button variation="icon" onClick={() => setLanguageOpen(false)}>
-						<Icon.Close style={{ fill: "var(--primary-light)" }} />
-					</Button>
+					<Dropdown.List.Item index={0}>
+						<Button variation="icon" onClick={() => setLanguageOpen(false)} tabIndex="-1">
+							<Icon.Close style={{ fill: "var(--primary-light)" }} />
+						</Button>
+					</Dropdown.List.Item>
 				</Dropdown.List.Header>
 				<Dropdown.List.Group>
-					{languages.map(lang => (
-						<Dropdown.List.Item key={lang.code}>
+					{languages.map((lang, index) => (
+						<Dropdown.List.Item key={lang.code} index={index + 1}>
 							<Button
 								style={{ width: "100%" }}
 								variation="mix"
 								onClick={() => languageClickHandler(lang.code)}
+								tabIndex="-1"
 							>
 								{lang.full}
 								<Icon name={lang.icon} />
