@@ -8,7 +8,6 @@ import WorkCard from "../components/WorkCard";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import "./CV.scss";
-import Infotip from "../components/Infotip";
 import usePageTitle from "../hooks/usePageTitle";
 
 function CV() {
@@ -102,6 +101,7 @@ function CV() {
 				</h2>
 				<Skills translation="skills-languages" array={data.skills?.languages} />
 				<Skills translation="skills-tech" array={data.skills?.tech} />
+				<Skills translation="skills-paradigms" array={data.skills?.paradigms} />
 				<Skills translation="skills-other" array={data.skills?.design} />
 				<Skills translation="skills-fiddle" array={data.skills?.fiddle} />
 			</Layout.Cell>

@@ -123,6 +123,7 @@ const translations = {
 		eng: "Programming languages:"
 	},
 	"skills-tech": { dan: "Andre tech:", eng: "Other tech:" },
+	"skills-paradigms": { dan: "Mønstre / paradigmer:", eng: "Patterns / paradigms:" },
 	"skills-other": {
 		dan: "Relaterede programmer:",
 		eng: "Related applications:"

@@ -158,19 +158,28 @@
 				}
 			},
 			{
+				"name": "Markdown",
+				"icon": "Markdown",
+				"color": "#424242",
+				"description": {
+					"dan": ".md filer til dokumentation.",
+					"eng": ".md files for documentation."
+				}
+			},
+			{
 				"name": "PHP",
 				"icon": "Php",
 				"color": "#787cb5",
 				"description": {
-					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP og dermed PHP hvor jeg byggede min første form med GET og POST.",
-					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP and thereby PHP where I built my first form using GET and POST."
+					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP (Linux, Apache, MySQL, PHP) og dermed PHP hvor jeg byggede min første form med GET og POST. Senere fik jeg brug for mine PHP skills igen med WordPress.",
+					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP (Linux, Apache, MySQL, PHP) and thereby PHP where I built my first form using GET and POST. Later on I had to pick up my PHP skills again to develop with WordPress."
 				}
 			},
 			{
 				"name": "mySQL",
 				"description": {
-					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP og dermed mySQL hvor jeg byggede min første database med data jeg kunne bruge online.",
-					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP and thereby mySQL where I built my first database with data I could use online."
+					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP (Linux, Apache, MySQL, PHP) og dermed mySQL hvor jeg byggede min første database med data jeg kunne bruge online.",
+					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP (Linux, Apache, MySQL, PHP) and thereby mySQL where I built my first database with data I could use online."
 				}
 			},
 			{
@@ -178,6 +187,29 @@
 				"description": {
 					"dan": "I mit arbejde hos K. A. Rasmussen (2009-2017) byggede jeg små systemer der skulle lette arbejdsbyrden for mig og mine kollegaer. Alt dette foregik i VBA (Visual Basic for Applications i Microsoft Office).",
 					"eng": "My work at K. A. Rasmussen (2009-2017) I built small systems which would lighten the burden for me and my colleagues. For all of this I used VBA (Visual Basic for Applications in Microsoft Office)"
+				}
+			},
+			{
+				"name": "BASIC",
+				"description": {
+					"dan": "BASIC var det første sprog jeg stiftede bekendskab med nogensinde, på en SORD M5 computer. Senere brugte jeg BASIC på den klassiske spille-computer, Commodore 64.",
+					"eng": "BASIC was the first ever language I learned, writing it on a computer called SORD M5. Later I used BASIC on the classic gaming machine, Commodore 64."
+				}
+			},
+			{
+				"name": "Borland Delphi",
+				"description": {
+					"dan": "Anders Hejlsberg, en dansker der stod i spidsen af udviklingen af Delphi og senere Microsofts C# og TypeScript.",
+					"eng": "Anders Hejlsberg, a danish developer/engineer leading the development of Delphi and later Microsofts C# and TypeScript."
+				}
+			},
+			{
+				"name": "TypeScript",
+				"icon": "TypeScript",
+				"color": "#007acc",
+				"description": {
+					"dan": "Er pt. i gang med at lære TypeScript.",
+					"eng": "Currently in the process of learning TypeScript"
 				}
 			}
 		],
@@ -279,29 +311,15 @@
 			{
 				"name": "Security",
 				"description": {
-					"dan": "",
-					"eng": ""
+					"dan": "Grundlæggende viden omkring sikkerhed (JWT, hash, salt, pepper, brute force, XSS, SQL injection, DoS, DDoS, MitM, mv.)",
+					"eng": "Basic knowledge about security (JWT, hash, salt, pepper, brute force, XSS, SQL injection, DoS, DDoS, MitM, etc.)"
 				}
 			},
 			{
 				"name": "Bcrypt",
 				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "Hashing",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "Salting",
-				"description": {
-					"dan": "",
-					"eng": ""
+					"dan": "Et password hashing værktøj der understøtter salt.",
+					"eng": "A password hashing tool supporting salt."
 				}
 			},
 			{
@@ -342,15 +360,6 @@
 				}
 			},
 			{
-				"name": "Markdown",
-				"icon": "Markdown",
-				"color": "#424242",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
 				"name": "Git",
 				"description": {
 					"dan": "",
@@ -378,8 +387,15 @@
 			{
 				"name": "TDD",
 				"description": {
-					"dan": "",
-					"eng": ""
+					"dan": "Test Driven Development",
+					"eng": "Test Driven Development"
+				}
+			},
+			{
+				"name": "Red / Green / Refactor",
+				"description": {
+					"dan": "Et mønster i udvikling med TDD. Red: skriv en test der fejler. Green: skriv minimal kode der får testen til at bestå. Refactor: evt. omskriv kode så det hele ser lidt bedre ud.",
+					"eng": "A pattern in developing with TDD. Red: write a test that fails. Green: write minimal code that makes the test pass. Refactor: optionally rewrite the code to make everything look a little better."
 				}
 			},
 			{
@@ -429,6 +445,56 @@
 				"description": {
 					"dan": "",
 					"eng": ""
+				}
+			}
+		],
+		"paradigms": [
+			{
+				"name": "Compound Components",
+				"icon": "React",
+				"color": "#35b2f4",
+				"description": {
+					"dan": "En metode i React til at oprette komponenter med underkomponenter der administrerer deres egen lille verden af states og gør dem ekstremt flexible og nemme at vedligeholde.",
+					"eng": "A method in React to create components with sub-components managing their own little world of states making them extremely flexible and easy to maintain."
+				}
+			},
+			{
+				"name": "Atomic Design",
+				"icon": "AtomicDesign",
+				"color": "#d47b32",
+				"description": {
+					"dan": "Lav atomerne først og arbejd dig ud mod hele sider. Fungerer rigtig godt sammen med React, når man laver de små/simple komponenter først, fordi koden bliver mere solid og så er det sjovt at bruge som byggeklodser til molekyler, organismer, osv.",
+					"eng": "Create the atoms first and work your way out to pages. Works well with React, because making the smaller/simpler components first, makes it much more reliant and fun to use them as building blocks for molecules, organisms, etc."
+				}
+			},
+			{
+				"name": "DRY / WET",
+				"icon": "Umbrella",
+				"color": "#0290d2",
+				"description": {
+					"dan": "Repetitiv kode kan være besværligt at vedligeholde, ser ikke godt ud, gør koden mindre fleksibel og fylder mere end nødvendigt (Dette kaldes WET kode eller Write Everything Twice). Løsningen er at gøre koden mere DRY (Don't Repeat Yourself).",
+					"eng": "Repetitive code can be cumbersome to maintain, doesn't look good, can make the code less flexible and takes up more space than needed (this is called WET code or Write Everything Twice). The solution to this is making it more DRY (Don't Repeat Yourself)."
+				}
+			},
+			{
+				"name": "Functional programming",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "KISS",
+				"description": {
+					"dan": "Keep It Simple Stupid",
+					"eng": "Keep It Simple Stupid"
+				}
+			},
+			{
+				"name": "OOP",
+				"description": {
+					"dan": "Object Oriented Programming",
+					"eng": "Object Oriented Programming"
 				}
 			}
 		],
