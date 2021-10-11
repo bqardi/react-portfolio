@@ -41,8 +41,8 @@
 					"eng": "Web developer, front end developer"
 				},
 				"description": {
-					"dan": "Her stiftede jeg bekendtskab med React og har elsket det lige siden.",
-					"eng": "Here I learned about React and have loved it ever since."
+					"dan": "Gradueret d. 08-10-2021, med karakteren 12. Her stiftede jeg bekendtskab med React og har elsket det lige siden.",
+					"eng": "Graduated 10-08-2021, with a grade of 12. Here I learned about React and have loved it ever since."
 				},
 				"from": {
 					"year": "2020",
@@ -246,13 +246,6 @@
 				"description": {
 					"dan": "",
 					"eng": ""
-				}
-			},
-			{
-				"name": "BEM",
-				"description": {
-					"dan": "Block Element Modifier, en måde at skrive CSS på der gør det nemt at holde styr på classes. Fungerer godt med React, selvom det måske er ved at være lidt gammeldags.",
-					"eng": "Block Element Modifier, a way to write CSS that makes it easy to maintain classes. Works really well with React, even though it is getting a little old fashioned."
 				}
 			},
 			{
@@ -481,6 +474,13 @@
 				"description": {
 					"dan": "",
 					"eng": ""
+				}
+			},
+			{
+				"name": "BEM",
+				"description": {
+					"dan": "Block Element Modifier, en måde at skrive CSS på der gør det nemt at holde styr på classes. Fungerer godt med React, selvom det måske er ved at være lidt gammeldags.",
+					"eng": "Block Element Modifier, a way to write CSS that makes it easy to maintain classes. Works really well with React, even though it is getting a little old fashioned."
 				}
 			},
 			{
