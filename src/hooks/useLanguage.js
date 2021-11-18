@@ -84,8 +84,8 @@ const translations = {
 		eng: "Drivers license type B - Own car"
 	},
 	"current-occupation": {
-		dan: "Uddannelse - Roskilde Teknisk Skole",
-		eng: "Education - Roskilde Teknisk Skole"
+		dan: "På jagt efter job - nyligt uddannet som webudvikler",
+		eng: "Jobhunting - recently graduated as web developer"
 	},
 	"birth-date-title": { dan: "Fødselsdag:", eng: "Birth date:" },
 	"current-occupation-title": {
