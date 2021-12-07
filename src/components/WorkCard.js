@@ -25,11 +25,13 @@ function WorkCard({ project }) {
 				))}
 			</div>
 			<div className="WorkCard__container">
-				<img
-					src={project.image}
-					alt={title}
-					style={{ objectPosition: project.imageFocusArea }}
-				/>
+				<Button key={project.links[0].url} href={project.links[0].url}>
+					<img
+						src={project.image}
+						alt={title}
+						style={{ objectPosition: project.imageFocusArea }}
+					/>
+				</Button>
 				<h3>{title}</h3>
 			</div>
 			<p className="WorkCard__tags">
