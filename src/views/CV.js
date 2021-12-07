@@ -90,7 +90,7 @@ function CV() {
 							project={projects?.find(project => project.id === "prj16")}
 						/>
 						<WorkCard
-							project={projects?.find(project => project.id === "prj19")}
+							project={projects?.find(project => project.id === "prj25")}
 						/>
 					</Layout.Grid>
 				</Layout.Cell>
@@ -99,11 +99,11 @@ function CV() {
 				<h2 className="CV__title">
 					<Translate id="skills" />
 				</h2>
-				<Skills translation="skills-languages" array={data.skills?.languages} />
-				<Skills translation="skills-tech" array={data.skills?.tech} />
-				<Skills translation="skills-paradigms" array={data.skills?.paradigms} />
-				<Skills translation="skills-other" array={data.skills?.design} />
-				<Skills translation="skills-fiddle" array={data.skills?.fiddle} />
+				{data.skills?.languages.length ? <Skills translation="skills-languages" array={data.skills.languages} /> : null}
+				{data.skills?.tech.length ? <Skills translation="skills-tech" array={data.skills.tech} /> : null}
+				{data.skills?.paradigms.length ? <Skills translation="skills-paradigms" array={data.skills.paradigms} /> : null}
+				{data.skills?.design.length ? <Skills translation="skills-other" array={data.skills.design} /> : null}
+				{data.skills?.fiddle.length ? <Skills translation="skills-fiddle" array={data.skills.fiddle} /> : null}
 			</Layout.Cell>
 			<Layout.Cell modifiers={["section", "print-avoid-break-after"]}>
 				<Layout.Cell modifiers={["padding", "maxwidth", "print-padding"]}>

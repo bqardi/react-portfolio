@@ -21,11 +21,12 @@
 		border: 2px solid var(--theme-darker);
 		text-align: center;
 		&--tooltip {
-			border: 2px solid $ok;
+			// border: 2px solid $ok;
 			&:hover,
 			&:focus {
-				outline: none;
-				border: 2px solid $highlight;
+				outline: 2px solid $highlight;
+				// outline: none;
+				// border: 2px solid $highlight;
 			}
 		}
 		@media print {
@@ -52,6 +53,16 @@
 			padding: 4px;
 			margin-right: 5px;
 		}
+	}
+	&__information{
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		width: 24px;
+		height: 24px;
+		background-color: var(--theme-darker);
+		border-radius: 50%;
+		padding: 2px;
 	}
 	&__printflex {
 		@media print {

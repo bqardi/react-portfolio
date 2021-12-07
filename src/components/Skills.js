@@ -44,6 +44,9 @@ function Skills({ translation, array, noBottomMargin }) {
 										className="Skills__icon"
 									/>
 								)}
+								{description ? (
+									<Icon.InformationOutline className="Skills__information" />
+								) : null}
 								{item.name}
 							</Layout.Flex>
 						</Tooltip>

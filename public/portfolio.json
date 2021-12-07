@@ -208,8 +208,8 @@
 				"icon": "TypeScript",
 				"color": "#007acc",
 				"description": {
-					"dan": "Er pt. i gang med at lære TypeScript.",
-					"eng": "Currently in the process of learning TypeScript"
+					"dan": "Et typed sprog som et lag ovenpå JavaScript der giver bedre kontrol over din kode.",
+					"eng": "A typed language as a layer on top of JavaScript which gives better control over your code."
 				}
 			}
 		],
@@ -221,6 +221,13 @@
 				"description": {
 					"dan": "Første gang jeg arbejdede med React var i januar, 2021. At bygge en webapp med React komponenter har virkelig hjulpet mig til at holde en god kode struktur og gør det generelt nemmere at bygge store projekter.",
 					"eng": "My first time working with React was in january, 2021. Building a webapp with React components has really helped me keep a good code structure and generally makes it easier to build large projects."
+				}
+			},
+			{
+				"name": "@reach/router",
+				"description": {
+					"dan": "",
+					"eng": ""
 				}
 			},
 			{
@@ -249,12 +256,46 @@
 				}
 			},
 			{
+				"name": "Material UI",
+				"icon": "MaterialUi",
+				"color": "#007dc5",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Tailwind CSS",
+				"icon": "Tailwindcss",
+				"color": "#07b6d5",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "ThreeJS",
+				"icon": "Threejs",
+				"color": "#fff",
+				"description": {
+					"dan": "Et bibliotek til at lave 3D applikationer. Fuldt featured, med kamera, belysning, 3D-meshes, textures med mapping, loading-managers, post-processing, mm.",
+					"eng": "A library to make 3D applications. Fully featured, with camera, lighting, 3D-meshes, textures with mapping, loading-managers, post-processing, etc."
+				}
+			},
+			{
 				"name": "Node JS",
 				"icon": "Nodejs",
 				"color": "#3c873a",
 				"description": {
 					"dan": "",
 					"eng": ""
+				}
+			},
+			{
+				"name": "NPM",
+				"description": {
+					"dan": "Node Package Manager",
+					"eng": "Node Package Manager"
 				}
 			},
 			{
@@ -439,6 +480,34 @@
 					"dan": "",
 					"eng": ""
 				}
+			},
+			{
+				"name": "MySQL",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "TensorFlow",
+				"description": {
+					"dan": "Machine Learning/AI. Lavede et enkelt projekt hvor jeg hyggede mig med talegenkendelse.",
+					"eng": "Machine Learning/AI. Did a single project where I had fun with speechrecognition."
+				}
+			},
+			{
+				"name": "AnimeJS",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "NextJS",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
 			}
 		],
 		"paradigms": [
@@ -501,9 +570,11 @@
 		"design": [
 			{
 				"name": "Maya 3D",
+				"icon": "Maya",
+				"color": "#fff",
 				"description": {
-					"dan": "",
-					"eng": ""
+					"dan": "3D program jeg brugte da jeg gik på Digital Media uddannelsen på Roskilde Teknisk Skole.",
+					"eng": "3D program I used when I attended Digital Media at Roskilde Teknisk Skole."
 				}
 			},
 			{
@@ -511,8 +582,8 @@
 				"icon": "BlenderSoftware",
 				"color": "#ea7600",
 				"description": {
-					"dan": "",
-					"eng": ""
+					"dan": "Kraftfuld, gratis og Open Source 2D/3D program til modellering af 3D objekter, film, spil, digital kunst, 2D/3D animationer, mm.",
+					"eng": "Powerfull, free and Open Source 2D/3D tool for modelling 3D objects, creating movies, games, art, 2D/3D animations, etc."
 				}
 			},
 			{
@@ -568,43 +639,6 @@
 			}
 		],
 		"fiddle": [
-			{
-				"name": "TensorFlow",
-				"description": {
-					"dan": "Machine Learning/AI. Lavede et enkelt projekt hvor jeg hyggede mig med talegenkendelse.",
-					"eng": "Machine Learning/AI. Did a single project where I had fun with speechrecognition."
-				}
-			},
-			{
-				"name": "Material UI",
-				"icon": "MaterialUi",
-				"color": "#007dc5",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "ThreeJS",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "AnimeJS",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "NextJS",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			}
 		]
 	},
 	"projects": [

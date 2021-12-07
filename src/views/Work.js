@@ -30,8 +30,7 @@ function Work({ type }) {
 						<Layout.Grid>
 							{projects
 								?.filter(project => project.types.find(tp => tp === type))
-								.sort((prj1, prj2) => prj1.rating - prj2.rating)
-								.reverse()
+								.sort((prj1, prj2) => prj2.rating - prj1.rating)
 								.map(project => (
 									<WorkCard key={project.id} project={project} />
 								))}
