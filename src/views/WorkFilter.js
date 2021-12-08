@@ -44,7 +44,7 @@ function WorkFilter({array}){
 
 	return (
 		<>
-			<div style={{marginBottom: 50}}>
+			<div className="WorkFilter">
 				<h3><Translate id="work-filter-by-type" /></h3>
 				<Layout.Flex gap={10} style={{padding: "20px 0"}} wrap>
 					{types.map(type => <Button.Toggle key={type.id} isActive onToggle={isActive => test(isActive, type)}>{type[language]}</Button.Toggle>)}
