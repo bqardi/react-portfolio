@@ -353,7 +353,7 @@ const translations = {
 			dan:
 				"- Betyder at jeg bygger det hele fra bunden med React (dvs. sådan noget som bl.a. oversættelse-, accordion-, tooltip- og dropdown-komponenter har jeg bygget selv, på trods af de allerede eksisterende npm pakker med disse features der findes derude).",
 			eng:
-				"- Meaning I will build everything myself using only React (things like translation-, accordion-, tooltip- and dropdown-components amongst others, where build by myself, despite the existense of npm packages with these features already out there)."
+				"- Meaning I will build everything myself using only React (things like translation-, accordion-, tooltip- and dropdown-components amongst others, were built by myself, despite the existense of npm packages with these features already out there)."
 		},
 
 		"title-02": { dan: "Tech", eng: "Tech" },
