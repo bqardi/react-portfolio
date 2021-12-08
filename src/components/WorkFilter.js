@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Button from "../components/Button";
-import { useStoreContext } from "../components/Store";
-import WorkCard from "../components/WorkCard";
+import Button from "./Button";
+import { useStoreContext } from "./Store";
+import WorkCard from "./WorkCard";
 import Layout from "../layout/Layout";
 import "./WorkFilter.scss";
 

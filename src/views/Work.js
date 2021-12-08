@@ -3,7 +3,7 @@ import Layout from "../layout/Layout";
 import Article from "../layout/Article";
 import { useStoreContext } from "../components/Store";
 import usePageTitle from "../hooks/usePageTitle";
-import WorkFilter from "./WorkFilter";
+import WorkFilter from "../components/WorkFilter";
 
 function Work() {
 	var { projects, setProjects, translate, Translate } = useStoreContext();
