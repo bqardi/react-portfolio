@@ -177,6 +177,8 @@
 			},
 			{
 				"name": "mySQL",
+				"icon": "Mysql",
+				"color": "#fff",
 				"description": {
 					"dan": "Da jeg for mange år tilbage havde brug for en server til at hoste mine hjemmesider, stiftede jeg bekendtskab med LAMP (Linux, Apache, MySQL, PHP) og dermed mySQL hvor jeg byggede min første database med data jeg kunne bruge online.",
 					"eng": "Many years ago when I needed a server to host my websites, I got aquainted with LAMP (Linux, Apache, MySQL, PHP) and thereby mySQL where I built my first database with data I could use online."
@@ -184,6 +186,8 @@
 			},
 			{
 				"name": "VBA",
+				"icon": "VBA",
+				"color": "#fff",
 				"description": {
 					"dan": "I mit arbejde hos K. A. Rasmussen (2009-2017) byggede jeg små systemer der skulle lette arbejdsbyrden for mig og mine kollegaer. Alt dette foregik i VBA (Visual Basic for Applications i Microsoft Office).",
 					"eng": "My work at K. A. Rasmussen (2009-2017) I built small systems which would lighten the burden for me and my colleagues. For all of this I used VBA (Visual Basic for Applications in Microsoft Office)"
@@ -224,7 +228,7 @@
 				}
 			},
 			{
-				"name": "@reach/router",
+				"name": "@reach/[shy]router",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -300,6 +304,8 @@
 			},
 			{
 				"name": "NPM",
+				"icon": "NPM",
+				"color": "#CB3837",
 				"description": {
 					"dan": "Node Package Manager",
 					"eng": "Node Package Manager"
@@ -316,6 +322,8 @@
 			},
 			{
 				"name": "Netlify",
+				"icon": "Netlify",
+				"color": "#4d9abf",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -323,6 +331,8 @@
 			},
 			{
 				"name": "Heroku",
+				"icon": "Heroku",
+				"color": "#430098",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -330,6 +340,8 @@
 			},
 			{
 				"name": "Mongo DB",
+				"icon": "Mongodb",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -365,6 +377,8 @@
 			},
 			{
 				"name": "Strapi",
+				"icon": "Strapi",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -372,6 +386,8 @@
 			},
 			{
 				"name": "Insomnia",
+				"icon": "Insomnia",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -394,7 +410,7 @@
 				}
 			},
 			{
-				"name": "Doku-mentation",
+				"name": "Doku[shy]mentation",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -489,13 +505,6 @@
 				}
 			},
 			{
-				"name": "MySQL",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
 				"name": "TensorFlow",
 				"description": {
 					"dan": "Machine Learning/AI. Lavede et enkelt projekt hvor jeg hyggede mig med talegenkendelse.",
@@ -504,6 +513,8 @@
 			},
 			{
 				"name": "AnimeJS",
+				"icon": "Animejs",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -511,6 +522,8 @@
 			},
 			{
 				"name": "NextJS",
+				"icon": "Nextjs",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -604,6 +617,8 @@
 			},
 			{
 				"name": "Adobe PhotoShop",
+				"icon": "Photoshop",
+				"color": "#001E36",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -611,6 +626,8 @@
 			},
 			{
 				"name": "Adobe InDesign",
+				"icon": "Indesign",
+				"color": "#49021F",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -618,13 +635,8 @@
 			},
 			{
 				"name": "Adobe Illustrator",
-				"description": {
-					"dan": "",
-					"eng": ""
-				}
-			},
-			{
-				"name": "Figma",
+				"icon": "Illustrator",
+				"color": "#330000",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -632,6 +644,17 @@
 			},
 			{
 				"name": "Adobe XD",
+				"icon": "XD",
+				"color": "#470137",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
+				"name": "Figma",
+				"icon": "Figma",
+				"color": "#fff",
 				"description": {
 					"dan": "",
 					"eng": ""
@@ -639,6 +662,8 @@
 			},
 			{
 				"name": "Inkscape",
+				"icon": "Inkscape",
+				"color": "#fff",
 				"description": {
 					"dan": "Bruger jeg til at generere/redigere SVG filer/kode.",
 					"eng": "I use this to generate/edit SVG files/code."
