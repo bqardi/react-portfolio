@@ -1,3 +1,8 @@
 .WorkFilter{
 	margin-bottom: 50px;
+	&__filtered{
+		color: var(--theme-lighter);
+		opacity: 0.5;
+		font-weight: 300;
+	}
 }

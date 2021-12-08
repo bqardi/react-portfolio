@@ -78,6 +78,7 @@ const translations = {
 	"dashboard": { dan: "Dashboard", eng: "Dashboard" },
 	"work": { dan: "Projekter", eng: "Projects" },
 	"work-filter-by-type": { dan: "Filtrér efter type:", eng: "Filter by type:" },
+	"work-filter-by-type-shown": { dan: "viser", eng: "showing" },
 	"work-filter-error": { dan: "Du skal vælge mindst én type for at se mine projekter!", eng: "You must select at least one type to see my projects!" },
 	"language": { dan: "Sprog", eng: "Language" },
 	"cv": { dan: "CV", eng: "CV" },
