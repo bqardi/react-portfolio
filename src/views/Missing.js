@@ -1,13 +1,14 @@
-import { Link } from "@reach/router";
 import { useEffect, useState } from "react";
 import Button from "../components/Button";
 import { useStoreContext } from "../components/Store";
+import useScrollToTop from "../hooks/useScrollToTop";
 import Article from "../layout/Article";
 import Layout from "../layout/Layout";
 import "./Missing.scss";
 
 function Missing() {
 	var [removeAnimation, setRemoveAnimation] = useState(false);
+	const onTop = useScrollToTop();
 
 	useEffect(() => {
 		var timeout = setTimeout(() => {
@@ -18,6 +19,8 @@ function Missing() {
 			setRemoveAnimation(false);
 		};
 	}, []);
+
+	if (!onTop) return null;
 
 	return (
 		<Article type="missing">
@@ -60,7 +63,7 @@ function MissingNavigation() {
 					</Button>
 				</li>
 				<li>
-					<Button to="/dashboard/websites">
+					<Button to="/dashboard/projects">
 						<Translate id="missing-to-projects" />
 					</Button>
 				</li>

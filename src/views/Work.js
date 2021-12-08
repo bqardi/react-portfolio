@@ -4,11 +4,13 @@ import Article from "../layout/Article";
 import { useStoreContext } from "../components/Store";
 import usePageTitle from "../hooks/usePageTitle";
 import WorkFilter from "../components/WorkFilter";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 function Work() {
 	var { projects, setProjects, translate, Translate } = useStoreContext();
 	const [sorted, setSorted] = useState([]);
 	usePageTitle(translate("title-projects"));
+	const onTop = useScrollToTop();
 
 	useEffect(() => {
 		if (!projects?.length) {
@@ -21,6 +23,8 @@ function Work() {
 			.sort((prj1, prj2) => prj2.rating - prj1.rating);
 		setSorted(sortedProjects);
 	}, [projects]);
+
+	if (!onTop) return null;
 
 	return (
 		<Article type={"projects"} resume>

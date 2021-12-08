@@ -9,11 +9,13 @@ import Experience from "../components/Experience";
 import Skills from "../components/Skills";
 import "./CV.scss";
 import usePageTitle from "../hooks/usePageTitle";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 function CV() {
 	var { translate, Translate, projects, setProjects } = useStoreContext();
 	usePageTitle(translate("title-cv"));
 	var [data, setData] = useState({});
+	const onTop = useScrollToTop();
 
 	useEffect(() => {
 		fetch("/portfolio.json")
@@ -26,6 +28,8 @@ function CV() {
 			setProjects(data.projects);
 		}
 	}, [data, projects, setProjects]);
+
+	if (!onTop) return null;
 
 	return (
 		<Article type="cv">

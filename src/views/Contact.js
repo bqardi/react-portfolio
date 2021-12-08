@@ -6,10 +6,14 @@ import Address from "../components/Address";
 import "./Contact.scss";
 import usePageTitle from "../hooks/usePageTitle";
 import OnlineProfiles from "../components/OnlineProfiles";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 function Contact() {
 	var { Translate, translate } = useStoreContext();
 	usePageTitle(translate("title-contact"));
+	const onTop = useScrollToTop();
+
+	if (!onTop) return null;
 
 	return (
 		<Article type="contact">

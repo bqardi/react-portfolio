@@ -15,10 +15,14 @@ import DarkmodeColorTheme from "./BuildProcess/DarkmodeColorTheme";
 import Backend from "./BuildProcess/Backend";
 import "./BuildProcess.scss";
 import usePageTitle from "../hooks/usePageTitle";
+import useScrollToTop from "../hooks/useScrollToTop";
 
 function BuildProcess() {
 	var { Translate, translate } = useStoreContext();
 	usePageTitle(translate("title-build-process"));
+	const onTop = useScrollToTop();
+
+	if (!onTop) return null;
 
 	return (
 		<Article type="build-process">
