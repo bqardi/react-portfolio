@@ -1,3 +1,4 @@
+import {Fragment} from "react";
 import { useStoreContext } from "./Store";
 import Layout from "../layout/Layout";
 import Tooltip from "./Tooltip";
@@ -47,7 +48,8 @@ function Skills({ translation, array, noBottomMargin }) {
 								{description ? (
 									<Icon.InformationOutline className="Skills__information" />
 								) : null}
-								{item.name}
+								{item.name.split("[shy]").map((txt, index, arr) =>
+									index < arr.length - 1 ? <Fragment key={index}>{txt}&shy;</Fragment> : txt)}
 							</Layout.Flex>
 						</Tooltip>
 					);
