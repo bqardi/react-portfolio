@@ -75,6 +75,8 @@ const translations = {
 
 	"dashboard": { dan: "Dashboard", eng: "Dashboard" },
 	"work": { dan: "Projekter", eng: "Projects" },
+	"work-filter-by-type": { dan: "Filtrér efter type:", eng: "Filter by type:" },
+	"work-filter-error": { dan: "Du skal vælge mindst én type for at se mine projekter!", eng: "You must select at least one type to see my projects!" },
 	"language": { dan: "Sprog", eng: "Language" },
 	"cv": { dan: "CV", eng: "CV" },
 	"my-best-work": { dan: "Mine bedste projekter", eng: "My best projects" },
@@ -210,39 +212,49 @@ const translations = {
 		eng: "How I build this portfolio"
 	},
 	"title-projects": { dan: "Projekter", eng: "Projects" },
-	"title-web": { dan: "Websites", eng: "Websites" },
-	"description-web": {
-		dan: "Her er nogle af mine website projekter og designs",
-		eng: "Here are some of my website projects and designs"
+	"description-projects": {
+		dan: "Her er mine website projekter og designs, samt nogle tutorials/artikler.",
+		eng: "Here are my website projects and designs, as well as some tutorials/articles."
 	},
-	"resume-web": {
+	"resume-projects": {
 		dan:
-			"På denne side finder du mine websites som jeg har bygget fra bunden af. De er alle lavet med JavaScript, HTML og CSS som minimum. Jeg begyndte at arbejde med React i januar 2021, så nogle projekter er lavet i React og flere bliver tilføjet med tiden.",
+			"På denne side finder du mine websites som jeg har bygget fra bunden af, samt nogle tutorials/artikler og spil-sider. Disse kan filtreres efter type ved hjælp af filtrerings-knapperne nedenunder. De er alle lavet med JavaScript, HTML og CSS som minimum. Jeg begyndte at arbejde med React i januar 2021, så nogle projekter er lavet i React og flere bliver tilføjet med tiden.",
 		eng:
-			"On this page you will find websites that I have build from the ground up. They are all made with JavaScript, HTML og CSS as a minimum. I started using React back in january 2021, so some projects are made with React and more will be added over time."
+			"On this page you will find websites that I have build from the ground up, as well as some tutorials/articles and game-sites. These can be filtered by type with the filtering-buttons below. They are all made with JavaScript, HTML og CSS as a minimum. I started using React back in january 2021, so some projects are made with React and more will be added over time."
 	},
-	"title-tutorial": { dan: "Tutorials", eng: "Tutorials" },
-	"description-tutorial": {
-		dan: "Læs mine tutorials og bliv klogere",
-		eng: "Read my tutorials and get smarter"
-	},
-	"resume-tutorial": {
-		dan:
-			"Dette er alt sammen tutorial orienteret. Nogle er blot artikler og ikke websites jeg har lavet.",
-		eng:
-			"These are all tutorial orientet. Some are articles and not websites I have created."
-	},
-	"title-game": { dan: "Spil", eng: "Games" },
-	"description-game": {
-		dan: "Nogle spil jeg har lavet",
-		eng: "Some games I've built"
-	},
-	"resume-game": {
-		dan:
-			"Online, gratis spil jeg har lavet. Et enkelt (Lego sjov) er lavet i 3D med Unity 3D og konverteret til web venlige filer så du kan nyde det.",
-		eng:
-			"Online, free games I have made. One (Lego fun) was made with the Unity 3D engine and converted to web friendly files for you to enjoy."
-	},
+	// "title-web": { dan: "Websites", eng: "Websites" },
+	// "description-web": {
+	// 	dan: "Her er nogle af mine website projekter og designs",
+	// 	eng: "Here are some of my website projects and designs"
+	// },
+	// "resume-web": {
+	// 	dan:
+	// 		"På denne side finder du mine websites som jeg har bygget fra bunden af. De er alle lavet med JavaScript, HTML og CSS som minimum. Jeg begyndte at arbejde med React i januar 2021, så nogle projekter er lavet i React og flere bliver tilføjet med tiden.",
+	// 	eng:
+	// 		"On this page you will find websites that I have build from the ground up. They are all made with JavaScript, HTML og CSS as a minimum. I started using React back in january 2021, so some projects are made with React and more will be added over time."
+	// },
+	// "title-tutorial": { dan: "Tutorials", eng: "Tutorials" },
+	// "description-tutorial": {
+	// 	dan: "Læs mine tutorials og bliv klogere",
+	// 	eng: "Read my tutorials and get smarter"
+	// },
+	// "resume-tutorial": {
+	// 	dan:
+	// 		"Dette er alt sammen tutorial orienteret. Nogle er blot artikler og ikke websites jeg har lavet.",
+	// 	eng:
+	// 		"These are all tutorial orientet. Some are articles and not websites I have created."
+	// },
+	// "title-game": { dan: "Spil", eng: "Games" },
+	// "description-game": {
+	// 	dan: "Nogle spil jeg har lavet",
+	// 	eng: "Some games I've built"
+	// },
+	// "resume-game": {
+	// 	dan:
+	// 		"Online, gratis spil jeg har lavet. Et enkelt (Lego sjov) er lavet i 3D med Unity 3D og konverteret til web venlige filer så du kan nyde det.",
+	// 	eng:
+	// 		"Online, free games I have made. One (Lego fun) was made with the Unity 3D engine and converted to web friendly files for you to enjoy."
+	// },
 	"title-about": { dan: "Om mig", eng: "About me" },
 	"description-about": {
 		dan: "Jeg er programmør/frontend developer",

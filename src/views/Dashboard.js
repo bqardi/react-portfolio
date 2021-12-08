@@ -41,9 +41,10 @@ function Dashboard() {
 						>
 							<Router>
 								<BuildProcess path="/build-process" />
-								<Work path="/websites" type="web" />
-								<Work path="/tutorials" type="tutorial" />
-								<Work path="/games" type="game" />
+								<Work path="/projects" />
+								{/* <Work path="/websites" type="web" /> */}
+								{/* <Work path="/tutorials" type="tutorial" />
+								<Work path="/games" type="game" /> */}
 								<Contact path="/contact" />
 								<CV path="/cv" />
 								<Missing default />

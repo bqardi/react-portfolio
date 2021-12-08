@@ -61,7 +61,7 @@ function Landing() {
 						</ButtonGroup.Button>
 					</ButtonGroup>
 					<nav className="Landing__nav">
-						<Link to="/dashboard/websites" className="Landing__hidden">
+						<Link to="/dashboard/projects" className="Landing__hidden">
 							<Translate id="landing-work" />
 						</Link>
 						<Link to="/dashboard/contact">
@@ -109,7 +109,7 @@ function Landing() {
 								style={{ marginBottom: "16px" }}
 							>
 								<Button
-									to="/dashboard/websites"
+									to="/dashboard/projects"
 									variation="cta"
 									className="Landing__cta"
 								>

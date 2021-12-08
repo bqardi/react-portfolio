@@ -231,6 +231,13 @@
 				}
 			},
 			{
+				"name": "React Hook Forms",
+				"description": {
+					"dan": "",
+					"eng": ""
+				}
+			},
+			{
 				"name": "JSON",
 				"icon": "Json",
 				"color": "#9273a3",
@@ -645,7 +652,11 @@
 		{
 			"id": "prj25",
 			"rating": "100",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/planets.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -694,7 +705,11 @@
 		{
 			"id": "prj24",
 			"rating": "90",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/mobile-app-landing-page.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -751,7 +766,11 @@
 		{
 			"id": "prj23",
 			"rating": "100",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/portfolio.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -808,7 +827,11 @@
 		{
 			"id": "prj22",
 			"rating": "100",
-			"types": ["tutorial"],
+			"types": [
+				{
+					"id": "tutorial", "dan": "Tutorials", "eng": "Tutorials"
+				}
+			],
 			"image": "/images/project/compound-component-pattern.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -837,7 +860,11 @@
 		{
 			"id": "prj21",
 			"rating": "50",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/dappy-crypto-currency.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -886,7 +913,11 @@
 		{
 			"id": "prj20",
 			"rating": "80",
-			"types": ["tutorial"],
+			"types": [
+				{
+					"id": "tutorial", "dan": "Tutorials", "eng": "Tutorials"
+				}
+			],
 			"image": "/images/project/testing_and_formatting_before_commit.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -915,7 +946,11 @@
 		{
 			"id": "prj19",
 			"rating": "90",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/newsbox.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -968,7 +1003,11 @@
 		{
 			"id": "prj18",
 			"rating": "60",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/hifi-corner.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1023,7 +1062,11 @@
 		{
 			"id": "prj17",
 			"rating": "100",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/svg-icon-list.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1052,7 +1095,11 @@
 		{
 			"id": "prj16",
 			"rating": "100",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/workflow-helper.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1081,7 +1128,11 @@
 		{
 			"id": "prj15",
 			"rating": "70",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/login-eksempel.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1130,7 +1181,14 @@
 		{
 			"id": "prj14",
 			"rating": "95",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/rogue-survivor.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1167,7 +1225,14 @@
 		{
 			"id": "prj13",
 			"rating": "90",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/kryds-og-bolle.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1204,7 +1269,11 @@
 		{
 			"id": "prj12",
 			"rating": "80",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/cph-architects.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1241,7 +1310,14 @@
 		{
 			"id": "prj11",
 			"rating": "100",
-			"types": ["web", "tutorial"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "tutorial", "dan": "Tutorials", "eng": "Tutorials"
+				}
+			],
 			"image": "/images/project/professor.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1292,7 +1368,14 @@
 		{
 			"id": "prj10",
 			"rating": "50",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/quiz.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1341,7 +1424,11 @@
 		{
 			"id": "prj9",
 			"rating": "60",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/object-builder.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1370,7 +1457,14 @@
 		{
 			"id": "prj8",
 			"rating": "70",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/space-invaders-clone.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1407,7 +1501,14 @@
 		{
 			"id": "prj7",
 			"rating": "50",
-			"types": ["web", "tutorial"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "tutorial", "dan": "Tutorials", "eng": "Tutorials"
+				}
+			],
 			"image": "/images/project/svg-mini-tutorial.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1436,7 +1537,11 @@
 		{
 			"id": "prj6",
 			"rating": "60",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/lego-klods-major.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1473,7 +1578,14 @@
 		{
 			"id": "prj5",
 			"rating": "70",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/lego-fun.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1502,7 +1614,11 @@
 		{
 			"id": "prj4",
 			"rating": "60",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/star-wars-api.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1547,7 +1663,11 @@
 		{
 			"id": "prj3",
 			"rating": "65",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/design-opgave.jpg",
 			"imageFocusArea": "top",
 			"title": {
@@ -1596,7 +1716,11 @@
 		{
 			"id": "prj2",
 			"rating": "70",
-			"types": ["web"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				}
+			],
 			"image": "/images/project/digital-media-eksamen-præsentation.jpg",
 			"imageFocusArea": "center",
 			"title": {
@@ -1633,7 +1757,14 @@
 		{
 			"id": "prj1",
 			"rating": "75",
-			"types": ["web", "game"],
+			"types": [
+				{
+					"id": "web", "dan": "Web", "eng": "Web"
+				},
+				{
+					"id": "game", "dan": "Spil", "eng": "Games"
+				}
+			],
 			"image": "/images/project/solitaire-klondike.jpg",
 			"imageFocusArea": "top",
 			"title": {

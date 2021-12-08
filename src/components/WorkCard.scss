@@ -13,7 +13,7 @@
 	&::before {
 		content: "";
 		position: absolute;
-		inset: math.div($space, 4);
+		inset: 0;
 		background-color: var(--theme-darkest);
 		border-radius: $borderRadius;
 		@media print {

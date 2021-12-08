@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import Layout from "../layout/Layout";
 import Article from "../layout/Article";
-import WorkCard from "../components/WorkCard";
 import { useStoreContext } from "../components/Store";
 import usePageTitle from "../hooks/usePageTitle";
+import WorkFilter from "./WorkFilter";
 
-function Work({ type }) {
+function Work() {
 	var { projects, setProjects, translate, Translate } = useStoreContext();
 	usePageTitle(translate("title-projects"));
 
@@ -14,11 +14,12 @@ function Work({ type }) {
 			fetch("/portfolio.json")
 				.then(response => response.json())
 				.then(data => setProjects(data.projects));
+			return;
 		}
-	}, [projects, setProjects]);
+	}, [projects]);
 
 	return (
-		<Article type={type} resume>
+		<Article type={"projects"} resume>
 			<Layout.Cell modifiers={["section", "maxwidth-large"]}>
 				<Layout.Cell modifiers={["padding"]}>
 					<section>
@@ -27,14 +28,7 @@ function Work({ type }) {
 								<Translate id="work" />
 							</h2>
 						</Layout.Cell>
-						<Layout.Grid>
-							{projects
-								?.filter(project => project.types.find(tp => tp === type))
-								.sort((prj1, prj2) => prj2.rating - prj1.rating)
-								.map(project => (
-									<WorkCard key={project.id} project={project} />
-								))}
-						</Layout.Grid>
+						<WorkFilter array={projects} />
 					</section>
 				</Layout.Cell>
 			</Layout.Cell>

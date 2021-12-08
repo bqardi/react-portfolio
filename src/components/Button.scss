@@ -176,4 +176,24 @@
 			}
 		}
 	}
+	&--toggle{
+		color: var(--light);
+		background-color: var(--dark);
+		padding: 0 $space;
+		min-width: 100px;
+		font-weight: 700;
+		font-size: 1.1rem;
+		&:hover {
+			color: var(--light-hover);
+			background-color: var(--dark-hover);
+		}
+	}
+	&--active{
+		color: var(--theme-darker);
+		background-color: var(--theme-light);
+		&:hover {
+			color: var(--theme-darkest);
+			background-color: var(--theme-lighter);
+		}
+	}
 }

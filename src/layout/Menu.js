@@ -15,18 +15,18 @@ function Menu() {
 					<Icon.Tools />
 					<Translate id="title-build-process" />
 				</Sidebar.Link>
-				<Sidebar.Link to="/dashboard/websites">
+				<Sidebar.Link to="/dashboard/projects">
 					<Icon.Web />
-					<Translate id="title-web" />
+					<Translate id="title-projects" />
 				</Sidebar.Link>
-				<Sidebar.Link to="/dashboard/tutorials">
+				{/* <Sidebar.Link to="/dashboard/tutorials">
 					<Icon.HandHeart />
 					<Translate id="title-tutorial" />
 				</Sidebar.Link>
 				<Sidebar.Link to="/dashboard/games">
 					<Icon.GamepadVariant />
 					<Translate id="title-game" />
-				</Sidebar.Link>
+				</Sidebar.Link> */}
 				<Sidebar.Link to="/dashboard/contact">
 					<Icon.TargetAccount />
 					<Translate id="title-contact" />
