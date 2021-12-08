@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import helper from "./helper";
 import useLocalStorage from "./useLocalStorage";
 import useLorem from "./useLorem";
@@ -8,11 +8,13 @@ const translations = {
 	"languages": [
 		{
 			code: "dan",
+			lang: "da",
 			full: "Dansk",
 			icon: "DanishFlag"
 		},
 		{
 			code: "eng",
+			lang: "en",
 			full: "English",
 			icon: "BritishFlag"
 		}
@@ -921,6 +923,11 @@ function useLanguage() {
 			</span>
 		);
 	}
+
+	useEffect(() => {
+		const lang = translations.languages.find(lng => lng.code === language).lang;
+		document.querySelector("html").lang = lang;
+	}, [language]);
 
 	return {
 		language,
