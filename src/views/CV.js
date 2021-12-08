@@ -83,15 +83,9 @@ function CV() {
 						<Translate id="work" />
 					</h2>
 					<Layout.Grid>
-						<WorkCard
-							project={projects?.find(project => project.id === "prj11")}
-						/>
-						<WorkCard
-							project={projects?.find(project => project.id === "prj16")}
-						/>
-						<WorkCard
-							project={projects?.find(project => project.id === "prj25")}
-						/>
+						<WorkCard project={projects?.find(project => project.id === "prj16")} />
+						<WorkCard project={projects?.find(project => project.id === "prj25")} />
+						<WorkCard project={projects?.find(project => project.id === "prj11")} />
 					</Layout.Grid>
 				</Layout.Cell>
 			</Layout.Cell>
