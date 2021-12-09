@@ -1,5 +1,4 @@
-import { createContext, useEffect } from "react";
-import { useRef } from "react/cjs/react.development";
+import { useEffect, useRef } from "react";
 import "./Christmas.scss";
 import { useStoreContext } from "./Store";
 import Toggler from "./Toggler";
