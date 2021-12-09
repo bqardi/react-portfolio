@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap");
+@import "../variables";
+
+.Christmas{
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	&__heading{
+		position: fixed;
+		top: clamp(72px, 2vw, 120px);
+		right: 16px;
+		font-family: "Luxurious Script", cursive;
+		font-size: clamp(3rem, 5vw, 8rem);
+		font-weight: 400;
+		padding-right: $space;
+		background: linear-gradient(to bottom,
+			#c3b391 17%,
+			#dfca86 35%,
+			#584318 65%,
+			#886d3d 71%,
+			#9e9072 85%,
+			#d6b46c 12%
+		); 
+		background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+		@media screen and (min-width: $breakpointMicro) {
+			&::before{
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 100%;
+				background-image: url("../images/christmas-ornaments.png");
+				background-repeat: no-repeat;
+				background-position: 100% 0;
+				background-size: contain;
+				width: clamp(48px, 7vw, 96px);
+				height: clamp(58px, 8vw, 110px);
+				margin-right: max(10px, 2vw);
+			}
+		}
+	}
+	&__toggler{
+		color: var(--light);
+		display: flex;
+		align-items: center;
+		&:hover{
+			background-color: var(--dark-hover);
+		}
+	}
+}

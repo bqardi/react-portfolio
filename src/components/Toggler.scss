@@ -24,4 +24,8 @@
 		outline: none;
 		border: 2px solid $highlight;
 	}
+	&__label{
+		display: inline-block;
+		margin-right: 8px;
+	}
 }

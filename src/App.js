@@ -9,6 +9,9 @@ import Toast from "./components/Toast";
 import "./App.scss";
 import useLocalStorage from "./hooks/useLocalStorage";
 import Missing from "./views/Missing";
+import Christmas from "./components/Christmas";
+
+const displayChristmas = true;
 
 function App() {
 	var breakpointSmall = useMediaQuery("(min-width: 600px)");
@@ -22,6 +25,7 @@ function App() {
 		saturation: "86%"
 	});
 	var [projects, setProjects] = useState([]);
+	const [snow, setSnow] = useState(true);
 	var {
 		language,
 		setLanguage,
@@ -46,29 +50,20 @@ function App() {
 		<div className="App">
 			<Store
 				value={{
-					projects,
-					setProjects,
-					darkmode,
-					setDarkmode,
-					theme,
-					setTheme,
-					menuOpen,
-					setMenuOpen,
-					toast,
-					setToast,
-					breakpointSmall,
-					breakpointMedium,
-					language,
-					setLanguage,
-					languages,
-					translate,
-					translateFeed,
-					Translate,
-					parseAttributes,
-					parseString
+					projects, setProjects,
+					darkmode, setDarkmode,
+					theme, setTheme,
+					menuOpen, setMenuOpen,
+					toast, setToast,
+					breakpointSmall, breakpointMedium,
+					language, setLanguage,
+					languages, translate, translateFeed, Translate,
+					parseAttributes, parseString,
+					displayChristmas, snow, setSnow
 				}}
 			>
 				<Toast toast={toast} />
+				{displayChristmas && snow && <Christmas />}
 				<Router>
 					<Landing path="/" />
 					<Dashboard path="/dashboard/*" />

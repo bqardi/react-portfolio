@@ -7,13 +7,15 @@ import Layout from "../layout/Layout";
 import Settings from "../layout/Settings";
 import Language from "./Language";
 import "./Topbar.scss";
+import Christmas from "./Christmas";
 
 function Topbar() {
 	var {
 		translate,
 		menuOpen,
 		setMenuOpen,
-		breakpointMedium
+		breakpointMedium,
+		displayChristmas
 	} = useStoreContext();
 
 	function menuClickHandler() {
@@ -35,6 +37,7 @@ function Topbar() {
 			</Button>
 			<Logo />
 			<Layout.Flex>
+				{displayChristmas && <Christmas.Toggler />}
 				<Language />
 				<Settings />
 			</Layout.Flex>

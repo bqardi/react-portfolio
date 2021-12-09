@@ -12,7 +12,7 @@ function Toggler({ id, label, isOn, callback, ...other }) {
 			callback={callback}
 			{...other}
 		>
-			{label}
+			<span className="Toggler__label">{label}</span>
 			<Toggle.Track className="Toggler__track">
 				<Toggle.Handle className="Toggler__handle" />
 			</Toggle.Track>

@@ -7,6 +7,7 @@ import ButtonGroup from "../components/ButtonGroup";
 import Layout from "../layout/Layout";
 import "./Landing.scss";
 import usePageTitle from "../hooks/usePageTitle";
+import Christmas from "../components/Christmas";
 
 var languageExperience = [
 	{
@@ -35,11 +36,12 @@ var languageExperience = [
 ];
 
 function Landing() {
-	var { Translate, translate, language, setLanguage } = useStoreContext();
+	var { Translate, translate, language, setLanguage, displayChristmas } = useStoreContext();
 	usePageTitle();
 
 	return (
 		<section className="Landing">
+			{displayChristmas && <Christmas.Heading />}
 			<div className="Landing__info">
 				<header className="Landing__header">
 					<ButtonGroup className="Landing__translation">

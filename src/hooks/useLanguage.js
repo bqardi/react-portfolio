@@ -29,6 +29,9 @@ const translations = {
 		eng: "Translate:",
 		lorem: "Lorem ipsum"
 	},
+	"christmas-heading": {dan: "Glædelig Jul", eng: "Merry Christmas"},
+	"chirstmas-visible": {dan: "Skjul sne", eng: "Hide snow"},
+	"chirstmas-hidden": {dan: "Vis sne", eng: "Show snow"},
 	"landing-title": {
 		dan: "På udkig efter en Web udvikler?",
 		eng: "Looking for a Web developer?"
