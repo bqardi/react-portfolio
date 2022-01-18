@@ -11,7 +11,7 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import Missing from "./views/Missing";
 import Christmas from "./components/Christmas";
 
-const displayChristmas = true;
+const displayChristmas = false;
 
 function App() {
 	var breakpointSmall = useMediaQuery("(min-width: 600px)");
