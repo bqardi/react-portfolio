@@ -2,30 +2,30 @@
 	"experience": {
 		"current": {
 			"id": "exp04",
-			"jobhunting": true,
+			"jobhunting": false,
 			"name": {
-				"dan": "Jeres virksomhed?",
-				"eng": "Your company?"
+				"dan": "Abtion",
+				"eng": "Abtion"
 			},
 			"title": {
-				"dan": "Webudvikler, front end udvikler",
-				"eng": "Web developer, front end developer"
+				"dan": "Webudvikler, fullstack",
+				"eng": "Web developer, fullstack"
 			},
 			"description": {
-				"dan": "Er du/I det rette match for mig? Pt. leder jeg efter et job som frontend udvikler. Tag meget gerne [link] til mig, hvis i synes jeg virker som et godt match for jer.",
-				"eng": "Are you the right match for me? Currently I am on the lookout for a fulltime job as a frontend developer. Please [link] me if you think I seem like a good match for you."
+				"dan": "Not another digital agency - Vi designer og udvikler digitale produkter og services",
+				"eng": "Not another digital agency - We design and develop digital products and services"
 			},
 			"from": {
-				"year": "2021",
-				"month": "10"
+				"year": "2022",
+				"month": "3"
 			},
 			"to": {
 				"year": "?",
 				"month": "?"
 			},
 			"location": {
-				"dan": "?",
-				"eng": "?"
+				"dan": "Odense",
+				"eng": "Odense"
 			},
 			"type": {
 				"dan": "Medarbejder",
