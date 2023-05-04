@@ -1,4 +1,4 @@
-import { Link } from "@reach/router";
+import { NavLink } from "react-router-dom";
 import helper from "../hooks/helper";
 import { useStoreContext } from "./Store";
 import "./Sidebar.scss";
@@ -39,7 +39,11 @@ function Anchor({ children, to, href, modifiers }) {
 
 	if (href) {
 		return (
-			<a href={href} className="Sidebar__anchor" tabIndex={menuOpen ? null : "-1"}>
+			<a
+				href={href}
+				className="Sidebar__anchor"
+				tabIndex={menuOpen ? null : "-1"}
+			>
 				{children}
 			</a>
 		);
@@ -50,18 +54,18 @@ function Anchor({ children, to, href, modifiers }) {
 	}
 
 	return (
-		<Link
+		<NavLink
 			to={to}
 			onClick={menuHandler}
-			getProps={({ isCurrent }) => ({
-				className: `Sidebar__link${
-					isCurrent ? " Sidebar__link--active" : ""
+			className={({ isActive }) =>
+				`Sidebar__link${
+					isActive ? " Sidebar__link--active" : ""
 				}${helper.modifiers("Sidebar__link", modifiers)}`
-			})}
+			}
 			tabIndex={menuOpen ? null : "-1"}
 		>
 			{children}
-		</Link>
+		</NavLink>
 	);
 }
 Sidebar.Link = Anchor;

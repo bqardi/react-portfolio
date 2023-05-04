@@ -1,5 +1,5 @@
 import helper from "../hooks/helper";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import "./Button.scss";
 import Icon from "./Icon";
 import { useStoreContext } from "./Store";
@@ -89,18 +89,27 @@ function HireMe({ className, translation = "button-hire-me", ...other }) {
 }
 Button.HireMe = HireMe;
 
-function ButtonToggle({children, className, onToggle, onClick, isActive, ...other}){
+function ButtonToggle({
+	children,
+	className,
+	onToggle,
+	onClick,
+	isActive,
+	...other
+}) {
 	var [active, setActive] = useState(!!isActive);
 
-	function clickHandler(e){
+	function clickHandler(e) {
 		setActive(prev => !prev);
 		onClick && onClick(e);
 		onToggle && onToggle(!active);
 	}
-	
+
 	return (
 		<button
-			className={`Button Button--toggle${active ? " Button--active" : ""}${helper.className(className)}`}
+			className={`Button Button--toggle${
+				active ? " Button--active" : ""
+			}${helper.className(className)}`}
 			onClick={clickHandler}
 			{...other}
 		>

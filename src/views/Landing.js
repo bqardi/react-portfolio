@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { Link } from "@reach/router";
+import { Link } from "react-router-dom";
 import { useStoreContext } from "../components/Store";
 import Icon from "../components/Icon";
 import Button from "../components/Button";
@@ -36,7 +36,8 @@ var languageExperience = [
 ];
 
 function Landing() {
-	var { Translate, translate, language, setLanguage, displayChristmas } = useStoreContext();
+	var { Translate, translate, language, setLanguage, displayChristmas } =
+		useStoreContext();
 	usePageTitle();
 
 	return (
